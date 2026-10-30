@@ -12,7 +12,9 @@
     "menu": "Apri il menu",
     "close": "Chiudi il menu",
     "nav": "Navigazione principale",
-    "skip": "Vai al contenuto"
+    "skip": "Vai al contenuto",
+    "themeDark": "Attiva la modalità scura",
+    "themeLight": "Attiva la modalità chiara"
   },
   "hero": {
     "audience": "Per attività da 1 a 15 persone",
@@ -24,8 +26,6 @@
     "secondary": "Scopri come funziona",
     "reassurance": "Nessuna email e nessun post parte senza la tua approvazione.",
     "panel": {
-      "example": "Esempio",
-      "appSection": "Home",
       "greeting": "Buongiorno, Giulia.",
       "summary": "2 decisioni ti aspettano. Stamattina la tua squadra ha completato 4 attività.",
       "decisionsTitle": "Richiede la tua attenzione",
@@ -34,24 +34,71 @@
       "review": "Vedi proposta",
       "approve": "Approva",
       "decisions": [
-        { "title": "Inviare la proposta a Laura Bianchi", "meta": "Ristrutturazione bagno · 2.480 €", "by": "Vendite" },
-        { "title": "Pubblicare l'offerta di venerdì su Facebook", "meta": "Testo e immagine pronti", "by": "Marketing" }
+        {
+          "title": "Inviare la proposta a Laura Bianchi",
+          "meta": "Ristrutturazione bagno · 2.480 €",
+          "by": "Vendite"
+        },
+        {
+          "title": "Pubblicare l'offerta di venerdì su Facebook",
+          "meta": "Testo e immagine pronti",
+          "by": "Marketing"
+        }
       ],
       "inProgress": [
-        { "title": "Ordinare le richieste della settimana", "by": "Assistenza clienti" },
-        { "title": "Sollecitare 3 preventivi senza risposta", "by": "Amministrazione" },
-        { "title": "Analizzare il tuo sito per migliorare su Google", "by": "SEO" }
+        {
+          "title": "Ordinare le richieste della settimana",
+          "by": "Assistenza clienti"
+        },
+        {
+          "title": "Sollecitare 3 preventivi senza risposta",
+          "by": "Amministrazione"
+        },
+        {
+          "title": "Analizzare il tuo sito per migliorare su Google",
+          "by": "SEO"
+        }
       ],
       "done": [
-        { "title": "14 email ordinate per priorità", "by": "Assistenza clienti" },
-        { "title": "Sopralluogo da Paolo Rossi aggiunto all'agenda", "by": "Amministrazione" },
-        { "title": "Proposta in PDF per Laura Bianchi", "by": "Vendite" },
-        { "title": "Idee di contenuti per due settimane", "by": "Marketing" }
-      ]
+        {
+          "title": "14 email ordinate per priorità",
+          "by": "Assistenza clienti",
+          "time": "8:14"
+        },
+        {
+          "title": "Sopralluogo da Paolo Rossi aggiunto all'agenda",
+          "by": "Amministrazione",
+          "time": "9:02"
+        },
+        {
+          "title": "Proposta in PDF per Laura Bianchi",
+          "by": "Vendite",
+          "time": "9:40"
+        },
+        {
+          "title": "Idee di contenuti per due settimane",
+          "by": "Marketing",
+          "time": "10:15"
+        }
+      ],
+      "url": "app.departify.app",
+      "company": "Bianchi Ristrutturazioni",
+      "user": "Giulia Bianchi",
+      "navItems": [
+        "Home",
+        "Chat",
+        "Attività",
+        "Approvazioni",
+        "Agenda",
+        "Clienti",
+        "Fatturazione"
+      ],
+      "requestWork": "Affida",
+      "date": "Martedì 4 novembre",
+      "example": "Esempio"
     }
   },
   "scene": {
-    "eyebrow": "Come funziona",
     "title": "Ecco come va avanti la tua attività quando non devi fare tutto tu.",
     "lede": "Una richiesta che si chiude con una proposta inviata e un promemoria in agenda. Tu intervieni in un solo passaggio: quello che conta.",
     "example": "Esempio con dati inventati",
@@ -92,58 +139,112 @@
       "received": "Oggi, 8:12",
       "tag": "Potenziale cliente",
       "subject": "Preventivo per ristrutturare un bagno",
-      "body": "Buongiorno, vorremmo ristrutturare il bagno di casa, circa 6 m². Potreste mandarci un preventivo e dirci quando potreste iniziare? Grazie."
+      "body": "Buongiorno, vorremmo ristrutturare il bagno di casa, circa 6 m². Potreste mandarci un preventivo e dirci quando potreste iniziare? Grazie.",
+      "to": "A: Bianchi Ristrutturazioni",
+      "inbox": "Posta in arrivo",
+      "others": [
+        {
+          "from": "Piastrelle Emilia",
+          "subject": "Fattura di ottobre",
+          "time": "7:55"
+        },
+        {
+          "from": "Comune di Bologna",
+          "subject": "Permesso di costruire: esito",
+          "time": "Ieri"
+        },
+        {
+          "from": "Paolo Rossi",
+          "subject": "Confermo il sopralluogo di giovedì",
+          "time": "Ieri"
+        }
+      ]
     },
     "contact": {
       "name": "Laura Bianchi",
       "company": "Privato · Bologna",
       "stage": "Da salvare",
       "fields": [
-        { "label": "Email", "value": "laura.bianchi@esempio.it" },
-        { "label": "Telefono", "value": "347 123 4567" },
-        { "label": "Di cosa ha bisogno", "value": "Ristrutturazione bagno, 6 m²" },
-        { "label": "Provenienza", "value": "Email, oggi" }
+        {
+          "label": "Email",
+          "value": "laura.bianchi@esempio.it"
+        },
+        {
+          "label": "Telefono",
+          "value": "347 123 4567"
+        },
+        {
+          "label": "Di cosa ha bisogno",
+          "value": "Ristrutturazione bagno, 6 m²"
+        },
+        {
+          "label": "Provenienza",
+          "value": "Email, oggi"
+        }
       ]
     },
     "quote": {
       "title": "Proposta · Ristrutturazione bagno",
       "draft": "Bozza",
       "lines": [
-        { "item": "Demolizione e smaltimento", "amount": "520 €" },
-        { "item": "Impianto idraulico e scarichi", "amount": "690 €" },
-        { "item": "Rivestimenti e pavimento", "amount": "870 €" },
-        { "item": "Sanitari e rubinetteria", "amount": "400 €" }
+        {
+          "item": "Demolizione e smaltimento",
+          "amount": "520 €"
+        },
+        {
+          "item": "Impianto idraulico e scarichi",
+          "amount": "690 €"
+        },
+        {
+          "item": "Rivestimenti e pavimento",
+          "amount": "870 €"
+        },
+        {
+          "item": "Sanitari e rubinetteria",
+          "amount": "400 €"
+        }
       ],
       "total": "Totale IVA esclusa",
       "totalValue": "2.480 €",
-      "reply": "«Buongiorno Laura, grazie per averci scritto. In allegato trova la proposta per la ristrutturazione del bagno. Potremmo iniziare la settimana del 17…»"
+      "reply": "«Buongiorno Laura, grazie per averci scritto. In allegato trova la proposta per la ristrutturazione del bagno. Potremmo iniziare la settimana del 17…»",
+      "company": "Bianchi Ristrutturazioni",
+      "client": "Per Laura Bianchi",
+      "date": "4 novembre"
     },
     "approval": {
       "title": "Richiede la tua attenzione",
       "summary": "Inviare a Laura Bianchi la risposta con la proposta da 2.480 € e salvarla tra i tuoi clienti",
-      "edit": "Vedi proposta",
       "reject": "Rifiuta",
       "approve": "Approva",
-      "note": "Vuoi cambiare qualcosa? Dillo in chat prima di approvare: «Proponile di iniziare il 10»."
+      "note": "Vuoi cambiare qualcosa? Dillo in chat prima di approvare: «Proponile di iniziare il 10».",
+      "items": [
+        "Risposta a Laura Bianchi",
+        "Proposta · Bagno (PDF)",
+        "Nuova scheda cliente"
+      ]
     },
     "next": {
       "sent": "Risposta inviata a Laura Bianchi con la proposta",
       "logged": "Laura Bianchi salvata tra i tuoi clienti",
       "followUp": "Chiamare Laura Bianchi se non ha risposto",
       "followUpDate": "Giovedì, 10:00 · nella tua agenda",
-      "alert": "Quando risponderà, lo vedrai nella tua casella di Departify."
+      "alert": "Quando risponderà, lo vedrai nella tua casella di Departify.",
+      "day": "Gio",
+      "dayNumber": "6"
     }
   },
   "connected": {
-    "eyebrow": "Cosa include",
     "title": "Prima: tanti strumenti e tu in mezzo. Ora: tutto lavora insieme.",
     "lede": "Departify riunisce ciò che ti serve per gestire l'attività. Dato che tutto condivide le stesse informazioni, nessuno ricopia dati da un posto all'altro e non devi spiegare due volte la stessa cosa.",
     "beforeLabel": "Prima",
-    "beforeItems": ["Clienti in un foglio di calcolo", "Fatture in un altro programma", "Email e agenda separate", "Social quando te ne ricordi"],
     "beforeYou": "Tu, in mezzo a tutto",
     "afterLabel": "Con Departify",
-    "afterItems": ["Clienti e vendite", "Gestione e fatturazione", "Marketing e canali", "Negozio e ordini"],
-    "sharedLabel": "Le stesse informazioni per tutta la squadra",
+    "afterItems": [
+      "Clienti e vendite",
+      "Gestione e fatturazione",
+      "Marketing e canali",
+      "Negozio e ordini"
+    ],
     "afterBody": "Un unico posto, i tuoi dati collegati e una squadra digitale che ci lavora sopra.",
     "blocks": [
       {
@@ -190,11 +291,29 @@
     ],
     "connectTitle": "Collega ciò che usi già",
     "connectBody": "La tua email, la tua agenda e i tuoi documenti restano dove sono. Departify lavora con loro.",
-    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
-    "connectNote": "Alcuni collegamenti permettono solo di consultare i dati, non di modificarli."
+    "connectors": [
+      "Gmail",
+      "Outlook",
+      "Google Calendar",
+      "Google Drive",
+      "Facebook",
+      "Shopify",
+      "WordPress",
+      "Google Analytics"
+    ],
+    "connectNote": "Alcuni collegamenti permettono solo di consultare i dati, non di modificarli.",
+    "beforeNodes": [
+      "Foglio clienti",
+      "Fatture",
+      "Email",
+      "Agenda",
+      "Social",
+      "Negozio"
+    ],
+    "youShort": "Tu",
+    "afterYou": "Tu: solo ciò che conta"
   },
   "team": {
-    "eyebrow": "La tua squadra digitale",
     "title": "Specialisti per ogni area. Una stessa conoscenza della tua attività.",
     "lede": "Ogni dipendente digitale si occupa di un tipo di lavoro. Tutti consultano le stesse informazioni: i tuoi clienti, i tuoi servizi, i tuoi prezzi e il tuo modo di comunicare.",
     "whatTitle": "Che cos'è un dipendente digitale?",
@@ -256,27 +375,42 @@
         "asks": "Niente di sua iniziativa: ti prepara le decisioni."
       }
     ],
-    "expand": "Vedi tutta la squadra"
+    "expand": "Vedi tutta la squadra",
+    "areaLabel": "Area"
   },
   "control": {
-    "eyebrow": "Decidi tu",
     "title": "La tua squadra si occupa del lavoro. Tu decidi ciò che conta.",
     "lede": "Le regole sono chiare dal primo giorno: cosa fa da sola, cosa ti chiede prima e cosa resta sempre nelle tue mani.",
     "lanes": {
       "own": {
         "title": "Lo fa da sola",
         "body": "Lavoro interno che non arriva a nessuno fuori dalla tua attività.",
-        "items": ["Leggere e ordinare la tua posta", "Preparare bozze, proposte e documenti", "Creare attività e appuntamenti in agenda", "Analizzare il tuo sito e i tuoi risultati"]
+        "items": [
+          "Leggere e ordinare la tua posta",
+          "Preparare bozze, proposte e documenti",
+          "Creare attività e appuntamenti in agenda",
+          "Analizzare il tuo sito e i tuoi risultati"
+        ]
       },
       "approve": {
         "title": "Te lo chiede prima",
         "body": "Ciò che esce verso altre persone o cambia dati importanti.",
-        "items": ["Inviare o rispondere alle email", "Pubblicare sulla tua pagina Facebook", "Salvare nuovi clienti e attivare solleciti automatici", "Scrivere nei tuoi documenti di Drive"]
+        "items": [
+          "Inviare o rispondere alle email",
+          "Pubblicare sulla tua pagina Facebook",
+          "Salvare nuovi clienti e attivare solleciti automatici",
+          "Scrivere nei tuoi documenti di Drive"
+        ]
       },
       "yours": {
         "title": "Sempre tuo",
         "body": "Le decisioni che definiscono la tua attività.",
-        "items": ["I tuoi prezzi e le tue condizioni", "A chi vendi e come", "Cosa si pubblica a tuo nome", "Qualsiasi decisione di denaro"]
+        "items": [
+          "I tuoi prezzi e le tue condizioni",
+          "A chi vendi e come",
+          "Cosa si pubblica a tuo nome",
+          "Qualsiasi decisione di denaro"
+        ]
       }
     },
     "qa": [
@@ -299,7 +433,6 @@
     ]
   },
   "pricing": {
-    "eyebrow": "Piani",
     "title": "Un prezzo chiaro, da 49 € al mese.",
     "lede": "Tutti i piani includono gli strumenti e la squadra digitale completa. Cambia quanto lavoro ti serve e quanto supporto desideri.",
     "perMonth": "/mese",
@@ -312,28 +445,76 @@
         "name": "Essenziale",
         "for": "Per il titolare che inizia a delegare il lavoro di ogni giorno.",
         "summary": "Pensato per circa 100 attività al mese.",
-        "points": ["Clienti, vendite, gestione e fatturazione in un unico posto", "Tutta la squadra digitale, con le tue approvazioni", "1 account email collegato", "Assistenza via email"]
+        "points": [
+          "Clienti, vendite, gestione e fatturazione in un unico posto",
+          "Tutta la squadra digitale, con le tue approvazioni",
+          "1 account email collegato",
+          "Assistenza via email"
+        ]
       },
       "negocio": {
         "name": "Impresa",
         "for": "Per un'attività con lavoro quotidiano in più aree.",
         "summary": "Pensato per circa 400 attività al mese.",
-        "points": ["Tutto ciò che include Essenziale", "Fino a 3 account email collegati", "Assistenza prioritaria via email"]
+        "points": [
+          "Tutto ciò che include Essenziale",
+          "Fino a 3 account email collegati",
+          "Assistenza prioritaria via email"
+        ]
       },
       "crecimiento": {
         "name": "Crescita",
         "for": "Per più volume di lavoro e più canali.",
         "summary": "Pensato per circa 1.200 attività al mese.",
-        "points": ["Tutto ciò che include Impresa", "Fino a 10 account email collegati", "Una sessione di avvio con il nostro team"]
+        "points": [
+          "Tutto ciò che include Impresa",
+          "Fino a 10 account email collegati",
+          "Una sessione di avvio con il nostro team"
+        ]
       }
     },
     "compareTitle": "Confronta i piani nel dettaglio",
     "compareRows": [
-      { "label": "Lavoro incluso al mese", "values": ["Circa 100 attività", "Circa 400 attività", "Circa 1.200 attività"] },
-      { "label": "Clienti, vendite, gestione, fatturazione e canali", "values": ["Incluso", "Incluso", "Incluso"] },
-      { "label": "Squadra digitale completa", "values": ["Inclusa", "Inclusa", "Inclusa"] },
-      { "label": "Account email collegati", "values": ["1", "Fino a 3", "Fino a 10"] },
-      { "label": "Assistenza", "values": ["Via email", "Prioritaria via email", "Prioritaria e sessione di avvio"] }
+      {
+        "label": "Lavoro incluso al mese",
+        "values": [
+          "Circa 100 attività",
+          "Circa 400 attività",
+          "Circa 1.200 attività"
+        ]
+      },
+      {
+        "label": "Clienti, vendite, gestione, fatturazione e canali",
+        "values": [
+          "Incluso",
+          "Incluso",
+          "Incluso"
+        ]
+      },
+      {
+        "label": "Squadra digitale completa",
+        "values": [
+          "Inclusa",
+          "Inclusa",
+          "Inclusa"
+        ]
+      },
+      {
+        "label": "Account email collegati",
+        "values": [
+          "1",
+          "Fino a 3",
+          "Fino a 10"
+        ]
+      },
+      {
+        "label": "Assistenza",
+        "values": [
+          "Via email",
+          "Prioritaria via email",
+          "Prioritaria e sessione di avvio"
+        ]
+      }
     ],
     "limitTitle": "Se raggiungi il limite",
     "limitBody": "Ti avvisiamo prima. Puoi cambiare piano o aspettare il mese successivo. Non addebitiamo mai nulla in più senza il tuo permesso.",
@@ -343,7 +524,6 @@
     "extrasBody": "Creare immagini o video usa il tuo account presso un fornitore, come Google o OpenAI, che ti fattura a parte. Lo stesso vale per la pubblicità che decidi di pagare."
   },
   "faq": {
-    "eyebrow": "Domande frequenti",
     "title": "Cosa sapere prima di iniziare.",
     "items": [
       {

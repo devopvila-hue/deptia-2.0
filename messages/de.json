@@ -12,7 +12,9 @@
     "menu": "Menü öffnen",
     "close": "Menü schließen",
     "nav": "Hauptnavigation",
-    "skip": "Zum Inhalt springen"
+    "skip": "Zum Inhalt springen",
+    "themeDark": "Dunkelmodus aktivieren",
+    "themeLight": "Hellmodus aktivieren"
   },
   "hero": {
     "audience": "Für Betriebe mit 1 bis 15 Personen",
@@ -24,8 +26,6 @@
     "secondary": "So funktioniert's",
     "reassurance": "Keine E-Mail und kein Beitrag geht ohne Ihre Freigabe raus.",
     "panel": {
-      "example": "Beispiel",
-      "appSection": "Start",
       "greeting": "Guten Morgen, Julia.",
       "summary": "2 Entscheidungen warten auf Sie. Ihr Team hat heute Vormittag 4 Dinge erledigt.",
       "decisionsTitle": "Braucht Ihre Aufmerksamkeit",
@@ -62,25 +62,43 @@
       "done": [
         {
           "title": "14 E-Mails nach Priorität sortiert",
-          "by": "Kundenservice"
+          "by": "Kundenservice",
+          "time": "8:14"
         },
         {
           "title": "Vor-Ort-Termin bei Paul Weber im Kalender",
-          "by": "Verwaltung"
+          "by": "Verwaltung",
+          "time": "9:02"
         },
         {
           "title": "PDF-Angebot für Laura Becker",
-          "by": "Vertrieb"
+          "by": "Vertrieb",
+          "time": "9:40"
         },
         {
           "title": "Content-Ideen für zwei Wochen",
-          "by": "Marketing"
+          "by": "Marketing",
+          "time": "10:15"
         }
-      ]
+      ],
+      "url": "app.departify.app",
+      "company": "Becker Sanierung",
+      "user": "Julia Becker",
+      "navItems": [
+        "Start",
+        "Chat",
+        "Aufgaben",
+        "Freigaben",
+        "Kalender",
+        "Kunden",
+        "Rechnungen"
+      ],
+      "requestWork": "Beauftragen",
+      "date": "Dienstag, 4. November",
+      "example": "Beispiel"
     }
   },
   "scene": {
-    "eyebrow": "So funktioniert's",
     "title": "So läuft Ihr Betrieb, wenn Sie nicht mehr alles selbst machen müssen.",
     "lede": "Eine Anfrage, die mit einem versendeten Angebot und einer Wiedervorlage im Kalender endet. Sie greifen nur an einer Stelle ein: dort, wo es zählt.",
     "example": "Beispiel mit erfundenen Daten",
@@ -121,7 +139,26 @@
       "received": "Heute, 8:12",
       "tag": "Möglicher Kunde",
       "subject": "Angebot für eine Badsanierung",
-      "body": "Hallo, wir möchten unser Bad sanieren, etwa 6 m². Können Sie uns ein Angebot schicken und sagen, wann Sie anfangen könnten? Danke."
+      "body": "Hallo, wir möchten unser Bad sanieren, etwa 6 m². Können Sie uns ein Angebot schicken und sagen, wann Sie anfangen könnten? Danke.",
+      "to": "An: Becker Sanierung",
+      "inbox": "Posteingang",
+      "others": [
+        {
+          "from": "Fliesen Rhein",
+          "subject": "Rechnung Oktober",
+          "time": "7:55"
+        },
+        {
+          "from": "Stadt Köln",
+          "subject": "Baugenehmigung: Bescheid",
+          "time": "Gestern"
+        },
+        {
+          "from": "Paul Weber",
+          "subject": "Termin am Donnerstag bestätigt",
+          "time": "Gestern"
+        }
+      ]
     },
     "contact": {
       "name": "Laura Becker",
@@ -169,35 +206,37 @@
       ],
       "total": "Summe netto",
       "totalValue": "2.480 €",
-      "reply": "„Hallo Frau Becker, vielen Dank für Ihre Anfrage. Anbei finden Sie unser Angebot für die Badsanierung. Wir könnten in der Woche ab dem 17. beginnen …“"
+      "reply": "„Hallo Frau Becker, vielen Dank für Ihre Anfrage. Anbei finden Sie unser Angebot für die Badsanierung. Wir könnten in der Woche ab dem 17. beginnen …“",
+      "company": "Becker Sanierung",
+      "client": "Für Laura Becker",
+      "date": "4. November"
     },
     "approval": {
       "title": "Braucht Ihre Aufmerksamkeit",
       "summary": "Laura Becker die Antwort mit dem Angebot über 2.480 € senden und sie in Ihren Kunden speichern",
-      "edit": "Vorschlag ansehen",
       "reject": "Ablehnen",
       "approve": "Freigeben",
-      "note": "Möchten Sie etwas ändern? Sagen Sie es vor der Freigabe im Chat: „Biete ihr den Start am 10. an.“"
+      "note": "Möchten Sie etwas ändern? Sagen Sie es vor der Freigabe im Chat: „Biete ihr den Start am 10. an.“",
+      "items": [
+        "Antwort an Laura Becker",
+        "Angebot · Badsanierung (PDF)",
+        "Neue Kundenkarte"
+      ]
     },
     "next": {
       "sent": "Antwort mit Angebot an Laura Becker gesendet",
       "logged": "Laura Becker in Ihren Kunden gespeichert",
       "followUp": "Laura Becker anrufen, falls sie nicht geantwortet hat",
       "followUpDate": "Donnerstag, 10:00 · in Ihrem Kalender",
-      "alert": "Sobald sie antwortet, sehen Sie es in Ihrem Departify-Posteingang."
+      "alert": "Sobald sie antwortet, sehen Sie es in Ihrem Departify-Posteingang.",
+      "day": "Do",
+      "dayNumber": "6"
     }
   },
   "connected": {
-    "eyebrow": "Was enthalten ist",
     "title": "Vorher: viele Tools und Sie mittendrin. Jetzt: alles arbeitet zusammen.",
     "lede": "Departify bündelt, was Sie zum Führen Ihres Betriebs brauchen. Weil alles dieselben Informationen nutzt, überträgt niemand Daten von Hand und Sie müssen nichts zweimal erklären.",
     "beforeLabel": "Vorher",
-    "beforeItems": [
-      "Kunden in einer Tabelle",
-      "Rechnungen in einem anderen Programm",
-      "E-Mail und Kalender getrennt",
-      "Social Media, wenn Zeit ist"
-    ],
     "beforeYou": "Sie, mitten in allem",
     "afterLabel": "Mit Departify",
     "afterItems": [
@@ -206,7 +245,6 @@
       "Marketing und Kanäle",
       "Shop und Bestellungen"
     ],
-    "sharedLabel": "Dieselben Informationen für Ihr ganzes Team",
     "afterBody": "Ein Ort, Ihre Daten verbunden und ein digitales Team, das damit arbeitet.",
     "blocks": [
       {
@@ -263,10 +301,19 @@
       "WordPress",
       "Google Analytics"
     ],
-    "connectNote": "Manche Verbindungen erlauben nur das Lesen von Daten, keine Änderungen."
+    "connectNote": "Manche Verbindungen erlauben nur das Lesen von Daten, keine Änderungen.",
+    "beforeNodes": [
+      "Kundenliste",
+      "Rechnungen",
+      "E-Mail",
+      "Kalender",
+      "Social Media",
+      "Shop"
+    ],
+    "youShort": "Sie",
+    "afterYou": "Sie: nur das Wichtige"
   },
   "team": {
-    "eyebrow": "Ihr digitales Team",
     "title": "Spezialisten für jeden Bereich. Dasselbe Wissen über Ihren Betrieb.",
     "lede": "Jeder digitale Mitarbeiter kümmert sich um eine Art von Arbeit. Alle greifen auf dieselben Informationen zu: Ihre Kunden, Ihre Leistungen, Ihre Preise und Ihren Tonfall.",
     "whatTitle": "Was ist ein digitaler Mitarbeiter?",
@@ -328,10 +375,10 @@
         "asks": "Nichts von sich aus: Sie bereitet Ihnen die Entscheidungen vor."
       }
     ],
-    "expand": "Das ganze Team ansehen"
+    "expand": "Das ganze Team ansehen",
+    "areaLabel": "Bereich"
   },
   "control": {
-    "eyebrow": "Sie entscheiden",
     "title": "Ihr Team kümmert sich um die Arbeit. Sie entscheiden, was wichtig ist.",
     "lede": "Die Regeln sind vom ersten Tag an klar: was es selbst erledigt, was es vorher fragt und was immer in Ihrer Hand bleibt.",
     "lanes": {
@@ -386,7 +433,6 @@
     ]
   },
   "pricing": {
-    "eyebrow": "Tarife",
     "title": "Klare Preise, ab 49 € im Monat.",
     "lede": "Alle Tarife enthalten die Tools und das komplette digitale Team. Unterschiedlich ist, wie viel Arbeit anfällt und wie viel Begleitung Sie möchten.",
     "perMonth": "/Monat",
@@ -478,7 +524,6 @@
     "extrasBody": "Bilder oder Videos entstehen über Ihr eigenes Konto bei einem Anbieter wie Google oder OpenAI, der Ihnen das gesondert berechnet. Dasselbe gilt für Anzeigen, die Sie bezahlen."
   },
   "faq": {
-    "eyebrow": "Häufige Fragen",
     "title": "Gut zu wissen, bevor Sie starten.",
     "items": [
       {

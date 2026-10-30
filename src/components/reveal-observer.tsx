@@ -6,8 +6,7 @@ import { useEffect } from "react";
 // `motion-ok` class (set before paint) is what enables the entrance effect.
 export function RevealObserver() {
   useEffect(() => {
-    const root = document.documentElement;
-    if (!root.classList.contains("motion-ok")) return;
+    if (!document.documentElement.classList.contains("motion-ok")) return;
     const nodes = Array.from(document.querySelectorAll<HTMLElement>("[data-reveal]"));
     if (!("IntersectionObserver" in window)) {
       nodes.forEach((n) => n.classList.add("is-in"));
@@ -22,14 +21,10 @@ export function RevealObserver() {
           }
         }
       },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
+      { rootMargin: "0px 0px -6% 0px", threshold: 0.06 },
     );
     nodes.forEach((n) => io.observe(n));
     return () => io.disconnect();
   }, []);
   return null;
 }
-
-// Runs before first paint: only opt into motion when the user has not asked to reduce it.
-export const motionBootScript =
-  "try{if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('motion-ok')}}catch(e){}";

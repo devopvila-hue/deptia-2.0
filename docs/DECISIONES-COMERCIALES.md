@@ -31,9 +31,20 @@ La sustitución de herramientas sueltas (publicación en redes, tienda, gestor d
 - Prueba gratuita, «sin tarjeta», descuentos, testimonios, logos de clientes, cifras de ahorro y certificaciones.
 - Vocabulario técnico (agentes, LLM, orquestación, ecosistema, «potenciado por IA»). Un test lo vigila en los siete idiomas.
 
+## Diseño (v2, 2026-10-30)
+
+La primera versión se descartó porque parecía una plantilla: etiquetas de color sobre cada título, píldoras, iconos en círculos, listas con ✓, cajas de color y un panel de producto esquemático. La v2:
+
+- **Producto como prueba.** La primera pantalla muestra una ventana del portal fiel a su estructura real: barra lateral con Inicio, Chat, Tareas, Aprobaciones, Calendario, Clientes y Facturación, botón «Encargar», decisiones pendientes, trabajo en curso y hecho. Lleva la etiqueta «Ejemplo».
+- **El ejemplo de «Cómo funciona»** usa piezas reconocibles: bandeja de entrada, correo, ficha de cliente, propuesta en PDF, solicitud de aprobación y cita en la agenda. Un indicador dice en cada paso quién actúa: tu equipo digital o tú.
+- **Diagrama antes/después** con líneas precisas: antes, tú en el centro de seis herramientas; ahora, Departify en el centro y tú conectado solo a lo importante.
+- **Sin adornos.** Filetes finos en lugar de tarjetas, un punto de color como único marcador de estado (verde: lo hace solo; ámbar: te lo pide; negro: es tuyo) y ninguna etiqueta encima de los títulos.
+- **Tipografía.** Inter con eje de tamaño óptico, alojada en el proyecto: corte Display en titulares y corte de texto en párrafos, con interletrado ajustado por tamaño.
+- **Modo claro y oscuro.** Sigue la preferencia del sistema y tiene un selector que recuerda la elección. En oscuro el acento pasa al lima del propio símbolo D, con texto oscuro sobre él (14:1). Contraste AA comprobado con axe en ambos temas.
+
 ## Marca
 
-Se conserva solo el logo oficial (símbolo D y logotipo). El texto del logotipo se oscurece para fondo claro; el símbolo no cambia. Paleta nueva: blanco, gris cálido muy suave, tinta casi negra y un único acento verde tomado del propio símbolo (contraste 5,4:1 con blanco). Tipografía Geist, la misma del portal, alojada en el proyecto.
+Se conserva solo el logo oficial: símbolo D y logotipo. En claro, el texto del logotipo es oscuro; en oscuro se usa el original blanco. El símbolo no cambia. Acento: verde profundo en claro (5,4:1 con blanco) y lima en oscuro, ambos sacados del degradado del símbolo.
 
 ## Medición
 

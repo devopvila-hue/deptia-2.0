@@ -12,7 +12,9 @@
     "menu": "Deschide meniul",
     "close": "Închide meniul",
     "nav": "Navigare principală",
-    "skip": "Sari la conținut"
+    "skip": "Sari la conținut",
+    "themeDark": "Activează modul întunecat",
+    "themeLight": "Activează modul luminos"
   },
   "hero": {
     "audience": "Pentru afaceri cu 1–15 oameni",
@@ -24,8 +26,6 @@
     "secondary": "Vezi cum funcționează",
     "reassurance": "Niciun e-mail și nicio postare nu pleacă fără aprobarea ta.",
     "panel": {
-      "example": "Exemplu",
-      "appSection": "Acasă",
       "greeting": "Bună dimineața, Andreea.",
       "summary": "Te așteaptă 2 decizii. Echipa ta a terminat 4 lucruri în această dimineață.",
       "decisionsTitle": "Are nevoie de atenția ta",
@@ -34,24 +34,71 @@
       "review": "Vezi propunerea",
       "approve": "Aprobă",
       "decisions": [
-        { "title": "Trimite oferta către Ioana Popescu", "meta": "Renovare baie · 2.480 €", "by": "Vânzări" },
-        { "title": "Publică oferta de vineri pe Facebook", "meta": "Text și imagine gata", "by": "Marketing" }
+        {
+          "title": "Trimite oferta către Ioana Popescu",
+          "meta": "Renovare baie · 2.480 €",
+          "by": "Vânzări"
+        },
+        {
+          "title": "Publică oferta de vineri pe Facebook",
+          "meta": "Text și imagine gata",
+          "by": "Marketing"
+        }
       ],
       "inProgress": [
-        { "title": "Ordonarea cererilor din această săptămână", "by": "Relații cu clienții" },
-        { "title": "Revenire la 3 oferte fără răspuns", "by": "Administrație" },
-        { "title": "Analiza site-ului pentru Google", "by": "SEO" }
+        {
+          "title": "Ordonarea cererilor din această săptămână",
+          "by": "Relații cu clienții"
+        },
+        {
+          "title": "Revenire la 3 oferte fără răspuns",
+          "by": "Administrație"
+        },
+        {
+          "title": "Analiza site-ului pentru Google",
+          "by": "SEO"
+        }
       ],
       "done": [
-        { "title": "14 e-mailuri ordonate după prioritate", "by": "Relații cu clienții" },
-        { "title": "Vizită la Mihai Ionescu adăugată în calendar", "by": "Administrație" },
-        { "title": "Ofertă PDF pentru Ioana Popescu", "by": "Vânzări" },
-        { "title": "Idei de conținut pentru două săptămâni", "by": "Marketing" }
-      ]
+        {
+          "title": "14 e-mailuri ordonate după prioritate",
+          "by": "Relații cu clienții",
+          "time": "8:14"
+        },
+        {
+          "title": "Vizită la Mihai Ionescu adăugată în calendar",
+          "by": "Administrație",
+          "time": "9:02"
+        },
+        {
+          "title": "Ofertă PDF pentru Ioana Popescu",
+          "by": "Vânzări",
+          "time": "9:40"
+        },
+        {
+          "title": "Idei de conținut pentru două săptămâni",
+          "by": "Marketing",
+          "time": "10:15"
+        }
+      ],
+      "url": "app.departify.app",
+      "company": "Popescu Renovări",
+      "user": "Andreea Popescu",
+      "navItems": [
+        "Acasă",
+        "Chat",
+        "Sarcini",
+        "Aprobări",
+        "Calendar",
+        "Clienți",
+        "Facturare"
+      ],
+      "requestWork": "Încredințează",
+      "date": "Marți, 4 noiembrie",
+      "example": "Exemplu"
     }
   },
   "scene": {
-    "eyebrow": "Cum funcționează",
     "title": "Așa merge afacerea ta când nu mai trebuie să faci totul tu.",
     "lede": "O cerere care se încheie cu o ofertă trimisă și o revenire în calendar. Tu intervii într-un singur pas: cel care contează.",
     "example": "Exemplu cu date fictive",
@@ -92,58 +139,112 @@
       "received": "Azi, 8:12",
       "tag": "Posibil client",
       "subject": "Ofertă pentru renovarea unei băi",
-      "body": "Bună ziua, vrem să renovăm baia de acasă, cam 6 m². Ne puteți trimite o ofertă și să ne spuneți când ați putea începe? Mulțumim."
+      "body": "Bună ziua, vrem să renovăm baia de acasă, cam 6 m². Ne puteți trimite o ofertă și să ne spuneți când ați putea începe? Mulțumim.",
+      "to": "Către: Popescu Renovări",
+      "inbox": "Mesaje primite",
+      "others": [
+        {
+          "from": "Faianța Transilvania",
+          "subject": "Factura pe octombrie",
+          "time": "7:55"
+        },
+        {
+          "from": "Primăria Cluj-Napoca",
+          "subject": "Autorizație de construire: răspuns",
+          "time": "Ieri"
+        },
+        {
+          "from": "Mihai Ionescu",
+          "subject": "Confirm vizita de joi",
+          "time": "Ieri"
+        }
+      ]
     },
     "contact": {
       "name": "Ioana Popescu",
       "company": "Persoană fizică · Cluj-Napoca",
       "stage": "De salvat",
       "fields": [
-        { "label": "E-mail", "value": "ioana.popescu@exemplu.ro" },
-        { "label": "Telefon", "value": "0721 234 567" },
-        { "label": "Ce are nevoie", "value": "Renovare baie, 6 m²" },
-        { "label": "Cum a ajuns", "value": "E-mail, azi" }
+        {
+          "label": "E-mail",
+          "value": "ioana.popescu@exemplu.ro"
+        },
+        {
+          "label": "Telefon",
+          "value": "0721 234 567"
+        },
+        {
+          "label": "Ce are nevoie",
+          "value": "Renovare baie, 6 m²"
+        },
+        {
+          "label": "Cum a ajuns",
+          "value": "E-mail, azi"
+        }
       ]
     },
     "quote": {
       "title": "Ofertă · Renovare baie",
       "draft": "Ciornă",
       "lines": [
-        { "item": "Demolare și evacuare", "amount": "520 €" },
-        { "item": "Instalații sanitare și scurgeri", "amount": "690 €" },
-        { "item": "Faianță și pardoseală", "amount": "870 €" },
-        { "item": "Obiecte sanitare și baterii", "amount": "400 €" }
+        {
+          "item": "Demolare și evacuare",
+          "amount": "520 €"
+        },
+        {
+          "item": "Instalații sanitare și scurgeri",
+          "amount": "690 €"
+        },
+        {
+          "item": "Faianță și pardoseală",
+          "amount": "870 €"
+        },
+        {
+          "item": "Obiecte sanitare și baterii",
+          "amount": "400 €"
+        }
       ],
       "total": "Total fără TVA",
       "totalValue": "2.480 €",
-      "reply": "„Bună ziua, Ioana, vă mulțumim pentru mesaj. Vă trimitem atașat oferta pentru renovarea băii. Am putea începe în săptămâna de 17…”"
+      "reply": "„Bună ziua, Ioana, vă mulțumim pentru mesaj. Vă trimitem atașat oferta pentru renovarea băii. Am putea începe în săptămâna de 17…”",
+      "company": "Popescu Renovări",
+      "client": "Pentru Ioana Popescu",
+      "date": "4 noiembrie"
     },
     "approval": {
       "title": "Are nevoie de atenția ta",
       "summary": "Trimite Ioanei Popescu răspunsul cu oferta de 2.480 € și salveaz-o în clienții tăi",
-      "edit": "Vezi propunerea",
       "reject": "Respinge",
       "approve": "Aprobă",
-      "note": "Vrei să schimbi ceva? Spune în chat înainte să aprobi: „Propune-i să începem pe 10”."
+      "note": "Vrei să schimbi ceva? Spune în chat înainte să aprobi: „Propune-i să începem pe 10”.",
+      "items": [
+        "Răspuns către Ioana Popescu",
+        "Ofertă · Renovare baie (PDF)",
+        "Fișă nouă de client"
+      ]
     },
     "next": {
       "sent": "Răspuns trimis Ioanei Popescu, cu oferta",
       "logged": "Ioana Popescu salvată în clienții tăi",
       "followUp": "Sună-o pe Ioana Popescu dacă nu a răspuns",
       "followUpDate": "Joi, 10:00 · în calendarul tău",
-      "alert": "Când răspunde, vei vedea mesajul în căsuța ta din Departify."
+      "alert": "Când răspunde, vei vedea mesajul în căsuța ta din Departify.",
+      "day": "Joi",
+      "dayNumber": "6"
     }
   },
   "connected": {
-    "eyebrow": "Ce include",
     "title": "Înainte: mai multe aplicații și tu la mijloc. Acum: totul lucrează împreună.",
     "lede": "Departify adună ce îți trebuie ca să conduci afacerea. Pentru că totul folosește aceleași informații, nimeni nu copiază date dintr-un loc în altul și nu trebuie să explici același lucru de două ori.",
     "beforeLabel": "Înainte",
-    "beforeItems": ["Clienți într-un tabel", "Facturi în alt program", "E-mail și calendar separate", "Rețele sociale când îți amintești"],
     "beforeYou": "Tu, în mijlocul tuturor",
     "afterLabel": "Cu Departify",
-    "afterItems": ["Clienți și vânzări", "Administrare și facturare", "Marketing și canale", "Magazin și comenzi"],
-    "sharedLabel": "Aceleași informații pentru toată echipa",
+    "afterItems": [
+      "Clienți și vânzări",
+      "Administrare și facturare",
+      "Marketing și canale",
+      "Magazin și comenzi"
+    ],
     "afterBody": "Un singur loc, datele tale legate între ele și o echipă digitală care lucrează cu ele.",
     "blocks": [
       {
@@ -190,11 +291,29 @@
     ],
     "connectTitle": "Conectează ce folosești deja",
     "connectBody": "E-mailul, calendarul și documentele tale rămân unde sunt. Departify lucrează cu ele.",
-    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
-    "connectNote": "Unele conexiuni permit doar consultarea datelor, nu și modificarea lor."
+    "connectors": [
+      "Gmail",
+      "Outlook",
+      "Google Calendar",
+      "Google Drive",
+      "Facebook",
+      "Shopify",
+      "WordPress",
+      "Google Analytics"
+    ],
+    "connectNote": "Unele conexiuni permit doar consultarea datelor, nu și modificarea lor.",
+    "beforeNodes": [
+      "Tabel clienți",
+      "Facturi",
+      "E-mail",
+      "Calendar",
+      "Rețele",
+      "Magazin"
+    ],
+    "youShort": "Tu",
+    "afterYou": "Tu: doar ce contează"
   },
   "team": {
-    "eyebrow": "Echipa ta digitală",
     "title": "Specialiști pentru fiecare domeniu. Aceeași cunoaștere a afacerii tale.",
     "lede": "Fiecare angajat digital se ocupă de un tip de muncă. Toți folosesc aceleași informații: clienții, serviciile, prețurile și felul tău de a comunica.",
     "whatTitle": "Ce este un angajat digital?",
@@ -256,27 +375,42 @@
         "asks": "Nimic din proprie inițiativă: îți pregătește deciziile."
       }
     ],
-    "expand": "Vezi toată echipa"
+    "expand": "Vezi toată echipa",
+    "areaLabel": "Domeniu"
   },
   "control": {
-    "eyebrow": "Tu decizi",
     "title": "Echipa ta se ocupă de muncă. Tu decizi ce contează.",
     "lede": "Regulile sunt clare din prima zi: ce face singură, ce te întreabă înainte și ce rămâne mereu în mâinile tale.",
     "lanes": {
       "own": {
         "title": "Face singură",
         "body": "Muncă internă, care nu ajunge la nimeni din afara afacerii.",
-        "items": ["Citește și ordonează e-mailul", "Pregătește ciorne, oferte și documente", "Creează sarcini și programări în calendar", "Analizează site-ul și rezultatele"]
+        "items": [
+          "Citește și ordonează e-mailul",
+          "Pregătește ciorne, oferte și documente",
+          "Creează sarcini și programări în calendar",
+          "Analizează site-ul și rezultatele"
+        ]
       },
       "approve": {
         "title": "Te întreabă înainte",
         "body": "Ce pleacă spre alte persoane sau schimbă date importante.",
-        "items": ["Trimiterea sau răspunsul la e-mailuri", "Postarea pe pagina ta de Facebook", "Salvarea clienților noi și pornirea revenirilor automate", "Scrierea în documentele tale din Drive"]
+        "items": [
+          "Trimiterea sau răspunsul la e-mailuri",
+          "Postarea pe pagina ta de Facebook",
+          "Salvarea clienților noi și pornirea revenirilor automate",
+          "Scrierea în documentele tale din Drive"
+        ]
       },
       "yours": {
         "title": "Rămâne mereu al tău",
         "body": "Deciziile care definesc afacerea ta.",
-        "items": ["Prețurile și condițiile tale", "Cui vinzi și cum", "Ce se publică în numele tău", "Orice decizie legată de bani"]
+        "items": [
+          "Prețurile și condițiile tale",
+          "Cui vinzi și cum",
+          "Ce se publică în numele tău",
+          "Orice decizie legată de bani"
+        ]
       }
     },
     "qa": [
@@ -299,7 +433,6 @@
     ]
   },
   "pricing": {
-    "eyebrow": "Planuri",
     "title": "Un preț clar, de la 49 € pe lună.",
     "lede": "Toate planurile includ instrumentele și întreaga echipă digitală. Diferă cât de multă muncă ai nevoie și cât sprijin vrei.",
     "perMonth": "/lună",
@@ -312,28 +445,76 @@
         "name": "Esențial",
         "for": "Pentru proprietarul care începe să delege munca de zi cu zi.",
         "summary": "Gândit pentru aproximativ 100 de sarcini pe lună.",
-        "points": ["Clienți, vânzări, administrare și facturare într-un singur loc", "Toată echipa digitală, cu aprobările tale", "1 cont de e-mail conectat", "Ajutor prin e-mail"]
+        "points": [
+          "Clienți, vânzări, administrare și facturare într-un singur loc",
+          "Toată echipa digitală, cu aprobările tale",
+          "1 cont de e-mail conectat",
+          "Ajutor prin e-mail"
+        ]
       },
       "negocio": {
         "name": "Afacere",
         "for": "Pentru o afacere cu activitate zilnică în mai multe domenii.",
         "summary": "Gândit pentru aproximativ 400 de sarcini pe lună.",
-        "points": ["Tot ce include Esențial", "Până la 3 conturi de e-mail conectate", "Ajutor prioritar prin e-mail"]
+        "points": [
+          "Tot ce include Esențial",
+          "Până la 3 conturi de e-mail conectate",
+          "Ajutor prioritar prin e-mail"
+        ]
       },
       "crecimiento": {
         "name": "Creștere",
         "for": "Pentru mai mult volum de muncă și mai multe canale.",
         "summary": "Gândit pentru aproximativ 1.200 de sarcini pe lună.",
-        "points": ["Tot ce include Afacere", "Până la 10 conturi de e-mail conectate", "O sesiune de pornire cu echipa noastră"]
+        "points": [
+          "Tot ce include Afacere",
+          "Până la 10 conturi de e-mail conectate",
+          "O sesiune de pornire cu echipa noastră"
+        ]
       }
     },
     "compareTitle": "Compară planurile în detaliu",
     "compareRows": [
-      { "label": "Muncă inclusă pe lună", "values": ["Circa 100 de sarcini", "Circa 400 de sarcini", "Circa 1.200 de sarcini"] },
-      { "label": "Clienți, vânzări, administrare, facturare și canale", "values": ["Inclus", "Inclus", "Inclus"] },
-      { "label": "Echipa digitală completă", "values": ["Inclusă", "Inclusă", "Inclusă"] },
-      { "label": "Conturi de e-mail conectate", "values": ["1", "Până la 3", "Până la 10"] },
-      { "label": "Ajutor", "values": ["Prin e-mail", "Prioritar prin e-mail", "Prioritar și sesiune de pornire"] }
+      {
+        "label": "Muncă inclusă pe lună",
+        "values": [
+          "Circa 100 de sarcini",
+          "Circa 400 de sarcini",
+          "Circa 1.200 de sarcini"
+        ]
+      },
+      {
+        "label": "Clienți, vânzări, administrare, facturare și canale",
+        "values": [
+          "Inclus",
+          "Inclus",
+          "Inclus"
+        ]
+      },
+      {
+        "label": "Echipa digitală completă",
+        "values": [
+          "Inclusă",
+          "Inclusă",
+          "Inclusă"
+        ]
+      },
+      {
+        "label": "Conturi de e-mail conectate",
+        "values": [
+          "1",
+          "Până la 3",
+          "Până la 10"
+        ]
+      },
+      {
+        "label": "Ajutor",
+        "values": [
+          "Prin e-mail",
+          "Prioritar prin e-mail",
+          "Prioritar și sesiune de pornire"
+        ]
+      }
     ],
     "limitTitle": "Dacă ajungi la limită",
     "limitBody": "Te anunțăm din timp. Poți schimba planul sau poți aștepta luna următoare. Nu încasăm niciodată nimic în plus fără acordul tău.",
@@ -343,7 +524,6 @@
     "extrasBody": "Crearea de imagini sau videoclipuri folosește propriul tău cont la un furnizor, precum Google sau OpenAI, care îți facturează separat. La fel și reclamele pe care decizi să le plătești."
   },
   "faq": {
-    "eyebrow": "Întrebări frecvente",
     "title": "Ce e bine să știi înainte să începi.",
     "items": [
       {

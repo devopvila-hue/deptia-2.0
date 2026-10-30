@@ -2,7 +2,7 @@
 
 Nueva landing comercial, separada de `devopvila-hue/deptia` (la web actual en `departify.app` no se toca).
 
-Next.js 14 (App Router) + Tailwind + next-intl, la misma base técnica que la web actual. Una sola página en siete idiomas: es (por defecto, sin prefijo), en, fr, de, it, ro, hu.
+Next.js 14 (App Router) + Tailwind + next-intl, la misma base técnica que la web actual. Una sola página en siete idiomas: es (por defecto, sin prefijo), en, fr, de, it, ro, hu. Tema claro y oscuro (preferencia del sistema + selector). Tipografía Inter con eje óptico, alojada.
 
 ## Uso
 
@@ -14,7 +14,7 @@ npm test             # paridad de idiomas, afirmaciones vetadas, planes
 BASE_URL=http://localhost:3000 npm run qa   # navegador: 7 idiomas × 4 anchos + teclado y movimiento reducido
 ```
 
-La prueba de navegador usa Playwright, que no está en las dependencias (se espera instalado en el entorno).
+La prueba de navegador usa Playwright, que no está en las dependencias (se espera instalado en el entorno). Si `axe-core` es resoluble (por ejemplo con `NODE_PATH`), también audita accesibilidad y contraste en ambos temas.
 
 ## Estructura
 

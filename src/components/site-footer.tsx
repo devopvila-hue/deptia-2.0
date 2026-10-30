@@ -22,42 +22,44 @@ type Props = {
   };
 };
 
+// "/es" lets next-intl reset the locale cookie before dropping the default prefix.
 export function localeHref(locale: Locale) {
-  // "/es" lets next-intl reset the locale cookie before dropping the default prefix.
   return `/${locale}`;
 }
+
+const linkClass = "text-ink2 transition-colors hover:text-ink";
 
 export function SiteFooter({ locale, labels }: Props) {
   const legal = (key: keyof typeof legalSlugs) => `${links.site}${locale === "es" ? "" : `/${locale}`}${legalSlugs[key][locale]}`;
   return (
-    <footer className="border-t border-line bg-canvas">
-      <div className="wrap grid gap-10 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
-        <div className="max-w-xs">
-          <BrandLogo className="h-[20px] w-auto" />
-          <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-2">{labels.tagline}</p>
+    <footer className="border-t border-line">
+      <div className="wrap grid gap-12 py-16 text-[0.875rem] md:grid-cols-[minmax(0,1.5fr)_repeat(3,minmax(0,1fr))]">
+        <div className="max-w-[18rem]">
+          <BrandLogo className="h-5 w-auto" />
+          <p className="mt-4 leading-relaxed text-ink2">{labels.tagline}</p>
         </div>
         <div>
-          <h2 className="text-[0.8125rem] font-medium text-ink-3">{labels.product}</h2>
-          <ul className="mt-3 space-y-2 text-[0.9375rem]">
-            <li><a className="text-ink-2 hover:text-ink" href="#como-funciona">{labels.how}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href="#que-incluye">{labels.included}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href="#planes">{labels.plans}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href={links.login}>{labels.login}</a></li>
+          <h2 className="font-medium">{labels.product}</h2>
+          <ul className="mt-4 space-y-2.5">
+            <li><a className={linkClass} href="#como-funciona">{labels.how}</a></li>
+            <li><a className={linkClass} href="#que-incluye">{labels.included}</a></li>
+            <li><a className={linkClass} href="#planes">{labels.plans}</a></li>
+            <li><a className={linkClass} href={links.login}>{labels.login}</a></li>
           </ul>
         </div>
         <div>
-          <h2 className="text-[0.8125rem] font-medium text-ink-3">{labels.legal}</h2>
-          <ul className="mt-3 space-y-2 text-[0.9375rem]">
-            <li><a className="text-ink-2 hover:text-ink" href={legal("privacy")}>{labels.privacy}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href={legal("cookies")}>{labels.cookies}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href={legal("terms")}>{labels.terms}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href={legal("security")}>{labels.security}</a></li>
-            <li><a className="text-ink-2 hover:text-ink" href={`mailto:${links.contactEmail}`}>{labels.contact}</a></li>
+          <h2 className="font-medium">{labels.legal}</h2>
+          <ul className="mt-4 space-y-2.5">
+            <li><a className={linkClass} href={legal("privacy")}>{labels.privacy}</a></li>
+            <li><a className={linkClass} href={legal("cookies")}>{labels.cookies}</a></li>
+            <li><a className={linkClass} href={legal("terms")}>{labels.terms}</a></li>
+            <li><a className={linkClass} href={legal("security")}>{labels.security}</a></li>
+            <li><a className={linkClass} href={`mailto:${links.contactEmail}`}>{labels.contact}</a></li>
           </ul>
         </div>
         <div>
-          <h2 id="footer-language" className="text-[0.8125rem] font-medium text-ink-3">{labels.language}</h2>
-          <ul aria-labelledby="footer-language" className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-[0.9375rem]">
+          <h2 id="footer-language" className="font-medium">{labels.language}</h2>
+          <ul aria-labelledby="footer-language" className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
             {locales.map((l) => (
               <li key={l}>
                 <a
@@ -65,7 +67,7 @@ export function SiteFooter({ locale, labels }: Props) {
                   hrefLang={localeMeta[l].bcp47}
                   lang={localeMeta[l].bcp47}
                   aria-current={l === locale ? "true" : undefined}
-                  className={l === locale ? "font-medium text-ink" : "text-ink-2 hover:text-ink"}
+                  className={l === locale ? "font-medium text-ink" : linkClass}
                 >
                   {localeMeta[l].native}
                 </a>
@@ -75,7 +77,7 @@ export function SiteFooter({ locale, labels }: Props) {
         </div>
       </div>
       <div className="wrap">
-        <p className="border-t border-line py-6 text-[0.8125rem] text-ink-3">
+        <p className="border-t border-line py-6 text-[0.8125rem] text-ink3">
           © {new Date().getFullYear()} Departify. {labels.rights}
         </p>
       </div>

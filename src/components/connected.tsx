@@ -1,18 +1,16 @@
-import { IconArrow, IconCheck } from "./icons";
-
 type Block = { title: string; line: string; points: string[]; link: string; badge?: string };
 
 export type ConnectedCopy = {
-  eyebrow: string;
   title: string;
   lede: string;
   beforeLabel: string;
-  beforeItems: string[];
+  beforeNodes: string[];
   beforeYou: string;
+  youShort: string;
   afterLabel: string;
   afterItems: string[];
+  afterYou: string;
   afterBody: string;
-  sharedLabel: string;
   blocks: Block[];
   connectTitle: string;
   connectBody: string;
@@ -20,99 +18,125 @@ export type ConnectedCopy = {
   connectNote: string;
 };
 
+// 3×3 grid; cell centres in percent of the diagram box.
+const cell = (col: number, row: number) => ({ x: (col - 0.5) * (100 / 3), y: (row - 0.5) * (100 / 3) });
+const BEFORE = [cell(1, 1), cell(3, 1), cell(1, 2), cell(3, 2), cell(1, 3), cell(3, 3)];
+const AFTER = [cell(1, 2), cell(3, 2), cell(1, 3), cell(3, 3)];
+const CENTER = cell(2, 2);
+const TOP = cell(2, 1);
+
+function Lines({ points, accent }: { points: { x: number; y: number }[]; accent?: { x: number; y: number } }) {
+  return (
+    <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      {points.map((p, i) => (
+        <line key={i} x1={CENTER.x} y1={CENTER.y} x2={p.x} y2={p.y} stroke="rgb(var(--line2))" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+      ))}
+      {accent && (
+        <line x1={CENTER.x} y1={CENTER.y} x2={accent.x} y2={accent.y} stroke="rgb(var(--accenttext))" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
+      )}
+    </svg>
+  );
+}
+
+const place = ["col-start-1 row-start-1", "col-start-3 row-start-1", "col-start-1 row-start-2", "col-start-3 row-start-2", "col-start-1 row-start-3", "col-start-3 row-start-3"];
+const placeAfter = ["col-start-1 row-start-2", "col-start-3 row-start-2", "col-start-1 row-start-3", "col-start-3 row-start-3"];
+
+function Node({ children, className = "", strong = false }: { children: React.ReactNode; className?: string; strong?: boolean }) {
+  return (
+    <div className={`relative z-10 flex items-center justify-center ${className}`}>
+      <span
+        className={`max-w-full rounded-lg border px-2.5 py-1.5 text-center text-[0.75rem] leading-tight sm:text-[0.8125rem] ${
+          strong ? "border-ink bg-ink font-semibold text-bg" : "border-line bg-bg text-ink2"
+        }`}
+      >
+        {children}
+      </span>
+    </div>
+  );
+}
+
 export function Connected({ copy }: { copy: ConnectedCopy }) {
   return (
-    <section id="que-incluye" aria-labelledby="connected-title" className="scroll-mt-16 py-20 sm:py-28">
+    <section id="que-incluye" aria-labelledby="connected-title" className="scroll-mt-14 border-t border-line py-24 sm:py-32">
       <div className="wrap">
-        <div className="max-w-2xl" data-reveal>
-          <p className="eyebrow">{copy.eyebrow}</p>
-          <h2 id="connected-title" className="display-2 mt-3">{copy.title}</h2>
-          <p className="lede mt-4">{copy.lede}</p>
+        <div className="max-w-[46rem]" data-reveal>
+          <h2 id="connected-title" className="t-section">{copy.title}</h2>
+          <p className="t-lede mt-5">{copy.lede}</p>
         </div>
 
-        {/* Before / after: the owner moves from the middle of the tools to the decisions. */}
-        <div className="mt-12 grid items-stretch gap-4 md:grid-cols-[1fr_auto_1fr]" data-reveal>
-          <div className="flex flex-col rounded-3xl border border-line bg-sand p-6 sm:p-8">
-            <p className="text-[0.8125rem] font-semibold text-ink-3">{copy.beforeLabel}</p>
-            <div className="mt-6 grid grid-cols-2 gap-2.5">
-              {copy.beforeItems.map((item, i) => (
-                <div
-                  key={item}
-                  className={`rounded-xl border border-line-strong/70 bg-canvas px-3 py-2.5 text-[0.875rem] text-ink-2 ${i % 2 ? "rotate-[0.8deg]" : "-rotate-[0.8deg]"}`}
-                >
-                  {item}
-                </div>
+        <div className="mt-14 grid gap-4 md:grid-cols-2" data-reveal>
+          <figure className="rounded-[20px] bg-bg2 p-5 sm:p-8">
+            <figcaption className="text-[0.8125rem] font-semibold text-ink3">{copy.beforeLabel}</figcaption>
+            <div className="relative mt-6 grid aspect-[4/3] grid-cols-3 grid-rows-3">
+              <Lines points={BEFORE} />
+              {copy.beforeNodes.map((n, i) => (
+                <Node key={n} className={place[i]}>{n}</Node>
               ))}
+              <div className="relative z-10 col-start-2 row-start-2 flex items-center justify-center">
+                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full border border-attn bg-attnsoft text-[0.8125rem] font-semibold text-attn">
+                  {copy.youShort}
+                </span>
+              </div>
             </div>
-            <div className="mt-auto flex items-center justify-center pt-6">
-              <span className="inline-flex items-center gap-2 rounded-full bg-amber-soft px-3.5 py-1.5 text-[0.875rem] font-medium text-amber">
-                <span className="h-1.5 w-1.5 rounded-full bg-amber" aria-hidden="true" />
-                {copy.beforeYou}
-              </span>
-            </div>
-          </div>
+            <p className="mt-6 text-center text-[0.875rem] text-ink2">{copy.beforeYou}</p>
+          </figure>
 
-          <div className="flex items-center justify-center text-ink-3" aria-hidden="true">
-            <IconArrow className="h-6 w-6 rotate-90 md:rotate-0" />
-          </div>
-
-          <div className="rounded-3xl border border-line bg-canvas p-6 shadow-card sm:p-8">
-            <p className="text-[0.8125rem] font-semibold text-accent">{copy.afterLabel}</p>
-            <div className="mt-6 rounded-2xl border border-line">
-              <ul className="grid grid-cols-2">
-                {copy.afterItems.map((item, i) => (
-                  <li
-                    key={item}
-                    className={`flex items-center gap-2 px-3 py-3 text-[0.875rem] text-ink ${i % 2 === 0 ? "border-r border-line" : ""} ${i > 1 ? "border-t border-line" : ""}`}
-                  >
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <p className="border-t border-line bg-accent-soft/60 px-3 py-2.5 text-center text-[0.8125rem] font-medium text-accent-ink">
-                {copy.sharedLabel}
-              </p>
+          <figure className="rounded-[20px] border border-line bg-bg p-5 sm:p-8" style={{ boxShadow: "var(--shadow-card)" }}>
+            <figcaption className="text-[0.8125rem] font-semibold text-ink3">{copy.afterLabel}</figcaption>
+            <div className="relative mt-6 grid aspect-[4/3] grid-cols-3 grid-rows-3">
+              <Lines points={AFTER} accent={TOP} />
+              <div className="relative z-10 col-start-2 row-start-1 flex items-center justify-center">
+                <span className="rounded-full border border-accenttext bg-accentsoft px-3 py-1.5 text-center text-[0.75rem] font-semibold leading-tight text-accenttext sm:text-[0.8125rem]">
+                  {copy.afterYou}
+                </span>
+              </div>
+              {copy.afterItems.map((n, i) => (
+                <Node key={n} className={placeAfter[i]}>{n}</Node>
+              ))}
+              <div className="relative z-10 col-start-2 row-start-2 flex items-center justify-center">
+                <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-line bg-bg" style={{ boxShadow: "var(--shadow-card)" }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/favicon.svg" alt="Departify" width={28} height={28} />
+                </span>
+              </div>
             </div>
-            <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-2">{copy.afterBody}</p>
-          </div>
+            <p className="mt-6 text-center text-[0.875rem] text-ink2">{copy.afterBody}</p>
+          </figure>
         </div>
 
-        <ul className="mt-16 grid gap-x-10 gap-y-12 md:grid-cols-2">
+        <div className="mt-20 grid gap-x-16 md:grid-cols-2">
           {copy.blocks.map((b) => (
-            <li key={b.title} className="border-t border-ink pt-6" data-reveal>
-              <div className="flex flex-wrap items-center gap-3">
-                <h3 className="display-3">{b.title}</h3>
-                {b.badge && <span className="chip border border-line-strong text-ink-2">{b.badge}</span>}
+            <article key={b.title} className="border-t border-line py-9" data-reveal>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <h3 className="t-title">{b.title}</h3>
+                {b.badge && <span className="text-[0.75rem] font-medium uppercase tracking-[0.08em] text-attn">{b.badge}</span>}
               </div>
-              <p className="mt-2 text-[1.0625rem] text-ink">{b.line}</p>
-              <ul className="mt-4 space-y-2.5 text-[0.9375rem] text-ink-2">
+              <p className="mt-2 text-[1.0625rem] tracking-[-0.01em] text-ink">{b.line}</p>
+              <ul className="mt-5 space-y-2 text-[0.9375rem] text-ink2">
                 {b.points.map((pt) => (
-                  <li key={pt} className="flex gap-2.5">
-                    <IconCheck className="mt-0.5 h-[18px] w-[18px] shrink-0 text-accent" />
+                  <li key={pt} className="flex gap-3">
+                    <span className="mt-[0.6rem] h-[5px] w-[5px] shrink-0 rounded-full bg-ink3" aria-hidden="true" />
                     <span>{pt}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-5 rounded-xl bg-sand px-4 py-3 text-[0.9375rem] leading-relaxed text-ink-2">{b.link}</p>
-            </li>
+              <p className="mt-5 border-l-2 border-accenttext pl-4 text-[0.9375rem] leading-relaxed text-ink2">{b.link}</p>
+            </article>
           ))}
-        </ul>
+        </div>
 
-        <div className="mt-16 grid gap-6 rounded-3xl border border-line p-6 sm:p-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center" data-reveal>
+        <div className="mt-8 grid gap-6 border-t border-line pt-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]" data-reveal>
           <div>
-            <h3 className="display-3">{copy.connectTitle}</h3>
-            <p className="mt-2 text-[1rem] leading-relaxed text-ink-2">{copy.connectBody}</p>
+            <h3 className="t-title">{copy.connectTitle}</h3>
+            <p className="t-body mt-2 max-w-[28rem]">{copy.connectBody}</p>
           </div>
           <div>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap gap-x-6 gap-y-3 text-[1rem] font-medium tracking-[-0.01em] text-ink">
               {copy.connectors.map((c) => (
-                <li key={c} className="rounded-full border border-line bg-sand px-3.5 py-1.5 text-[0.875rem] font-medium text-ink">
-                  {c}
-                </li>
+                <li key={c}>{c}</li>
               ))}
             </ul>
-            <p className="mt-3 text-[0.8125rem] text-ink-3">{copy.connectNote}</p>
+            <p className="t-small mt-4">{copy.connectNote}</p>
           </div>
         </div>
       </div>

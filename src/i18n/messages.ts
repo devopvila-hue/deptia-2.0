@@ -10,7 +10,7 @@ import type { ClosingCopy } from "@/components/closing";
 // Shape every locale file must satisfy (checked by tests/unit/messages.test.mjs).
 export type Messages = {
   meta: { title: string; description: string };
-  nav: { how: string; included: string; plans: string; login: string; cta: string; menu: string; close: string; nav: string; skip: string };
+  nav: { how: string; included: string; plans: string; login: string; cta: string; menu: string; close: string; nav: string; skip: string; themeDark: string; themeLight: string };
   hero: HeroCopy;
   scene: SceneCopy;
   connected: ConnectedCopy;

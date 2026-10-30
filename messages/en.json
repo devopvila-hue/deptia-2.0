@@ -12,7 +12,9 @@
     "menu": "Open menu",
     "close": "Close menu",
     "nav": "Main navigation",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "themeDark": "Switch to dark mode",
+    "themeLight": "Switch to light mode"
   },
   "hero": {
     "audience": "For businesses of 1 to 15 people",
@@ -24,8 +26,6 @@
     "secondary": "See how it works",
     "reassurance": "No email or post goes out without your approval.",
     "panel": {
-      "example": "Example",
-      "appSection": "Home",
       "greeting": "Good morning, Sarah.",
       "summary": "2 decisions are waiting for you. Your team finished 4 things this morning.",
       "decisionsTitle": "Needs your attention",
@@ -34,24 +34,71 @@
       "review": "View proposal",
       "approve": "Approve",
       "decisions": [
-        { "title": "Send the proposal to Laura Hughes", "meta": "Bathroom renovation · €2,480", "by": "Sales" },
-        { "title": "Post Friday's offer on Facebook", "meta": "Text and image ready", "by": "Marketing" }
+        {
+          "title": "Send the proposal to Laura Hughes",
+          "meta": "Bathroom renovation · €2,480",
+          "by": "Sales"
+        },
+        {
+          "title": "Post Friday's offer on Facebook",
+          "meta": "Text and image ready",
+          "by": "Marketing"
+        }
       ],
       "inProgress": [
-        { "title": "Sort this week's enquiries", "by": "Customer service" },
-        { "title": "Follow up on 3 unanswered quotes", "by": "Admin" },
-        { "title": "Review your website to rank better on Google", "by": "SEO" }
+        {
+          "title": "Sort this week's enquiries",
+          "by": "Customer service"
+        },
+        {
+          "title": "Follow up on 3 unanswered quotes",
+          "by": "Admin"
+        },
+        {
+          "title": "Review your website to rank better on Google",
+          "by": "SEO"
+        }
       ],
       "done": [
-        { "title": "14 emails sorted by priority", "by": "Customer service" },
-        { "title": "Site visit to Paul Byrne's home added to your calendar", "by": "Admin" },
-        { "title": "PDF proposal for Laura Hughes", "by": "Sales" },
-        { "title": "Content ideas for the next two weeks", "by": "Marketing" }
-      ]
+        {
+          "title": "14 emails sorted by priority",
+          "by": "Customer service",
+          "time": "8:14"
+        },
+        {
+          "title": "Site visit to Paul Byrne's home added to your calendar",
+          "by": "Admin",
+          "time": "9:02"
+        },
+        {
+          "title": "PDF proposal for Laura Hughes",
+          "by": "Sales",
+          "time": "9:40"
+        },
+        {
+          "title": "Content ideas for the next two weeks",
+          "by": "Marketing",
+          "time": "10:15"
+        }
+      ],
+      "url": "app.departify.app",
+      "company": "Hughes Renovations",
+      "user": "Sarah Hughes",
+      "navItems": [
+        "Home",
+        "Chat",
+        "Tasks",
+        "Approvals",
+        "Calendar",
+        "Customers",
+        "Invoicing"
+      ],
+      "requestWork": "Assign",
+      "date": "Tuesday, 4 November",
+      "example": "Example"
     }
   },
   "scene": {
-    "eyebrow": "How it works",
     "title": "This is how your business runs when you don't have to do it all.",
     "lede": "An enquiry that ends with a proposal sent and a follow-up in your calendar. You only step in once: where it matters.",
     "example": "Example with fictional data",
@@ -92,58 +139,112 @@
       "received": "Today, 8:12",
       "tag": "Potential customer",
       "subject": "Quote for a bathroom renovation",
-      "body": "Hi, we'd like to renovate our bathroom at home, about 6 m². Could you send us a quote and let us know when you could start? Thanks."
+      "body": "Hi, we'd like to renovate our bathroom at home, about 6 m². Could you send us a quote and let us know when you could start? Thanks.",
+      "to": "To: Hughes Renovations",
+      "inbox": "Inbox",
+      "others": [
+        {
+          "from": "Tiles Direct",
+          "subject": "October invoice",
+          "time": "7:55"
+        },
+        {
+          "from": "Dublin City Council",
+          "subject": "Building permit decision",
+          "time": "Yesterday"
+        },
+        {
+          "from": "Paul Byrne",
+          "subject": "Confirming Thursday's visit",
+          "time": "Yesterday"
+        }
+      ]
     },
     "contact": {
       "name": "Laura Hughes",
       "company": "Private customer · Dublin",
       "stage": "Waiting to be saved",
       "fields": [
-        { "label": "Email", "value": "laura.hughes@example.com" },
-        { "label": "Phone", "value": "087 123 4567" },
-        { "label": "What she needs", "value": "Bathroom renovation, 6 m²" },
-        { "label": "How she found you", "value": "Email, today" }
+        {
+          "label": "Email",
+          "value": "laura.hughes@example.com"
+        },
+        {
+          "label": "Phone",
+          "value": "087 123 4567"
+        },
+        {
+          "label": "What she needs",
+          "value": "Bathroom renovation, 6 m²"
+        },
+        {
+          "label": "How she found you",
+          "value": "Email, today"
+        }
       ]
     },
     "quote": {
       "title": "Proposal · Bathroom renovation",
       "draft": "Draft",
       "lines": [
-        { "item": "Demolition and removal", "amount": "€520" },
-        { "item": "Plumbing and drainage", "amount": "€690" },
-        { "item": "Tiling and flooring", "amount": "€870" },
-        { "item": "Sanitaryware and taps", "amount": "€400" }
+        {
+          "item": "Demolition and removal",
+          "amount": "€520"
+        },
+        {
+          "item": "Plumbing and drainage",
+          "amount": "€690"
+        },
+        {
+          "item": "Tiling and flooring",
+          "amount": "€870"
+        },
+        {
+          "item": "Sanitaryware and taps",
+          "amount": "€400"
+        }
       ],
       "total": "Total excl. VAT",
       "totalValue": "€2,480",
-      "reply": "“Hi Laura, thanks for getting in touch. Please find attached the proposal for your bathroom renovation. We could start the week of the 17th…”"
+      "reply": "“Hi Laura, thanks for getting in touch. Please find attached the proposal for your bathroom renovation. We could start the week of the 17th…”",
+      "company": "Hughes Renovations",
+      "client": "For Laura Hughes",
+      "date": "4 November"
     },
     "approval": {
       "title": "Needs your attention",
       "summary": "Send Laura Hughes the reply with the €2,480 proposal and save her to your customers",
-      "edit": "View proposal",
       "reject": "Reject",
       "approve": "Approve",
-      "note": "Want to change something? Say so in the chat before approving: “Offer to start on the 10th.”"
+      "note": "Want to change something? Say so in the chat before approving: “Offer to start on the 10th.”",
+      "items": [
+        "Reply to Laura Hughes",
+        "Proposal · Bathroom renovation (PDF)",
+        "New customer record"
+      ]
     },
     "next": {
       "sent": "Reply sent to Laura Hughes with the proposal",
       "logged": "Laura Hughes saved to your customers",
       "followUp": "Call Laura Hughes if she hasn't replied",
       "followUpDate": "Thursday, 10:00 · in your calendar",
-      "alert": "When she replies, you'll see it in your Departify inbox."
+      "alert": "When she replies, you'll see it in your Departify inbox.",
+      "day": "Thu",
+      "dayNumber": "6"
     }
   },
   "connected": {
-    "eyebrow": "What's included",
     "title": "Before: several tools with you in the middle. Now: everything works together.",
     "lede": "Departify brings together what you need to run the business. Because everything shares the same information, nobody copies data from one place to another and you never have to explain the same thing twice.",
     "beforeLabel": "Before",
-    "beforeItems": ["Customers in a spreadsheet", "Invoices in another program", "Email and calendar apart", "Social media when you remember"],
     "beforeYou": "You, in the middle of it all",
     "afterLabel": "With Departify",
-    "afterItems": ["Customers and sales", "Admin and invoicing", "Marketing and channels", "Shop and orders"],
-    "sharedLabel": "The same information for your whole team",
+    "afterItems": [
+      "Customers and sales",
+      "Admin and invoicing",
+      "Marketing and channels",
+      "Shop and orders"
+    ],
     "afterBody": "One place, your data connected and a digital team working on top of it.",
     "blocks": [
       {
@@ -190,11 +291,29 @@
     ],
     "connectTitle": "Connect what you already use",
     "connectBody": "Your email, calendar and documents stay where they are. Departify works with them.",
-    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
-    "connectNote": "Some connections can only read data, not make changes."
+    "connectors": [
+      "Gmail",
+      "Outlook",
+      "Google Calendar",
+      "Google Drive",
+      "Facebook",
+      "Shopify",
+      "WordPress",
+      "Google Analytics"
+    ],
+    "connectNote": "Some connections can only read data, not make changes.",
+    "beforeNodes": [
+      "Customer sheet",
+      "Invoices",
+      "Email",
+      "Calendar",
+      "Social media",
+      "Shop"
+    ],
+    "youShort": "You",
+    "afterYou": "You: only what matters"
   },
   "team": {
-    "eyebrow": "Your digital team",
     "title": "A specialist for each area. One shared understanding of your business.",
     "lede": "Each digital employee handles one kind of work. They all draw on the same information: your customers, your services, your prices and the way you talk.",
     "whatTitle": "What is a digital employee?",
@@ -256,27 +375,42 @@
         "asks": "Nothing on its own: it prepares the decisions for you."
       }
     ],
-    "expand": "See the full team"
+    "expand": "See the full team",
+    "areaLabel": "Area"
   },
   "control": {
-    "eyebrow": "You decide",
     "title": "Your team takes care of the work. You decide what matters.",
     "lede": "The rules are clear from day one: what it does on its own, what it asks you first and what never leaves your hands.",
     "lanes": {
       "own": {
         "title": "Does on its own",
         "body": "Internal work that doesn't reach anyone outside your business.",
-        "items": ["Reading and sorting your email", "Preparing drafts, proposals and documents", "Creating tasks and calendar appointments", "Analysing your website and your results"]
+        "items": [
+          "Reading and sorting your email",
+          "Preparing drafts, proposals and documents",
+          "Creating tasks and calendar appointments",
+          "Analysing your website and your results"
+        ]
       },
       "approve": {
         "title": "Asks you first",
         "body": "Anything that goes out to other people or changes important data.",
-        "items": ["Sending or replying to emails", "Posting on your Facebook page", "Saving new customers and switching on automatic follow-ups", "Writing to your Drive documents"]
+        "items": [
+          "Sending or replying to emails",
+          "Posting on your Facebook page",
+          "Saving new customers and switching on automatic follow-ups",
+          "Writing to your Drive documents"
+        ]
       },
       "yours": {
         "title": "Always yours",
         "body": "The decisions that define your business.",
-        "items": ["Your prices and your terms", "Who you sell to and how", "What is published in your name", "Any decision about money"]
+        "items": [
+          "Your prices and your terms",
+          "Who you sell to and how",
+          "What is published in your name",
+          "Any decision about money"
+        ]
       }
     },
     "qa": [
@@ -299,7 +433,6 @@
     ]
   },
   "pricing": {
-    "eyebrow": "Plans",
     "title": "Clear pricing, from €49 a month.",
     "lede": "Every plan includes the tools and the full digital team. What changes is how much work you need and how much support you want.",
     "perMonth": "/month",
@@ -312,28 +445,76 @@
         "name": "Essential",
         "for": "For owners starting to hand off everyday work.",
         "summary": "Designed for around 100 tasks a month.",
-        "points": ["Customers, sales, admin and invoicing in one place", "The full digital team, with your approvals", "1 connected email account", "Help by email"]
+        "points": [
+          "Customers, sales, admin and invoicing in one place",
+          "The full digital team, with your approvals",
+          "1 connected email account",
+          "Help by email"
+        ]
       },
       "negocio": {
         "name": "Business",
         "for": "For a business with daily activity across several areas.",
         "summary": "Designed for around 400 tasks a month.",
-        "points": ["Everything in Essential", "Up to 3 connected email accounts", "Priority help by email"]
+        "points": [
+          "Everything in Essential",
+          "Up to 3 connected email accounts",
+          "Priority help by email"
+        ]
       },
       "crecimiento": {
         "name": "Growth",
         "for": "For more work and more channels.",
         "summary": "Designed for around 1,200 tasks a month.",
-        "points": ["Everything in Business", "Up to 10 connected email accounts", "A setup session with our team"]
+        "points": [
+          "Everything in Business",
+          "Up to 10 connected email accounts",
+          "A setup session with our team"
+        ]
       }
     },
     "compareTitle": "Compare plans in detail",
     "compareRows": [
-      { "label": "Work included per month", "values": ["Around 100 tasks", "Around 400 tasks", "Around 1,200 tasks"] },
-      { "label": "Customers, sales, admin, invoicing and channels", "values": ["Included", "Included", "Included"] },
-      { "label": "Full digital team", "values": ["Included", "Included", "Included"] },
-      { "label": "Connected email accounts", "values": ["1", "Up to 3", "Up to 10"] },
-      { "label": "Help", "values": ["By email", "Priority by email", "Priority and a setup session"] }
+      {
+        "label": "Work included per month",
+        "values": [
+          "Around 100 tasks",
+          "Around 400 tasks",
+          "Around 1,200 tasks"
+        ]
+      },
+      {
+        "label": "Customers, sales, admin, invoicing and channels",
+        "values": [
+          "Included",
+          "Included",
+          "Included"
+        ]
+      },
+      {
+        "label": "Full digital team",
+        "values": [
+          "Included",
+          "Included",
+          "Included"
+        ]
+      },
+      {
+        "label": "Connected email accounts",
+        "values": [
+          "1",
+          "Up to 3",
+          "Up to 10"
+        ]
+      },
+      {
+        "label": "Help",
+        "values": [
+          "By email",
+          "Priority by email",
+          "Priority and a setup session"
+        ]
+      }
     ],
     "limitTitle": "If you reach the limit",
     "limitBody": "We'll let you know beforehand. You can change plan or wait until next month. We never charge anything extra without your permission.",
@@ -343,7 +524,6 @@
     "extrasBody": "Creating images or videos uses your own account with a provider such as Google or OpenAI, which bills you separately. The same goes for any ads you choose to pay for."
   },
   "faq": {
-    "eyebrow": "Questions",
     "title": "Worth knowing before you start.",
     "items": [
       {

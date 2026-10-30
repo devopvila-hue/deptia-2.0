@@ -1,8 +1,12 @@
-// Official Departify logo (D symbol + wordmark). Only the wordmark ink is
-// darkened so it reads on light backgrounds.
-export function BrandLogo({ className = "h-6 w-auto" }: { className?: string }) {
+// Official Departify logo (D symbol + wordmark): dark wordmark on light
+// backgrounds, the original white wordmark on dark ones.
+export function BrandLogo({ className = "h-[22px] w-auto" }: { className?: string }) {
   return (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img src="/logo.svg" alt="Departify" width={1794} height={398} className={className} decoding="async" />
+    <>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/logo.svg" alt="Departify" width={1794} height={398} className={`logo-for-light ${className}`} decoding="async" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src="/logo-dark.svg" alt="Departify" width={1794} height={398} className={`logo-for-dark ${className}`} decoding="async" />
+    </>
   );
 }

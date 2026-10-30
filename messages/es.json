@@ -12,7 +12,9 @@
     "menu": "Abrir menú",
     "close": "Cerrar menú",
     "nav": "Navegación principal",
-    "skip": "Saltar al contenido"
+    "skip": "Saltar al contenido",
+    "themeDark": "Activar modo oscuro",
+    "themeLight": "Activar modo claro"
   },
   "hero": {
     "audience": "Para negocios de 1 a 15 personas",
@@ -24,8 +26,6 @@
     "secondary": "Ver cómo funciona",
     "reassurance": "Ningún correo ni publicación sale sin tu aprobación.",
     "panel": {
-      "example": "Ejemplo",
-      "appSection": "Inicio",
       "greeting": "Buenos días, Marta.",
       "summary": "2 decisiones te esperan. Tu equipo ha terminado 4 cosas esta mañana.",
       "decisionsTitle": "Necesita tu atención",
@@ -62,25 +62,43 @@
       "done": [
         {
           "title": "14 correos ordenados por prioridad",
-          "by": "Atención al cliente"
+          "by": "Atención al cliente",
+          "time": "8:14"
         },
         {
           "title": "Visita a casa de Pablo Ruiz añadida a tu agenda",
-          "by": "Administración"
+          "by": "Administración",
+          "time": "9:02"
         },
         {
           "title": "Propuesta en PDF para Laura Gil",
-          "by": "Ventas"
+          "by": "Ventas",
+          "time": "9:40"
         },
         {
           "title": "Ideas de contenido para dos semanas",
-          "by": "Marketing"
+          "by": "Marketing",
+          "time": "10:15"
         }
-      ]
+      ],
+      "url": "app.departify.app",
+      "company": "Reformas Ortega",
+      "user": "Marta Ortega",
+      "navItems": [
+        "Inicio",
+        "Chat",
+        "Tareas",
+        "Aprobaciones",
+        "Calendario",
+        "Clientes",
+        "Facturación"
+      ],
+      "requestWork": "Encargar",
+      "date": "Martes, 4 de noviembre",
+      "example": "Ejemplo"
     }
   },
   "scene": {
-    "eyebrow": "Cómo funciona",
     "title": "Así se mueve tu negocio cuando no tienes que hacerlo todo tú.",
     "lede": "Una consulta que termina en una propuesta enviada y un seguimiento en tu agenda. Tú solo intervienes en un paso: el que importa.",
     "example": "Ejemplo con datos ficticios",
@@ -121,7 +139,26 @@
       "received": "Hoy, 8:12",
       "tag": "Posible cliente",
       "subject": "Presupuesto para reformar un baño",
-      "body": "Hola: queremos reformar el baño de casa, de unos 6 m². ¿Podéis pasarnos un presupuesto y decirnos cuándo podríais empezar? Gracias."
+      "body": "Hola: queremos reformar el baño de casa, de unos 6 m². ¿Podéis pasarnos un presupuesto y decirnos cuándo podríais empezar? Gracias.",
+      "to": "Para: Reformas Ortega",
+      "inbox": "Bandeja de entrada",
+      "others": [
+        {
+          "from": "Azulejos Levante",
+          "subject": "Factura de octubre",
+          "time": "7:55"
+        },
+        {
+          "from": "Ayuntamiento de Valencia",
+          "subject": "Licencia de obra: resolución",
+          "time": "Ayer"
+        },
+        {
+          "from": "Pablo Ruiz",
+          "subject": "Confirmo la visita del jueves",
+          "time": "Ayer"
+        }
+      ]
     },
     "contact": {
       "name": "Laura Gil",
@@ -169,35 +206,37 @@
       ],
       "total": "Total sin IVA",
       "totalValue": "2.480 €",
-      "reply": "«Hola, Laura: gracias por escribirnos. Te adjunto la propuesta para la reforma del baño. Podríamos empezar la semana del día 17…»"
+      "reply": "«Hola, Laura: gracias por escribirnos. Te adjunto la propuesta para la reforma del baño. Podríamos empezar la semana del día 17…»",
+      "company": "Reformas Ortega",
+      "client": "Para Laura Gil",
+      "date": "4 de noviembre"
     },
     "approval": {
       "title": "Necesita tu atención",
       "summary": "Enviar a Laura Gil la respuesta con la propuesta de 2.480 € y guardarla en tus clientes",
-      "edit": "Ver propuesta",
       "reject": "Rechazar",
       "approve": "Aprobar",
-      "note": "¿Quieres cambiar algo? Díselo en el chat antes de aprobar: «Ofrécele empezar el día 10»."
+      "note": "¿Quieres cambiar algo? Díselo en el chat antes de aprobar: «Ofrécele empezar el día 10».",
+      "items": [
+        "Respuesta a Laura Gil",
+        "Propuesta · Reforma de baño (PDF)",
+        "Ficha de cliente nueva"
+      ]
     },
     "next": {
       "sent": "Respuesta enviada a Laura Gil con la propuesta",
       "logged": "Laura Gil guardada en tus clientes",
       "followUp": "Llamar a Laura Gil si no ha contestado",
       "followUpDate": "Jueves, 10:00 · en tu agenda",
-      "alert": "Cuando responda, lo verás en tu bandeja de Departify."
+      "alert": "Cuando responda, lo verás en tu bandeja de Departify.",
+      "day": "Jue",
+      "dayNumber": "6"
     }
   },
   "connected": {
-    "eyebrow": "Qué incluye",
     "title": "Antes, varias herramientas y tú en medio. Ahora, todo trabaja junto.",
     "lede": "Departify reúne lo que necesitas para llevar el negocio. Como todo comparte la misma información, nadie copia datos de un sitio a otro y no tienes que explicar lo mismo dos veces.",
     "beforeLabel": "Antes",
-    "beforeItems": [
-      "Clientes en una hoja de cálculo",
-      "Facturas en otro programa",
-      "Correo y agenda por separado",
-      "Redes cuando te acuerdas"
-    ],
     "beforeYou": "Tú, en medio de todo",
     "afterLabel": "Con Departify",
     "afterItems": [
@@ -206,7 +245,6 @@
       "Marketing y canales",
       "Tienda y pedidos"
     ],
-    "sharedLabel": "La misma información para todo tu equipo",
     "afterBody": "Un solo lugar, tus datos conectados y un equipo digital que trabaja sobre ellos.",
     "blocks": [
       {
@@ -263,10 +301,19 @@
       "WordPress",
       "Google Analytics"
     ],
-    "connectNote": "Algunas conexiones solo permiten consultar datos, no hacer cambios."
+    "connectNote": "Algunas conexiones solo permiten consultar datos, no hacer cambios.",
+    "beforeNodes": [
+      "Hoja de clientes",
+      "Facturas",
+      "Correo",
+      "Agenda",
+      "Redes",
+      "Tienda"
+    ],
+    "youShort": "Tú",
+    "afterYou": "Tú: solo lo importante"
   },
   "team": {
-    "eyebrow": "Tu equipo digital",
     "title": "Especialistas para cada área. Un mismo conocimiento de tu negocio.",
     "lede": "Cada empleado digital se ocupa de un tipo de trabajo. Todos consultan la misma información: tus clientes, tus servicios, tus precios y tu forma de hablar.",
     "whatTitle": "¿Qué es un empleado digital?",
@@ -328,10 +375,10 @@
         "asks": "Nada por su cuenta: te prepara las decisiones."
       }
     ],
-    "expand": "Ver el equipo completo"
+    "expand": "Ver el equipo completo",
+    "areaLabel": "Área"
   },
   "control": {
-    "eyebrow": "Tú decides",
     "title": "Tu equipo se ocupa del trabajo. Tú decides lo importante.",
     "lede": "Las reglas son claras desde el primer día: qué hace por su cuenta, qué te pide antes y qué no sale nunca de tus manos.",
     "lanes": {
@@ -386,7 +433,6 @@
     ]
   },
   "pricing": {
-    "eyebrow": "Planes",
     "title": "Un precio claro, desde 49 € al mes.",
     "lede": "Todos los planes incluyen las herramientas y el equipo digital completo. Lo que cambia es cuánto trabajo necesitas y cuánto acompañamiento quieres.",
     "perMonth": "/mes",
@@ -478,7 +524,6 @@
     "extrasBody": "Crear imágenes o vídeos usa tu propia cuenta de un proveedor, como Google u OpenAI, que te lo factura aparte. Lo mismo ocurre con los anuncios que decidas pagar."
   },
   "faq": {
-    "eyebrow": "Preguntas frecuentes",
     "title": "Lo que conviene saber antes de empezar.",
     "items": [
       {

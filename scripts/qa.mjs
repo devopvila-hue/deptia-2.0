@@ -4,7 +4,15 @@ import { createRequire } from "node:module";
 import { readFileSync } from "node:fs";
 
 // Playwright is pre-installed globally in CI images; fall back to a local install if present.
-const { chromium } = createRequire(import.meta.url)("playwright");
+const require = createRequire(import.meta.url);
+const { chromium } = require("playwright");
+// Optional: axe-core for contrast/a11y rules in both themes (skipped if not installed).
+let axeSource = null;
+try {
+  axeSource = readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
+} catch {
+  axeSource = null;
+}
 
 const BASE = process.env.BASE_URL || "http://localhost:3100";
 const locales = ["es", "en", "fr", "de", "it", "ro", "hu"];
@@ -15,17 +23,18 @@ const fail = (name, detail) => results.push({ ok: false, name, detail });
 const pass = (name) => results.push({ ok: true, name });
 
 const browser = await chromium.launch();
+for (const scheme of ["light", "dark"])
 for (const locale of locales) {
   const messages = JSON.parse(readFileSync(new URL(`../messages/${locale}.json`, import.meta.url), "utf8"));
   for (const width of widths) {
-    const ctx = await browser.newContext({ viewport: { width, height: 900 } });
+    const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme });
     const page = await ctx.newPage();
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
     page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
     const url = `${BASE}/${locale === "es" ? "" : locale}`;
     const res = await page.goto(url, { waitUntil: "networkidle" });
-    const name = `${locale}@${width}`;
+    const name = `${locale}@${width} ${scheme}`;
     if (res?.status() !== 200) { fail(name, `HTTP ${res?.status()}`); await ctx.close(); continue; }
     const data = await page.evaluate(() => {
       const offenders = [];
@@ -63,6 +72,19 @@ for (const locale of locales) {
     if (missing.length) problems.push(`broken anchors ${missing.join(",")}`);
     if (data.imgsNoAlt) problems.push(`${data.imgsNoAlt} img without alt`);
     if (data.smallTargets) problems.push(`${data.smallTargets} targets < 24px`);
+    const theme = await page.evaluate(() => document.documentElement.dataset.theme);
+    if (theme !== scheme) problems.push(`theme=${theme}`);
+    if (axeSource && (width === 390 || width === 1440)) {
+      await page.evaluate(() => document.querySelectorAll("[data-reveal]").forEach((n) => n.classList.add("is-in")));
+      await page.waitForTimeout(700);
+      await page.addScriptTag({ content: axeSource });
+      const violations = await page.evaluate(async () => {
+        // eslint-disable-next-line no-undef
+        const r = await axe.run(document, { runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21aa"] } });
+        return r.violations.map((v) => `${v.id}(${v.nodes.length}): ${v.nodes[0]?.target?.join(" ")}`);
+      });
+      if (violations.length) problems.push(`axe: ${violations.join(" | ")}`);
+    }
     problems.length ? fail(name, problems.join("; ")) : pass(name);
     await ctx.close();
   }
@@ -139,6 +161,27 @@ for (const locale of locales) {
   lang === "es-ES" ? pass("language switch en → es") : fail("language switch", `${page.url()} lang=${lang}`);
   await ctx.close();
 }
+// Theme toggle: switches, persists across reloads and swaps the logo variant.
+{
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: "light" });
+  const page = await ctx.newPage();
+  await page.goto(BASE + "/", { waitUntil: "networkidle" });
+  const toggle = page.locator("header button[aria-label]").first();
+  await toggle.click();
+  const after = await page.evaluate(() => ({
+    theme: document.documentElement.dataset.theme,
+    stored: localStorage.getItem("theme"),
+    darkLogo: getComputedStyle(document.querySelector("header .logo-for-dark")).display,
+    bg: getComputedStyle(document.body).backgroundColor,
+  }));
+  await page.reload({ waitUntil: "networkidle" });
+  const persisted = await page.evaluate(() => document.documentElement.dataset.theme);
+  after.theme === "dark" && after.stored === "dark" && after.darkLogo !== "none" && after.bg === "rgb(11, 12, 11)" && persisted === "dark"
+    ? pass("theme toggle: switches, swaps logo, persists")
+    : fail("theme toggle", JSON.stringify({ ...after, persisted }));
+  await ctx.close();
+}
+if (!axeSource) console.log("NOTE axe-core not installed: contrast audit skipped");
 await browser.close();
 
 const failed = results.filter((r) => !r.ok);
