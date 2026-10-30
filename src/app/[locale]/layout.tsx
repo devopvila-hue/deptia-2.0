@@ -5,7 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { isLocale, locales, localeMeta } from "@/i18n/config";
 import { bootScript } from "@/components/boot-script";
 import { links } from "@/config/links";
-import { inter, interExt } from "@/styles/fonts";
+import { sans, mono } from "@/styles/fonts";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -29,7 +29,7 @@ export default function LocaleLayout({ children, params: { locale } }: { childre
   if (!isLocale(locale)) notFound();
   setRequestLocale(locale);
   return (
-    <html lang={localeMeta[locale].bcp47} className={`${inter.variable} ${interExt.variable}`} suppressHydrationWarning>
+    <html lang={localeMeta[locale].bcp47} className={`${sans.variable} ${mono.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: bootScript }} />
       </head>

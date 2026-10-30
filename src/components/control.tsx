@@ -13,14 +13,14 @@ export function Control({ copy }: { copy: ControlCopy }) {
     { lane: copy.lanes.yours, dot: "bg-ink" },
   ];
   return (
-    <section aria-labelledby="control-title" className="border-t border-line py-24 sm:py-32">
+    <section aria-labelledby="control-title" className="py-24 sm:py-32">
       <div className="wrap">
         <div className="max-w-[46rem]" data-reveal>
           <h2 id="control-title" className="t-section">{copy.title}</h2>
           <p className="t-lede mt-5">{copy.lede}</p>
         </div>
 
-        <ol className="mt-14 grid overflow-hidden rounded-[20px] border border-line lg:grid-cols-3" data-reveal>
+        <ol className="panel mt-14 grid overflow-hidden lg:grid-cols-3" data-reveal>
           {lanes.map(({ lane, dot }, i) => (
             <li key={lane.title} className={`p-6 sm:p-8 ${i > 0 ? "border-t border-line lg:border-l lg:border-t-0" : ""} ${i === 2 ? "bg-bg2" : ""}`}>
               <p className="flex items-center gap-2.5">

@@ -17,221 +17,91 @@
     "themeLight": "Hellmodus aktivieren"
   },
   "hero": {
-    "audience": "Für Betriebe mit 1 bis 15 Personen",
+    "audience": "CRM, ERP und Social Media inklusive",
     "title": "Ihr Betrieb sollte nicht davon abhängen, dass Sie alles selbst machen.",
     "subtitle": "Bringen Sie Kunden, Vertrieb und Verwaltung an einem Ort zusammen – mit einem Team digitaler Mitarbeiter, das Ihnen hilft, die Arbeit zu erledigen.",
+    "forWhom": "Ob Sie Ihren Betrieb allein führen oder ein Team von 20 Personen leiten: alles im Griff, ohne Stress.",
     "price": "Ab 49 €/Monat",
     "priceNote": "zzgl. MwSt.",
     "cta": "Konto erstellen",
     "secondary": "So funktioniert's",
     "reassurance": "Keine E-Mail und kein Beitrag geht ohne Ihre Freigabe raus.",
-    "panel": {
-      "greeting": "Guten Morgen, Julia.",
-      "summary": "2 Entscheidungen warten auf Sie. Ihr Team hat heute Vormittag 4 Dinge erledigt.",
-      "decisionsTitle": "Braucht Ihre Aufmerksamkeit",
-      "runningTitle": "In Arbeit",
-      "doneTitle": "Heute erledigt",
-      "review": "Vorschlag ansehen",
-      "approve": "Freigeben",
-      "decisions": [
-        {
-          "title": "Angebot an Laura Becker senden",
-          "meta": "Badsanierung · 2.480 €",
-          "by": "Vertrieb"
-        },
-        {
-          "title": "Freitagsangebot auf Facebook posten",
-          "meta": "Text und Bild fertig",
-          "by": "Marketing"
-        }
-      ],
-      "inProgress": [
-        {
-          "title": "Anfragen dieser Woche sortieren",
-          "by": "Kundenservice"
-        },
-        {
-          "title": "3 unbeantwortete Angebote nachfassen",
-          "by": "Verwaltung"
-        },
-        {
-          "title": "Ihre Website für Google prüfen",
-          "by": "SEO"
-        }
-      ],
-      "done": [
-        {
-          "title": "14 E-Mails nach Priorität sortiert",
-          "by": "Kundenservice",
-          "time": "8:14"
-        },
-        {
-          "title": "Vor-Ort-Termin bei Paul Weber im Kalender",
-          "by": "Verwaltung",
-          "time": "9:02"
-        },
-        {
-          "title": "PDF-Angebot für Laura Becker",
-          "by": "Vertrieb",
-          "time": "9:40"
-        },
-        {
-          "title": "Content-Ideen für zwei Wochen",
-          "by": "Marketing",
-          "time": "10:15"
-        }
-      ],
-      "url": "app.departify.app",
-      "company": "Becker Sanierung",
-      "user": "Julia Becker",
-      "navItems": [
-        "Start",
-        "Chat",
-        "Aufgaben",
-        "Freigaben",
-        "Kalender",
-        "Kunden",
-        "Rechnungen"
-      ],
-      "requestWork": "Beauftragen",
-      "date": "Dienstag, 4. November",
-      "example": "Beispiel"
+    "showcase": {
+      "label": "Beispiele nach Art des Betriebs",
+      "example": "Echter Screenshot des Portals · Beispieldaten",
+      "shotAlt": "Startseite des Departify-Portals für {sector}, mit Beispieldaten",
+      "pause": "Beispiele anhalten",
+      "play": "Beispiele fortsetzen",
+      "sectors": {
+        "clinic": "Praxis",
+        "shop": "Onlineshop",
+        "advisory": "Steuerbüro",
+        "agency": "Agentur",
+        "academy": "Schule",
+        "service": "Kundendienst"
+      }
     }
   },
-  "scene": {
-    "title": "So läuft Ihr Betrieb, wenn Sie nicht mehr alles selbst machen müssen.",
-    "lede": "Eine Anfrage, die mit einem versendeten Angebot und einer Wiedervorlage im Kalender endet. Sie greifen nur an einer Stelle ein: dort, wo es zählt.",
-    "example": "Beispiel mit erfundenen Daten",
-    "stepsLabel": "Schritte im Beispiel",
-    "departify": "Departify",
-    "you": "Sie",
-    "actorTeam": "Das erledigt Ihr digitales Team",
-    "actorYou": "Das entscheiden Sie",
-    "steps": [
+  "included": {
+    "title": "Alles, was Sie brauchen, inklusive.",
+    "lede": "CRM, ERP und Social-Media-Beiträge in Departify, und Ihr digitales Team arbeitet damit. Keine Tools extra bezahlen: Daten importieren und loslegen.",
+    "items": [
       {
-        "title": "Eine Anfrage kommt herein",
-        "does": "Liest die E-Mail in Ihrem Postfach, erkennt einen möglichen Kunden und setzt ihn nach oben.",
-        "you": "Nichts. Sie müssen Ihr Postfach nicht im Blick behalten."
+        "name": "CRM",
+        "desc": "Kunden, Verkaufschancen und Wiedervorlagen geordnet."
       },
       {
-        "title": "Die Kundendaten werden geordnet",
-        "does": "Fasst Kontaktdaten und Anliegen in einer Karte zusammen, bereit zum Speichern in Ihren Kunden.",
-        "you": "Noch nichts. Die Karte wird gespeichert, sobald Sie freigeben."
+        "name": "ERP",
+        "desc": "Angebote, Rechnungen, Einkauf und Lager."
       },
       {
-        "title": "Das Angebot wird vorbereitet",
-        "does": "Entwirft die Antwort und erstellt das Angebot als PDF mit Ihren Leistungen und Preisen.",
-        "you": "Nichts. Es arbeitet mit den Informationen Ihres Betriebs."
+        "name": "Social Media",
+        "desc": "Beiträge für Ihre Facebook-Seite erstellen, planen und veröffentlichen."
       },
       {
-        "title": "Sie prüfen und geben frei",
-        "does": "Legt alles unter Freigaben ab: Antwort, Angebot und Kundenkarte.",
-        "you": "Sie prüfen. Änderungen wünschen Sie sich im Chat. Dann geben Sie frei oder lehnen ab."
+        "name": "Chat mit Ihrem Team",
+        "desc": "Aufträge in eigenen Worten vergeben."
       },
       {
-        "title": "Der nächste Schritt wird festgehalten",
-        "does": "Sendet die Antwort, speichert den Kunden und trägt die Wiedervorlage in Ihren Kalender ein.",
-        "you": "Auf der Startseite sehen Sie, was erledigt ist und was noch offen ist."
+        "name": "Aufgaben und Kalender",
+        "desc": "Aufgaben, Termine und Erinnerungen mit Ihrem Kalender verbunden."
+      },
+      {
+        "name": "Onlineshop",
+        "desc": "Katalog und Bestellungen mit Ihrem Lager verbunden (im Test)."
       }
     ],
-    "mail": {
-      "from": "Laura Becker",
-      "received": "Heute, 8:12",
-      "tag": "Möglicher Kunde",
-      "subject": "Angebot für eine Badsanierung",
-      "body": "Hallo, wir möchten unser Bad sanieren, etwa 6 m². Können Sie uns ein Angebot schicken und sagen, wann Sie anfangen könnten? Danke.",
-      "to": "An: Becker Sanierung",
-      "inbox": "Posteingang",
-      "others": [
-        {
-          "from": "Fliesen Rhein",
-          "subject": "Rechnung Oktober",
-          "time": "7:55"
-        },
-        {
-          "from": "Stadt Köln",
-          "subject": "Baugenehmigung: Bescheid",
-          "time": "Gestern"
-        },
-        {
-          "from": "Paul Weber",
-          "subject": "Termin am Donnerstag bestätigt",
-          "time": "Gestern"
-        }
-      ]
-    },
-    "contact": {
-      "name": "Laura Becker",
-      "company": "Privatkundin · Köln",
-      "stage": "Noch nicht gespeichert",
-      "fields": [
-        {
-          "label": "E-Mail",
-          "value": "laura.becker@beispiel.de"
-        },
-        {
-          "label": "Telefon",
-          "value": "0151 2345 6789"
-        },
-        {
-          "label": "Anliegen",
-          "value": "Badsanierung, 6 m²"
-        },
-        {
-          "label": "Herkunft",
-          "value": "E-Mail, heute"
-        }
-      ]
-    },
-    "quote": {
-      "title": "Angebot · Badsanierung",
-      "draft": "Entwurf",
-      "lines": [
-        {
-          "item": "Abbruch und Entsorgung",
-          "amount": "520 €"
-        },
-        {
-          "item": "Sanitärinstallation",
-          "amount": "690 €"
-        },
-        {
-          "item": "Fliesen und Boden",
-          "amount": "870 €"
-        },
-        {
-          "item": "Sanitärobjekte und Armaturen",
-          "amount": "400 €"
-        }
-      ],
-      "total": "Summe netto",
-      "totalValue": "2.480 €",
-      "reply": "„Hallo Frau Becker, vielen Dank für Ihre Anfrage. Anbei finden Sie unser Angebot für die Badsanierung. Wir könnten in der Woche ab dem 17. beginnen …“",
-      "company": "Becker Sanierung",
-      "client": "Für Laura Becker",
-      "date": "4. November"
-    },
-    "approval": {
-      "title": "Braucht Ihre Aufmerksamkeit",
-      "summary": "Laura Becker die Antwort mit dem Angebot über 2.480 € senden und sie in Ihren Kunden speichern",
-      "reject": "Ablehnen",
-      "approve": "Freigeben",
-      "note": "Möchten Sie etwas ändern? Sagen Sie es vor der Freigabe im Chat: „Biete ihr den Start am 10. an.“",
-      "items": [
-        "Antwort an Laura Becker",
-        "Angebot · Badsanierung (PDF)",
-        "Neue Kundenkarte"
-      ]
-    },
-    "next": {
-      "sent": "Antwort mit Angebot an Laura Becker gesendet",
-      "logged": "Laura Becker in Ihren Kunden gespeichert",
-      "followUp": "Laura Becker anrufen, falls sie nicht geantwortet hat",
-      "followUpDate": "Donnerstag, 10:00 · in Ihrem Kalender",
-      "alert": "Sobald sie antwortet, sehen Sie es in Ihrem Departify-Posteingang.",
-      "day": "Do",
-      "dayNumber": "6"
-    }
+    "note": "In allen Tarifen enthalten."
+  },
+  "tools": {
+    "title": "Verbinden Sie, was Sie schon nutzen",
+    "body": "E-Mail, Kalender, Social Media und Shop bleiben, wo sie sind. Departify arbeitet damit.",
+    "note": "Manche Verbindungen erlauben nur das Lesen von Daten, keine Änderungen.",
+    "pause": "Liste der Tools anhalten",
+    "play": "Liste der Tools fortsetzen"
+  },
+  "tour": {
+    "title": "So läuft Ihr Betrieb, wenn Sie nicht mehr alles selbst machen müssen.",
+    "lede": "Sie beauftragen Ihr Team in eigenen Worten, prüfen das Wichtige und sehen an einem Ort, was schon erledigt ist.",
+    "example": "Echter Screenshot des Portals · Beispieldaten",
+    "stepsLabel": "So funktioniert’s",
+    "steps": [
+      {
+        "title": "Sagen Sie, was Sie brauchen",
+        "body": "Schreiben Sie im Chat wie mit einem Menschen. Ihr Team nutzt Ihre Preise, Ihren Kalender und Ihren Tonfall.",
+        "alt": "Chat im Portal: Die Inhaberin bittet um eine Antwort an eine Kundin, das Team bereitet sie vor"
+      },
+      {
+        "title": "Sie geben das Wichtige frei",
+        "body": "E-Mails, Beiträge und neue Kunden warten unter Freigaben. Nichts geht ohne Ihr OK raus.",
+        "alt": "Freigaben im Portal mit drei offenen Vorschlägen"
+      },
+      {
+        "title": "Sie sehen, was erledigt ist",
+        "body": "Die Startseite zeigt, was auf Ihre Entscheidung wartet und was Ihr Team schon abgeschlossen hat.",
+        "alt": "Startseite des Portals mit den offenen Entscheidungen des Tages"
+      }
+    ]
   },
   "connected": {
     "title": "Vorher: viele Tools und Sie mittendrin. Jetzt: alles arbeitet zusammen.",
@@ -289,19 +159,6 @@
         "link": "Aktuell läuft er im Testmodus: Sie können ihn einrichten und Bestellungen testen, echte Zahlungen nimmt er noch nicht an."
       }
     ],
-    "connectTitle": "Verbinden Sie, was Sie schon nutzen",
-    "connectBody": "E-Mail, Kalender und Dokumente bleiben, wo sie sind. Departify arbeitet damit.",
-    "connectors": [
-      "Gmail",
-      "Outlook",
-      "Google Calendar",
-      "Google Drive",
-      "Facebook",
-      "Shopify",
-      "WordPress",
-      "Google Analytics"
-    ],
-    "connectNote": "Manche Verbindungen erlauben nur das Lesen von Daten, keine Änderungen.",
     "beforeNodes": [
       "Kundenliste",
       "Rechnungen",
@@ -446,7 +303,7 @@
         "for": "Für Inhaber, die beginnen, die tägliche Arbeit abzugeben.",
         "summary": "Ausgelegt auf etwa 100 Aufgaben im Monat.",
         "points": [
-          "Kunden, Vertrieb, Verwaltung und Rechnungen an einem Ort",
+          "CRM, ERP und Social-Media-Beiträge inklusive",
           "Das ganze digitale Team, mit Ihren Freigaben",
           "1 verbundenes E-Mail-Konto",
           "Hilfe per E-Mail"
@@ -471,6 +328,17 @@
           "Bis zu 10 verbundene E-Mail-Konten",
           "Eine Einrichtungssitzung mit unserem Team"
         ]
+      },
+      "empresa": {
+        "name": "Unternehmen",
+        "for": "Für Betriebe mit 20 oder mehr Personen oder besonderen Anforderungen.",
+        "summary": "Arbeitsvolumen passend zu Ihrem Betrieb.",
+        "points": [
+          "Alles aus Wachstum",
+          "Mehr E-Mail-Konten und Kanäle",
+          "Einrichtung und Begleitung durch unser Team",
+          "Individuelle Konditionen und Abrechnung"
+        ]
       }
     },
     "compareTitle": "Tarife im Detail vergleichen",
@@ -480,12 +348,14 @@
         "values": [
           "Etwa 100 Aufgaben",
           "Etwa 400 Aufgaben",
-          "Etwa 1.200 Aufgaben"
+          "Etwa 1.200 Aufgaben",
+          "Individuell"
         ]
       },
       {
-        "label": "Kunden, Vertrieb, Verwaltung, Rechnungen und Kanäle",
+        "label": "CRM, ERP und Social-Media-Beiträge inklusive",
         "values": [
+          "Enthalten",
           "Enthalten",
           "Enthalten",
           "Enthalten"
@@ -496,6 +366,7 @@
         "values": [
           "Enthalten",
           "Enthalten",
+          "Enthalten",
           "Enthalten"
         ]
       },
@@ -504,7 +375,8 @@
         "values": [
           "1",
           "Bis zu 3",
-          "Bis zu 10"
+          "Bis zu 10",
+          "Individuell"
         ]
       },
       {
@@ -512,7 +384,8 @@
         "values": [
           "Per E-Mail",
           "Bevorzugt per E-Mail",
-          "Bevorzugt und Einrichtungssitzung"
+          "Bevorzugt und Einrichtungssitzung",
+          "Persönliche Betreuung"
         ]
       }
     ],
@@ -521,7 +394,10 @@
     "billingTitle": "Abrechnung",
     "billingBody": "Monatliche Preise zzgl. MwSt. Vor der ersten Abbuchung bestätigen wir Ihnen Tarif und Bedingungen schriftlich.",
     "extrasTitle": "Kosten anderer Anbieter",
-    "extrasBody": "Bilder oder Videos entstehen über Ihr eigenes Konto bei einem Anbieter wie Google oder OpenAI, der Ihnen das gesondert berechnet. Dasselbe gilt für Anzeigen, die Sie bezahlen."
+    "extrasBody": "Bilder oder Videos entstehen über Ihr eigenes Konto bei einem Anbieter wie Google oder OpenAI, der Ihnen das gesondert berechnet. Dasselbe gilt für Anzeigen, die Sie bezahlen.",
+    "customPrice": "Individuell",
+    "customNote": "Wir erstellen Ihnen ein Angebot",
+    "customCta": "Sprechen wir"
   },
   "faq": {
     "title": "Gut zu wissen, bevor Sie starten.",
@@ -544,7 +420,7 @@
       },
       {
         "q": "Was ist im Preis enthalten?",
-        "a": "Die Tools für Ihren Betrieb, das komplette digitale Team und das Arbeitsvolumen Ihres Tarifs. Nicht enthalten ist, was andere Anbieter Ihnen berechnen, etwa Bilder und Videos über Ihr eigenes Konto oder bezahlte Anzeigen. Vorerst ist jedes Konto für eine Person gedacht: Zugang für weitere Personen aus Ihrem Team gibt es noch nicht."
+        "a": "Die Tools für Ihren Betrieb (CRM, ERP, Social-Media-Beiträge, Aufgaben und Kalender), das komplette digitale Team und das Arbeitsvolumen Ihres Tarifs, ohne zusätzliche Tools. Nicht enthalten ist, was andere Anbieter Ihnen berechnen, etwa Bilder und Videos über Ihr eigenes Konto oder bezahlte Anzeigen. Vorerst ist jedes Konto für eine Person gedacht: Zugang für weitere Personen aus Ihrem Team gibt es noch nicht."
       },
       {
         "q": "Wie fange ich an und was passiert, wenn ich aufhöre?",

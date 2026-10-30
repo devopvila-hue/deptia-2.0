@@ -12,10 +12,6 @@ export type ConnectedCopy = {
   afterYou: string;
   afterBody: string;
   blocks: Block[];
-  connectTitle: string;
-  connectBody: string;
-  connectors: string[];
-  connectNote: string;
 };
 
 // 3×3 grid; cell centres in percent of the diagram box.
@@ -29,7 +25,7 @@ function Lines({ points, accent }: { points: { x: number; y: number }[]; accent?
   return (
     <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
       {points.map((p, i) => (
-        <line key={i} x1={CENTER.x} y1={CENTER.y} x2={p.x} y2={p.y} stroke="rgb(var(--line2))" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+        <line key={i} x1={CENTER.x} y1={CENTER.y} x2={p.x} y2={p.y} stroke="var(--line2)" strokeWidth="1" vectorEffect="non-scaling-stroke" />
       ))}
       {accent && (
         <line x1={CENTER.x} y1={CENTER.y} x2={accent.x} y2={accent.y} stroke="rgb(var(--accenttext))" strokeWidth="1.5" vectorEffect="non-scaling-stroke" />
@@ -46,7 +42,7 @@ function Node({ children, className = "", strong = false }: { children: React.Re
     <div className={`relative z-10 flex items-center justify-center ${className}`}>
       <span
         className={`max-w-full rounded-lg border px-2.5 py-1.5 text-center text-[0.75rem] leading-tight sm:text-[0.8125rem] ${
-          strong ? "border-ink bg-ink font-semibold text-bg" : "border-line bg-bg text-ink2"
+          strong ? "border-ink bg-ink font-semibold text-bg" : "border-line bg-surface text-ink2"
         }`}
       >
         {children}
@@ -57,7 +53,7 @@ function Node({ children, className = "", strong = false }: { children: React.Re
 
 export function Connected({ copy }: { copy: ConnectedCopy }) {
   return (
-    <section id="que-incluye" aria-labelledby="connected-title" className="scroll-mt-14 border-t border-line py-24 sm:py-32">
+    <section id="que-incluye" aria-labelledby="connected-title" className="scroll-mt-14 py-24 sm:py-32">
       <div className="wrap">
         <div className="max-w-[46rem]" data-reveal>
           <h2 id="connected-title" className="t-section">{copy.title}</h2>
@@ -65,7 +61,7 @@ export function Connected({ copy }: { copy: ConnectedCopy }) {
         </div>
 
         <div className="mt-14 grid gap-4 md:grid-cols-2" data-reveal>
-          <figure className="rounded-[20px] bg-bg2 p-5 sm:p-8">
+          <figure className="rounded-[24px] border border-line bg-bg2 p-5 sm:p-8">
             <figcaption className="text-[0.8125rem] font-semibold text-ink3">{copy.beforeLabel}</figcaption>
             <div className="relative mt-6 grid aspect-[4/3] grid-cols-3 grid-rows-3">
               <Lines points={BEFORE} />
@@ -81,7 +77,7 @@ export function Connected({ copy }: { copy: ConnectedCopy }) {
             <p className="mt-6 text-center text-[0.875rem] text-ink2">{copy.beforeYou}</p>
           </figure>
 
-          <figure className="rounded-[20px] border border-line bg-bg p-5 sm:p-8" style={{ boxShadow: "var(--shadow-card)" }}>
+          <figure className="panel p-5 sm:p-8">
             <figcaption className="text-[0.8125rem] font-semibold text-ink3">{copy.afterLabel}</figcaption>
             <div className="relative mt-6 grid aspect-[4/3] grid-cols-3 grid-rows-3">
               <Lines points={AFTER} accent={TOP} />
@@ -94,7 +90,7 @@ export function Connected({ copy }: { copy: ConnectedCopy }) {
                 <Node key={n} className={placeAfter[i]}>{n}</Node>
               ))}
               <div className="relative z-10 col-start-2 row-start-2 flex items-center justify-center">
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-line bg-bg" style={{ boxShadow: "var(--shadow-card)" }}>
+                <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-line bg-surface" style={{ boxShadow: "var(--rim), var(--shadow-card)" }}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/favicon.svg" alt="Departify" width={28} height={28} />
                 </span>
@@ -104,9 +100,9 @@ export function Connected({ copy }: { copy: ConnectedCopy }) {
           </figure>
         </div>
 
-        <div className="mt-20 grid gap-x-16 md:grid-cols-2">
+        <div className="mt-6 grid gap-4 md:grid-cols-2">
           {copy.blocks.map((b) => (
-            <article key={b.title} className="border-t border-line py-9" data-reveal>
+            <article key={b.title} className="panel p-6 sm:p-8" data-reveal>
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <h3 className="t-title">{b.title}</h3>
                 {b.badge && <span className="text-[0.75rem] font-medium uppercase tracking-[0.08em] text-attn">{b.badge}</span>}
@@ -125,20 +121,6 @@ export function Connected({ copy }: { copy: ConnectedCopy }) {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-6 border-t border-line pt-9 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]" data-reveal>
-          <div>
-            <h3 className="t-title">{copy.connectTitle}</h3>
-            <p className="t-body mt-2 max-w-[28rem]">{copy.connectBody}</p>
-          </div>
-          <div>
-            <ul className="flex flex-wrap gap-x-6 gap-y-3 text-[1rem] font-medium tracking-[-0.01em] text-ink">
-              {copy.connectors.map((c) => (
-                <li key={c}>{c}</li>
-              ))}
-            </ul>
-            <p className="t-small mt-4">{copy.connectNote}</p>
-          </div>
-        </div>
       </div>
     </section>
   );

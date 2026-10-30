@@ -5,7 +5,9 @@ import { links } from "@/config/links";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Hero } from "@/components/hero";
-import { Scene } from "@/components/scene";
+import { Tour } from "@/components/tour";
+import { Included } from "@/components/included";
+import { ConnectorsMarquee } from "@/components/connectors-marquee";
 import { Connected } from "@/components/connected";
 import { Team } from "@/components/team";
 import { Control } from "@/components/control";
@@ -45,6 +47,8 @@ export default async function Page({ params: { locale } }: { params: { locale: s
   if (!isLocale(locale)) return null;
   setRequestLocale(locale);
   const m = (await getMessages({ locale })) as unknown as Messages;
+  // The portal itself ships in Spanish, English and Romanian; other pages show the English UI.
+  const shotLang = locale === "es" || locale === "ro" ? locale : "en";
 
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -59,12 +63,14 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       </a>
       <SiteHeader homeHref={locale === "es" ? "/" : `/${locale}`} labels={m.nav} />
       <main id="main">
-        <Hero copy={m.hero} />
-        <Scene copy={m.scene} />
+        <Hero copy={m.hero} shotLang={shotLang} />
+        <Included copy={m.included} />
+        <ConnectorsMarquee copy={m.tools} />
+        <Tour copy={m.tour} lang={shotLang} />
         <Connected copy={m.connected} />
         <Team copy={m.team} />
         <Control copy={m.control} />
-        <Pricing copy={m.pricing} locale={localeMeta[locale].bcp47} />
+        <Pricing copy={m.pricing} locale={localeMeta[locale].bcp47} site={locale} />
         <Faq copy={m.faq} />
         <Closing copy={m.closing} />
       </main>

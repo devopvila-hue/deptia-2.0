@@ -17,221 +17,91 @@
     "themeLight": "Activer le mode clair"
   },
   "hero": {
-    "audience": "Pour les entreprises de 1 à 15 personnes",
+    "audience": "CRM, ERP et réseaux inclus",
     "title": "Votre entreprise ne devrait pas dépendre de vous pour tout.",
     "subtitle": "Réunissez vos clients, vos ventes et votre gestion au même endroit, avec une équipe d'employés numériques qui vous aide à faire avancer le travail.",
+    "forWhom": "Que vous gériez votre entreprise seul ou une équipe de 20 personnes : tout sous contrôle, sans vous épuiser.",
     "price": "À partir de 49 €/mois",
     "priceNote": "HT",
     "cta": "Créer mon compte",
     "secondary": "Voir comment ça marche",
     "reassurance": "Aucun e-mail ni aucune publication ne part sans votre accord.",
-    "panel": {
-      "greeting": "Bonjour, Sophie.",
-      "summary": "2 décisions vous attendent. Votre équipe a terminé 4 tâches ce matin.",
-      "decisionsTitle": "À traiter",
-      "runningTitle": "En cours",
-      "doneTitle": "Fait aujourd'hui",
-      "review": "Voir la proposition",
-      "approve": "Valider",
-      "decisions": [
-        {
-          "title": "Envoyer la proposition à Claire Martin",
-          "meta": "Rénovation de salle de bains · 2 480 €",
-          "by": "Ventes"
-        },
-        {
-          "title": "Publier l'offre de vendredi sur Facebook",
-          "meta": "Texte et image prêts",
-          "by": "Marketing"
-        }
-      ],
-      "inProgress": [
-        {
-          "title": "Trier les demandes de la semaine",
-          "by": "Service client"
-        },
-        {
-          "title": "Relancer 3 devis sans réponse",
-          "by": "Administration"
-        },
-        {
-          "title": "Analyser votre site pour mieux apparaître sur Google",
-          "by": "SEO"
-        }
-      ],
-      "done": [
-        {
-          "title": "14 e-mails triés par priorité",
-          "by": "Service client",
-          "time": "8 h 14"
-        },
-        {
-          "title": "Visite chez Paul Girard ajoutée à votre agenda",
-          "by": "Administration",
-          "time": "9 h 02"
-        },
-        {
-          "title": "Proposition en PDF pour Claire Martin",
-          "by": "Ventes",
-          "time": "9 h 40"
-        },
-        {
-          "title": "Idées de contenu pour deux semaines",
-          "by": "Marketing",
-          "time": "10 h 15"
-        }
-      ],
-      "url": "app.departify.app",
-      "company": "Martin Rénovation",
-      "user": "Sophie Martin",
-      "navItems": [
-        "Accueil",
-        "Chat",
-        "Tâches",
-        "Validations",
-        "Agenda",
-        "Clients",
-        "Facturation"
-      ],
-      "requestWork": "Confier",
-      "date": "Mardi 4 novembre",
-      "example": "Exemple"
+    "showcase": {
+      "label": "Exemples par type d’entreprise",
+      "example": "Capture réelle du portail · données d’exemple",
+      "shotAlt": "Accueil du portail Departify pour {sector}, avec des données d’exemple",
+      "pause": "Mettre les exemples en pause",
+      "play": "Reprendre les exemples",
+      "sectors": {
+        "clinic": "Cabinet de santé",
+        "shop": "Boutique en ligne",
+        "advisory": "Cabinet comptable",
+        "agency": "Agence",
+        "academy": "École",
+        "service": "Dépannage"
+      }
     }
   },
-  "scene": {
-    "title": "Voici comment avance votre entreprise quand vous n'avez plus à tout faire.",
-    "lede": "Une demande qui se termine par une proposition envoyée et une relance dans votre agenda. Vous n'intervenez qu'à une étape : celle qui compte.",
-    "example": "Exemple avec des données fictives",
-    "stepsLabel": "Étapes de l'exemple",
-    "departify": "Departify",
-    "you": "Vous",
-    "actorTeam": "Votre équipe numérique s'en charge",
-    "actorYou": "C'est vous qui décidez",
-    "steps": [
+  "included": {
+    "title": "Tout ce qu’il vous faut, inclus.",
+    "lede": "CRM, ERP et publication sur les réseaux dans Departify, avec votre équipe numérique qui travaille dessus. Aucun outil à payer en plus : vous importez vos données et vous êtes prêt.",
+    "items": [
       {
-        "title": "Une demande arrive",
-        "does": "Lit l'e-mail dans votre boîte, voit qu'il s'agit d'un client potentiel et le place en tête.",
-        "you": "Rien. Vous n'avez pas à surveiller votre messagerie."
+        "name": "CRM",
+        "desc": "Clients, opportunités et relances bien organisés."
       },
       {
-        "title": "Les informations du client sont rassemblées",
-        "does": "Regroupe dans une fiche ses coordonnées et sa demande, prête à être enregistrée dans vos clients.",
-        "you": "Rien pour l'instant. La fiche est enregistrée quand vous validez."
+        "name": "ERP",
+        "desc": "Devis, factures, achats et stocks."
       },
       {
-        "title": "La proposition est préparée",
-        "does": "Rédige la réponse et prépare la proposition en PDF avec vos prestations et vos tarifs.",
-        "you": "Rien. Elle s'appuie sur les informations de votre entreprise."
+        "name": "Publication sur les réseaux",
+        "desc": "Créez, programmez et publiez sur votre page Facebook."
       },
       {
-        "title": "Vous relisez et validez",
-        "does": "Dépose tout dans Validations : la réponse, la proposition et la fiche client.",
-        "you": "Vous relisez. Pour un changement, vous le demandez dans le chat. Puis vous validez ou refusez."
+        "name": "Chat avec votre équipe",
+        "desc": "Confiez le travail avec vos mots."
       },
       {
-        "title": "L'étape suivante est enregistrée",
-        "does": "Envoie la réponse, enregistre le client et ajoute la relance à votre agenda.",
-        "you": "Vous voyez sur l'Accueil ce qui est fait et ce qui reste à faire."
+        "name": "Tâches et agenda",
+        "desc": "Tâches, rendez-vous et rappels reliés à votre agenda."
+      },
+      {
+        "name": "Boutique en ligne",
+        "desc": "Catalogue et commandes reliés à vos stocks (en test)."
       }
     ],
-    "mail": {
-      "from": "Claire Martin",
-      "received": "Aujourd'hui, 8 h 12",
-      "tag": "Client potentiel",
-      "subject": "Devis pour rénover une salle de bains",
-      "body": "Bonjour, nous voudrions rénover notre salle de bains, environ 6 m². Pourriez-vous nous envoyer un devis et nous dire quand vous pourriez commencer ? Merci.",
-      "to": "À : Martin Rénovation",
-      "inbox": "Boîte de réception",
-      "others": [
-        {
-          "from": "Carrelages du Rhône",
-          "subject": "Facture d'octobre",
-          "time": "7 h 55"
-        },
-        {
-          "from": "Mairie de Lyon",
-          "subject": "Autorisation de travaux : décision",
-          "time": "Hier"
-        },
-        {
-          "from": "Paul Girard",
-          "subject": "Je confirme la visite de jeudi",
-          "time": "Hier"
-        }
-      ]
-    },
-    "contact": {
-      "name": "Claire Martin",
-      "company": "Particulier · Lyon",
-      "stage": "À enregistrer",
-      "fields": [
-        {
-          "label": "E-mail",
-          "value": "claire.martin@exemple.fr"
-        },
-        {
-          "label": "Téléphone",
-          "value": "06 12 34 56 78"
-        },
-        {
-          "label": "Besoin",
-          "value": "Rénovation de salle de bains, 6 m²"
-        },
-        {
-          "label": "Origine",
-          "value": "E-mail, aujourd'hui"
-        }
-      ]
-    },
-    "quote": {
-      "title": "Proposition · Rénovation de salle de bains",
-      "draft": "Brouillon",
-      "lines": [
-        {
-          "item": "Démolition et évacuation",
-          "amount": "520 €"
-        },
-        {
-          "item": "Plomberie et évacuations",
-          "amount": "690 €"
-        },
-        {
-          "item": "Carrelage et sol",
-          "amount": "870 €"
-        },
-        {
-          "item": "Sanitaires et robinetterie",
-          "amount": "400 €"
-        }
-      ],
-      "total": "Total HT",
-      "totalValue": "2 480 €",
-      "reply": "« Bonjour Claire, merci pour votre message. Vous trouverez ci-joint notre proposition pour la rénovation de votre salle de bains. Nous pourrions commencer la semaine du 17… »",
-      "company": "Martin Rénovation",
-      "client": "Pour Claire Martin",
-      "date": "4 novembre"
-    },
-    "approval": {
-      "title": "À traiter",
-      "summary": "Envoyer à Claire Martin la réponse avec la proposition de 2 480 € et l'enregistrer dans vos clients",
-      "reject": "Refuser",
-      "approve": "Valider",
-      "note": "Un détail à changer ? Dites-le dans le chat avant de valider : « Propose-lui de commencer le 10 ».",
-      "items": [
-        "Réponse à Claire Martin",
-        "Proposition · Salle de bains (PDF)",
-        "Nouvelle fiche client"
-      ]
-    },
-    "next": {
-      "sent": "Réponse envoyée à Claire Martin avec la proposition",
-      "logged": "Claire Martin enregistrée dans vos clients",
-      "followUp": "Appeler Claire Martin si elle n'a pas répondu",
-      "followUpDate": "Jeudi, 10 h 00 · dans votre agenda",
-      "alert": "Quand elle répondra, vous le verrez dans votre boîte de réception Departify.",
-      "day": "Jeu",
-      "dayNumber": "6"
-    }
+    "note": "Inclus dans toutes les offres."
+  },
+  "tools": {
+    "title": "Connectez ce que vous utilisez déjà",
+    "body": "Votre messagerie, votre agenda, vos réseaux et votre boutique restent où ils sont. Departify travaille avec eux.",
+    "note": "Certaines connexions permettent seulement de consulter des données, pas de les modifier.",
+    "pause": "Mettre la liste des outils en pause",
+    "play": "Reprendre la liste des outils"
+  },
+  "tour": {
+    "title": "Voici comment avance votre entreprise quand vous n'avez plus à tout faire.",
+    "lede": "Vous confiez le travail à votre équipe avec vos mots, vous validez l’essentiel et vous voyez au même endroit ce qui est déjà fait.",
+    "example": "Capture réelle du portail · données d’exemple",
+    "stepsLabel": "Comment ça marche",
+    "steps": [
+      {
+        "title": "Demandez ce dont vous avez besoin",
+        "body": "Écrivez dans le chat comme à une personne. Votre équipe utilise vos tarifs, votre agenda et votre ton.",
+        "alt": "Chat du portail : le dirigeant demande une réponse pour une cliente et l’équipe la prépare"
+      },
+      {
+        "title": "Vous validez l’essentiel",
+        "body": "E-mails, publications et nouveaux clients attendent dans Validations. Rien ne part sans votre accord.",
+        "alt": "Écran Validations du portail avec trois propositions en attente"
+      },
+      {
+        "title": "Vous voyez ce qui est fait",
+        "body": "L’Accueil montre ce qui attend votre décision et ce que votre équipe a déjà terminé.",
+        "alt": "Accueil du portail avec les décisions du jour"
+      }
+    ]
   },
   "connected": {
     "title": "Avant : plusieurs outils et vous au milieu. Maintenant : tout fonctionne ensemble.",
@@ -289,19 +159,6 @@
         "link": "Elle fonctionne aujourd'hui en mode test : vous pouvez la créer et tester des commandes, mais elle n'encaisse pas encore de vrais paiements."
       }
     ],
-    "connectTitle": "Connectez ce que vous utilisez déjà",
-    "connectBody": "Votre messagerie, votre agenda et vos documents restent où ils sont. Departify travaille avec eux.",
-    "connectors": [
-      "Gmail",
-      "Outlook",
-      "Google Calendar",
-      "Google Drive",
-      "Facebook",
-      "Shopify",
-      "WordPress",
-      "Google Analytics"
-    ],
-    "connectNote": "Certaines connexions permettent seulement de consulter des données, pas de les modifier.",
     "beforeNodes": [
       "Tableur clients",
       "Factures",
@@ -446,14 +303,14 @@
         "for": "Pour le dirigeant qui commence à déléguer le travail de tous les jours.",
         "summary": "Prévu pour environ 100 tâches par mois.",
         "points": [
-          "Clients, ventes, gestion et facturation au même endroit",
+          "CRM, ERP et publication sur les réseaux inclus",
           "Toute l'équipe numérique, avec vos validations",
           "1 compte e-mail connecté",
           "Aide par e-mail"
         ]
       },
       "negocio": {
-        "name": "Entreprise",
+        "name": "Activité",
         "for": "Pour une activité quotidienne dans plusieurs domaines.",
         "summary": "Prévu pour environ 400 tâches par mois.",
         "points": [
@@ -467,9 +324,20 @@
         "for": "Pour plus de volume de travail et plus de canaux.",
         "summary": "Prévu pour environ 1 200 tâches par mois.",
         "points": [
-          "Tout ce qui est inclus dans Entreprise",
+          "Tout ce qui est inclus dans Activité",
           "Jusqu'à 10 comptes e-mail connectés",
           "Une séance de mise en route avec notre équipe"
+        ]
+      },
+      "empresa": {
+        "name": "Entreprise",
+        "for": "Pour les entreprises de 20 personnes ou plus, ou aux besoins spécifiques.",
+        "summary": "Volume de travail adapté à votre activité.",
+        "points": [
+          "Tout ce qui est inclus dans Croissance",
+          "Plus de comptes e-mail et de canaux",
+          "Mise en route et suivi avec notre équipe",
+          "Conditions et facturation sur mesure"
         ]
       }
     },
@@ -480,12 +348,14 @@
         "values": [
           "Environ 100 tâches",
           "Environ 400 tâches",
-          "Environ 1 200 tâches"
+          "Environ 1 200 tâches",
+          "Sur mesure"
         ]
       },
       {
-        "label": "Clients, ventes, gestion, facturation et canaux",
+        "label": "CRM, ERP et publication sur les réseaux inclus",
         "values": [
+          "Inclus",
           "Inclus",
           "Inclus",
           "Inclus"
@@ -496,6 +366,7 @@
         "values": [
           "Incluse",
           "Incluse",
+          "Incluse",
           "Incluse"
         ]
       },
@@ -504,7 +375,8 @@
         "values": [
           "1",
           "Jusqu'à 3",
-          "Jusqu'à 10"
+          "Jusqu'à 10",
+          "Sur mesure"
         ]
       },
       {
@@ -512,7 +384,8 @@
         "values": [
           "Par e-mail",
           "Prioritaire par e-mail",
-          "Prioritaire et séance de mise en route"
+          "Prioritaire et séance de mise en route",
+          "Accompagnement dédié"
         ]
       }
     ],
@@ -521,7 +394,10 @@
     "billingTitle": "Facturation",
     "billingBody": "Prix mensuels hors taxes. Avant le premier prélèvement, nous vous confirmons par écrit l'offre et ses conditions.",
     "extrasTitle": "Coûts d'autres fournisseurs",
-    "extrasBody": "La création d'images ou de vidéos utilise votre propre compte chez un fournisseur, comme Google ou OpenAI, qui vous facture à part. Il en va de même pour les publicités que vous décidez de payer."
+    "extrasBody": "La création d'images ou de vidéos utilise votre propre compte chez un fournisseur, comme Google ou OpenAI, qui vous facture à part. Il en va de même pour les publicités que vous décidez de payer.",
+    "customPrice": "Sur mesure",
+    "customNote": "Nous vous préparons une proposition",
+    "customCta": "Parlons-en"
   },
   "faq": {
     "title": "Ce qu'il faut savoir avant de commencer.",
@@ -544,7 +420,7 @@
       },
       {
         "q": "Que comprend le prix ?",
-        "a": "Les outils de gestion, l'équipe numérique complète et le volume de travail de votre offre. Il ne comprend pas ce que vous facturent d'autres fournisseurs, comme les images et vidéos créées avec votre compte ou les publicités que vous payez. Pour l'instant, chaque compte est destiné à une seule personne : l'accès pour d'autres membres de votre équipe n'est pas encore disponible."
+        "a": "Les outils de gestion (CRM, ERP, publication sur les réseaux, tâches et agenda), l’équipe numérique complète et le volume de travail de votre offre, sans outil à payer en plus. Il ne comprend pas ce que vous facturent d’autres fournisseurs, comme les images et vidéos créées avec votre compte ou les publicités que vous payez. Pour l’instant, chaque compte est destiné à une seule personne : l’accès pour d’autres membres de votre équipe n’est pas encore disponible."
       },
       {
         "q": "Comment commencer, et que se passe-t-il si j'arrête ?",

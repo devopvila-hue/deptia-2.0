@@ -48,15 +48,15 @@ test("public copy avoids unverified or banned claims", () => {
       for (const re of banned) assert.ok(!re.test(String(v)), `${l}:${k} matches ${re}`);
 });
 
-test("plans keep the 49 € entry point and three tiers", async () => {
+test("plans keep the 49 € entry point, three priced tiers and a custom one", async () => {
   const src = readFileSync(new URL("../../src/config/plans.ts", import.meta.url), "utf8");
   assert.match(src, /id: "esencial", price: 49/);
-  for (const l of locales) assert.equal(Object.keys(messages[l].pricing.plans).length, 3);
+  for (const l of locales) assert.equal(Object.keys(messages[l].pricing.plans).length, 4);
 });
 
 test("example scenes are labelled as examples in every locale", () => {
   for (const l of locales) {
-    assert.ok(messages[l].hero.panel.example.length > 0);
-    assert.ok(messages[l].scene.example.length > 0);
+    assert.ok(messages[l].hero.showcase.example.length > 0);
+    assert.ok(messages[l].tour.example.length > 0);
   }
 });

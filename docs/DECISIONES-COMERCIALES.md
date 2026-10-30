@@ -31,7 +31,17 @@ La sustitución de herramientas sueltas (publicación en redes, tienda, gestor d
 - Prueba gratuita, «sin tarjeta», descuentos, testimonios, logos de clientes, cifras de ahorro y certificaciones.
 - Vocabulario técnico (agentes, LLM, orquestación, ecosistema, «potenciado por IA»). Un test lo vigila en los siete idiomas.
 
-## Diseño (v2, 2026-10-30)
+## Diseño v3 (2026-10-30, tras la revisión del operador)
+
+- **Público abierto.** Fuera «de 1 a 15 personas» y fuera el ejemplo único de reformas. La primera pantalla enseña seis tipos de negocio (clínica, tienda online, asesoría, agencia, academia y servicio técnico) y dice: «Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas».
+- **Todo incluido, explícito.** Etiqueta «CRM, ERP y redes incluidos» y sección «Todo lo que necesitas, incluido» justo después de la portada: CRM, ERP, publicación en redes, chat, tareas y agenda, y tienda en pruebas. Mensaje: sin pagar herramientas sueltas, importas tus datos y a trabajar.
+- **Producto real.** Todas las imágenes de producto son capturas del portal en Glass White (claro) y Glass (oscuro): Inicio por sector, Chat y Aprobaciones, en es/en/ro. Las páginas en francés, alemán, italiano y húngaro muestran el portal en inglés, porque es como lo verá ese cliente.
+- **Lenguaje visual del portal.** Gris #f6f6f6 con luz blanca, tarjetas blancas sólidas con filo y sombra suave, acento negro (blanco en oscuro) y tipografía Geist, la del portal.
+- **Se recupera la cinta de herramientas** de la web anterior, con pausa y estática si se pide menos movimiento, y con los 21 conectores reales del catálogo (los de la web anterior incluían herramientas que no se conectan).
+- **Se conserva** el diagrama antes/después que el operador aprobó.
+- **Cuarto plan «Empresa»**, a medida, con «Hablemos».
+
+## Diseño v2 (2026-10-30, descartado)
 
 La primera versión se descartó porque parecía una plantilla: etiquetas de color sobre cada título, píldoras, iconos en círculos, listas con ✓, cajas de color y un panel de producto esquemático. La v2:
 

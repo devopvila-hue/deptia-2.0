@@ -10,6 +10,8 @@ export const links = {
 // Legal pages still live on the current site (localized slugs copied from its
 // routing registry). Migrating them is a prerequisite before this version
 // replaces departify.app.
+export const contactSlugs = { es: "/contacto", en: "/contact", fr: "/contact", de: "/kontakt", it: "/contatto", ro: "/contact", hu: "/kapcsolat" } as const;
+
 export const legalSlugs = {
   privacy: { es: "/privacidad", en: "/privacy", fr: "/confidentialite", de: "/datenschutz", it: "/privacy", ro: "/confidentialitate", hu: "/adatvedelem" },
   cookies: { es: "/cookies", en: "/cookies", fr: "/cookies", de: "/cookies", it: "/cookie", ro: "/cookieuri", hu: "/cookie-k" },

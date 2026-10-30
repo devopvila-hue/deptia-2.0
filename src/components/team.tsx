@@ -21,7 +21,7 @@ function Row({ m, copy }: { m: TeamMember; copy: TeamCopy }) {
   return (
     <li className={`grid gap-4 border-t border-line py-7 lg:gap-8 ${cols}`}>
       <div className="flex items-start gap-3.5">
-        <span aria-hidden="true" className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line bg-bg2 text-[0.875rem] font-semibold">
+        <span aria-hidden="true" className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line bg-bg text-[0.875rem] font-semibold">
           {(m.name || m.area).slice(0, 1)}
         </span>
         <div>
@@ -52,7 +52,7 @@ function Row({ m, copy }: { m: TeamMember; copy: TeamCopy }) {
 
 export function Team({ copy }: { copy: TeamCopy }) {
   return (
-    <section aria-labelledby="team-title" className="border-t border-line bg-bg2 py-24 sm:py-32">
+    <section aria-labelledby="team-title" className="py-24 sm:py-32">
       <div className="wrap">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] lg:items-end" data-reveal>
           <div>
@@ -65,7 +65,7 @@ export function Team({ copy }: { copy: TeamCopy }) {
           </aside>
         </div>
 
-        <div className="mt-14" data-reveal>
+        <div className="panel mt-14 px-5 pb-2 pt-5 sm:px-8 sm:pt-7" data-reveal>
           <div className={`hidden gap-8 pb-3 text-[0.8125rem] text-ink3 lg:grid ${cols}`} aria-hidden="true">
             <span>{copy.areaLabel}</span>
             <span>{copy.doesLabel}</span>
@@ -90,7 +90,6 @@ export function Team({ copy }: { copy: TeamCopy }) {
               ))}
             </ul>
           </details>
-          <div className="border-t border-line" />
         </div>
       </div>
     </section>

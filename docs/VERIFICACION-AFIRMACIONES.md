@@ -29,6 +29,16 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 | Una persona por cuenta; sin invitaciones | VERIFICADO | `apps/portal/src/i18n/locales/es/connections.json:288` |
 | Solicitar la eliminación de datos | VERIFICADO | `/en/data-deletion` en `router.tsx:131` |
 
+## Añadido en la v3 (2026-10-30)
+
+| Afirmación | Veredicto | Evidencia o condición |
+|---|---|---|
+| «CRM, ERP y redes incluidos» en todos los planes | CONDICIONADO | CRM y ERP existen y se abren en el portal, pero dependen del aprovisionamiento por empresa (`crm-workspace-gateway.ts:40-52`, `product-catalog.ts:84-97`). Redes = Facebook Pages (`studio-channel-capabilities.ts:4-15`) |
+| «Importas tus datos y a trabajar», «sin pagar herramientas sueltas» | PENDIENTE | Petición del operador. Falta verificar la importación de clientes en el CRM y de artículos/facturas en el ERP (repos `departify-crm` y `departify-erp`, no accesibles en esta sesión) |
+| «Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas» | CONDICIONADO | Habla del tamaño del negocio. Hoy cada cuenta es para una persona y no hay invitaciones (`connections.json:288`); la FAQ lo dice |
+| Plan Empresa «A medida» con «Hablemos» | PENDIENTE | Compromisos comerciales (volumen, acompañamiento, facturación a medida) a confirmar por el operador. El botón abre la página de contacto actual (`/contacto?plan=empresa`) |
+| Capturas de producto | VERIFICADO | Son el portal real (`apps/portal` compilado) en Glass White y Glass, con datos de ejemplo simulados; scripts en `scripts/portal-shots/` |
+
 ## Lo que la landing NO afirma (y por qué)
 
 | Idea del encargo o de la web actual | Motivo |
@@ -48,4 +58,5 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 2. **CRM y ERP para cuentas nuevas.** Confirmar en producción `DEPARTIFY_WORKSPACE_AUTO_PROVISION` y el permiso de producto del ERP. Sin eso, un cliente nuevo no ve dos de los cuatro bloques vendidos.
 3. **Verificación OAuth de Google no enviada** (`docs/customer-zero/GOOGLE-OAUTH-VERIFICACION-20261012.md`). Conectar Gmail/Drive desde cuentas externas mostrará avisos de app no verificada y tiene límite de usuarios.
 4. **Sin cobro.** Los precios se muestran, pero no existe suscripción ni límites por plan. La página promete confirmar plan y condiciones por escrito antes del primer cobro: hay que cumplirlo manualmente o implementar el cobro.
-5. **Páginas legales.** El pie enlaza a las páginas legales de la web actual. Si esta versión sustituye a `departify.app`, hay que migrarlas antes.
+5. **Importación y plan Empresa.** Confirmar la importación de datos en CRM y ERP y los compromisos del plan Empresa antes de publicar.
+6. **Páginas legales.** El pie enlaza a las páginas legales de la web actual. Si esta versión sustituye a `departify.app`, hay que migrarlas antes.

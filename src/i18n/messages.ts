@@ -1,5 +1,7 @@
 import type { HeroCopy } from "@/components/hero";
-import type { SceneCopy } from "@/components/scene";
+import type { TourCopy } from "@/components/tour";
+import type { IncludedCopy } from "@/components/included";
+import type { MarqueeCopy } from "@/components/connectors-marquee";
 import type { ConnectedCopy } from "@/components/connected";
 import type { TeamCopy } from "@/components/team";
 import type { ControlCopy } from "@/components/control";
@@ -12,7 +14,9 @@ export type Messages = {
   meta: { title: string; description: string };
   nav: { how: string; included: string; plans: string; login: string; cta: string; menu: string; close: string; nav: string; skip: string; themeDark: string; themeLight: string };
   hero: HeroCopy;
-  scene: SceneCopy;
+  included: IncludedCopy;
+  tools: MarqueeCopy;
+  tour: TourCopy;
   connected: ConnectedCopy;
   team: TeamCopy;
   control: ControlCopy;

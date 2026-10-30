@@ -100,17 +100,24 @@ for (const locale of locales) {
   const hiddenReveal = await page.evaluate(() => [...document.querySelectorAll("[data-reveal]")].filter((n) => getComputedStyle(n).opacity !== "1").length);
   hiddenReveal ? fail("reduced-motion visible", `${hiddenReveal} hidden blocks`) : pass("reduced-motion: all blocks visible");
 
-  // Scene tabs with keyboard.
-  const firstTab = page.locator('[role="tab"]').first();
+  // Sector showcase and tour tabs with keyboard.
+  const sector = page.locator('#sector-tab-clinic');
+  await sector.focus();
+  await page.keyboard.press("ArrowRight");
+  await page.keyboard.press("ArrowRight");
+  const sectorSel = await page.locator('[id^="sector-tab-"][aria-selected="true"]').getAttribute("id");
+  const sectorImg = await page.locator("#sector-panel img").getAttribute("src");
+  sectorSel === "sector-tab-advisory" && /inicio-advisory-es-(light|dark)\.webp$/.test(sectorImg || "") ? pass("sectors: arrows switch the real screenshot") : fail("sectors", `${sectorSel} ${sectorImg}`);
+  const firstTab = page.locator('#tour-tab-0');
   await firstTab.focus();
-  await page.keyboard.press("ArrowDown");
-  await page.keyboard.press("ArrowDown");
-  await page.keyboard.press("ArrowDown");
-  const selected = await page.locator('[role="tab"][aria-selected="true"]').getAttribute("id");
+  await page.keyboard.press("ArrowRight");
+  const selected = await page.locator('[id^="tour-tab-"][aria-selected="true"]').getAttribute("id");
   const focused = await page.evaluate(() => document.activeElement?.id);
-  selected === "scene-tab-3" && focused === "scene-tab-3" ? pass("scene: arrow keys move selection and focus") : fail("scene keyboard", `${selected} / ${focused}`);
-  const approvalVisible = await page.locator("#scene-panel").innerText();
-  approvalVisible.includes("Aprobar") ? pass("scene: approval step renders") : fail("scene panel", approvalVisible.slice(0, 80));
+  selected === "tour-tab-1" && focused === "tour-tab-1" ? pass("tour: arrow keys move selection and focus") : fail("tour keyboard", `${selected} / ${focused}`);
+  await page.locator("#tour-panel").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(600);
+  const tourImg = await page.locator("#tour-panel img").evaluate((im) => ({ src: im.currentSrc, ok: im.complete && im.naturalWidth > 0 }));
+  tourImg.ok && /aprobaciones-es-(light|dark)\.webp$/.test(tourImg.src) ? pass("tour: approvals screenshot loads") : fail("tour image", JSON.stringify(tourImg));
 
   // Team expand and FAQ via keyboard.
   const summary = page.locator("details summary").filter({ hasText: "Ver el equipo completo" });
@@ -176,7 +183,7 @@ for (const locale of locales) {
   }));
   await page.reload({ waitUntil: "networkidle" });
   const persisted = await page.evaluate(() => document.documentElement.dataset.theme);
-  after.theme === "dark" && after.stored === "dark" && after.darkLogo !== "none" && after.bg === "rgb(11, 12, 11)" && persisted === "dark"
+  after.theme === "dark" && after.stored === "dark" && after.darkLogo !== "none" && after.bg === "rgb(24, 24, 24)" && persisted === "dark"
     ? pass("theme toggle: switches, swaps logo, persists")
     : fail("theme toggle", JSON.stringify({ ...after, persisted }));
   await ctx.close();

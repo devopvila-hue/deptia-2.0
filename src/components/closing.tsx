@@ -5,7 +5,7 @@ export type ClosingCopy = { title: string; body: string; cta: string; note: stri
 
 export function Closing({ copy }: { copy: ClosingCopy }) {
   return (
-    <section aria-labelledby="closing-title" className="border-t border-line bg-bg2 py-24 text-center sm:py-36">
+    <section aria-labelledby="closing-title" className="py-24 text-center sm:py-36">
       <div className="wrap" data-reveal>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/favicon.svg" alt="" width={44} height={44} className="mx-auto" />

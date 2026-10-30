@@ -17,221 +17,91 @@
     "themeLight": "Switch to light mode"
   },
   "hero": {
-    "audience": "For businesses of 1 to 15 people",
+    "audience": "CRM, ERP and social publishing included",
     "title": "Your business shouldn't depend on you doing everything.",
     "subtitle": "Bring your customers, your sales and your admin together in one place, with a team of digital employees that helps you get the work done.",
+    "forWhom": "Whether you run your business on your own or lead a team of 20: everything under control, without losing your mind.",
     "price": "From €49/month",
     "priceNote": "VAT not included",
     "cta": "Create my account",
     "secondary": "See how it works",
     "reassurance": "No email or post goes out without your approval.",
-    "panel": {
-      "greeting": "Good morning, Sarah.",
-      "summary": "2 decisions are waiting for you. Your team finished 4 things this morning.",
-      "decisionsTitle": "Needs your attention",
-      "runningTitle": "In progress",
-      "doneTitle": "Done today",
-      "review": "View proposal",
-      "approve": "Approve",
-      "decisions": [
-        {
-          "title": "Send the proposal to Laura Hughes",
-          "meta": "Bathroom renovation · €2,480",
-          "by": "Sales"
-        },
-        {
-          "title": "Post Friday's offer on Facebook",
-          "meta": "Text and image ready",
-          "by": "Marketing"
-        }
-      ],
-      "inProgress": [
-        {
-          "title": "Sort this week's enquiries",
-          "by": "Customer service"
-        },
-        {
-          "title": "Follow up on 3 unanswered quotes",
-          "by": "Admin"
-        },
-        {
-          "title": "Review your website to rank better on Google",
-          "by": "SEO"
-        }
-      ],
-      "done": [
-        {
-          "title": "14 emails sorted by priority",
-          "by": "Customer service",
-          "time": "8:14"
-        },
-        {
-          "title": "Site visit to Paul Byrne's home added to your calendar",
-          "by": "Admin",
-          "time": "9:02"
-        },
-        {
-          "title": "PDF proposal for Laura Hughes",
-          "by": "Sales",
-          "time": "9:40"
-        },
-        {
-          "title": "Content ideas for the next two weeks",
-          "by": "Marketing",
-          "time": "10:15"
-        }
-      ],
-      "url": "app.departify.app",
-      "company": "Hughes Renovations",
-      "user": "Sarah Hughes",
-      "navItems": [
-        "Home",
-        "Chat",
-        "Tasks",
-        "Approvals",
-        "Calendar",
-        "Customers",
-        "Invoicing"
-      ],
-      "requestWork": "Assign",
-      "date": "Tuesday, 4 November",
-      "example": "Example"
+    "showcase": {
+      "label": "Examples by type of business",
+      "example": "Real portal screenshot · example data",
+      "shotAlt": "Departify portal home for a {sector}, with example data",
+      "pause": "Pause examples",
+      "play": "Resume examples",
+      "sectors": {
+        "clinic": "Clinic",
+        "shop": "Online shop",
+        "advisory": "Accountants",
+        "agency": "Agency",
+        "academy": "Academy",
+        "service": "Field service"
+      }
     }
   },
-  "scene": {
-    "title": "This is how your business runs when you don't have to do it all.",
-    "lede": "An enquiry that ends with a proposal sent and a follow-up in your calendar. You only step in once: where it matters.",
-    "example": "Example with fictional data",
-    "stepsLabel": "Steps in the example",
-    "departify": "Departify",
-    "you": "You",
-    "actorTeam": "Your digital team does this",
-    "actorYou": "You decide",
-    "steps": [
+  "included": {
+    "title": "Everything you need, included.",
+    "lede": "CRM, ERP and social media publishing inside Departify, with your digital team working on top of them. No separate tools to pay for: import your data and get to work.",
+    "items": [
       {
-        "title": "An enquiry comes in",
-        "does": "Reads the email in your inbox, sees it's a potential customer and moves it to the top.",
-        "you": "Nothing. You don't have to keep an eye on your inbox."
+        "name": "CRM",
+        "desc": "Customers, opportunities and follow-ups in order."
       },
       {
-        "title": "The customer's details get organised",
-        "does": "Puts their details and what they asked for into a record, ready to save to your customers.",
-        "you": "Nothing yet. The record is saved once you approve."
+        "name": "ERP",
+        "desc": "Quotes, invoices, purchasing and stock."
       },
       {
-        "title": "The proposal gets prepared",
-        "does": "Drafts the reply and prepares a PDF proposal with your services and your prices.",
-        "you": "Nothing. It works from your business information."
+        "name": "Social publishing",
+        "desc": "Create, schedule and post on your Facebook page."
       },
       {
-        "title": "You review and approve",
-        "does": "Leaves everything in Approvals: the reply, the proposal and the customer record.",
-        "you": "You review it. If you want changes, you ask in the chat. Then you approve or reject."
+        "name": "Chat with your team",
+        "desc": "Assign work in your own words."
       },
       {
-        "title": "The next step is recorded",
-        "does": "Sends the reply, saves the customer and adds the follow-up to your calendar.",
-        "you": "You see on Home what's been done and what's still pending."
+        "name": "Tasks and calendar",
+        "desc": "Tasks, appointments and reminders linked to your calendar."
+      },
+      {
+        "name": "Online shop",
+        "desc": "Catalogue and orders linked to your stock (in testing)."
       }
     ],
-    "mail": {
-      "from": "Laura Hughes",
-      "received": "Today, 8:12",
-      "tag": "Potential customer",
-      "subject": "Quote for a bathroom renovation",
-      "body": "Hi, we'd like to renovate our bathroom at home, about 6 m². Could you send us a quote and let us know when you could start? Thanks.",
-      "to": "To: Hughes Renovations",
-      "inbox": "Inbox",
-      "others": [
-        {
-          "from": "Tiles Direct",
-          "subject": "October invoice",
-          "time": "7:55"
-        },
-        {
-          "from": "Dublin City Council",
-          "subject": "Building permit decision",
-          "time": "Yesterday"
-        },
-        {
-          "from": "Paul Byrne",
-          "subject": "Confirming Thursday's visit",
-          "time": "Yesterday"
-        }
-      ]
-    },
-    "contact": {
-      "name": "Laura Hughes",
-      "company": "Private customer · Dublin",
-      "stage": "Waiting to be saved",
-      "fields": [
-        {
-          "label": "Email",
-          "value": "laura.hughes@example.com"
-        },
-        {
-          "label": "Phone",
-          "value": "087 123 4567"
-        },
-        {
-          "label": "What she needs",
-          "value": "Bathroom renovation, 6 m²"
-        },
-        {
-          "label": "How she found you",
-          "value": "Email, today"
-        }
-      ]
-    },
-    "quote": {
-      "title": "Proposal · Bathroom renovation",
-      "draft": "Draft",
-      "lines": [
-        {
-          "item": "Demolition and removal",
-          "amount": "€520"
-        },
-        {
-          "item": "Plumbing and drainage",
-          "amount": "€690"
-        },
-        {
-          "item": "Tiling and flooring",
-          "amount": "€870"
-        },
-        {
-          "item": "Sanitaryware and taps",
-          "amount": "€400"
-        }
-      ],
-      "total": "Total excl. VAT",
-      "totalValue": "€2,480",
-      "reply": "“Hi Laura, thanks for getting in touch. Please find attached the proposal for your bathroom renovation. We could start the week of the 17th…”",
-      "company": "Hughes Renovations",
-      "client": "For Laura Hughes",
-      "date": "4 November"
-    },
-    "approval": {
-      "title": "Needs your attention",
-      "summary": "Send Laura Hughes the reply with the €2,480 proposal and save her to your customers",
-      "reject": "Reject",
-      "approve": "Approve",
-      "note": "Want to change something? Say so in the chat before approving: “Offer to start on the 10th.”",
-      "items": [
-        "Reply to Laura Hughes",
-        "Proposal · Bathroom renovation (PDF)",
-        "New customer record"
-      ]
-    },
-    "next": {
-      "sent": "Reply sent to Laura Hughes with the proposal",
-      "logged": "Laura Hughes saved to your customers",
-      "followUp": "Call Laura Hughes if she hasn't replied",
-      "followUpDate": "Thursday, 10:00 · in your calendar",
-      "alert": "When she replies, you'll see it in your Departify inbox.",
-      "day": "Thu",
-      "dayNumber": "6"
-    }
+    "note": "Included in every plan."
+  },
+  "tools": {
+    "title": "Connect what you already use",
+    "body": "Your email, calendar, social media and shop stay where they are. Departify works with them.",
+    "note": "Some connections can only read data, not make changes.",
+    "pause": "Pause the list of tools",
+    "play": "Resume the list of tools"
+  },
+  "tour": {
+    "title": "This is how your business runs when you don't have to do it all.",
+    "lede": "Ask your team for the work in your own words, review what matters and see everything that is already done in one place.",
+    "example": "Real portal screenshot · example data",
+    "stepsLabel": "How it works",
+    "steps": [
+      {
+        "title": "Ask for what you need",
+        "body": "Write in the chat as you would to a person. Your team uses your prices, your calendar and the way you talk.",
+        "alt": "Portal chat: the owner asks for a reply to a customer and the team drafts it"
+      },
+      {
+        "title": "You approve what matters",
+        "body": "Emails, posts and new customers wait in Approvals. Nothing goes out without your OK.",
+        "alt": "Portal Approvals screen with three pending proposals"
+      },
+      {
+        "title": "See what has been done",
+        "body": "Home shows what is waiting for your decision and what your team has already finished.",
+        "alt": "Portal home with the day's pending decisions"
+      }
+    ]
   },
   "connected": {
     "title": "Before: several tools with you in the middle. Now: everything works together.",
@@ -289,19 +159,6 @@
         "link": "Today it runs in test mode: you can set it up and try orders, but it doesn't take real payments yet."
       }
     ],
-    "connectTitle": "Connect what you already use",
-    "connectBody": "Your email, calendar and documents stay where they are. Departify works with them.",
-    "connectors": [
-      "Gmail",
-      "Outlook",
-      "Google Calendar",
-      "Google Drive",
-      "Facebook",
-      "Shopify",
-      "WordPress",
-      "Google Analytics"
-    ],
-    "connectNote": "Some connections can only read data, not make changes.",
     "beforeNodes": [
       "Customer sheet",
       "Invoices",
@@ -446,7 +303,7 @@
         "for": "For owners starting to hand off everyday work.",
         "summary": "Designed for around 100 tasks a month.",
         "points": [
-          "Customers, sales, admin and invoicing in one place",
+          "CRM, ERP and social publishing included",
           "The full digital team, with your approvals",
           "1 connected email account",
           "Help by email"
@@ -471,6 +328,17 @@
           "Up to 10 connected email accounts",
           "A setup session with our team"
         ]
+      },
+      "empresa": {
+        "name": "Enterprise",
+        "for": "For businesses with teams of 20 people or more, or with specific needs.",
+        "summary": "Volume of work tailored to your business.",
+        "points": [
+          "Everything in Growth",
+          "More email accounts and channels",
+          "Setup and follow-up with our team",
+          "Custom terms and invoicing"
+        ]
       }
     },
     "compareTitle": "Compare plans in detail",
@@ -480,12 +348,14 @@
         "values": [
           "Around 100 tasks",
           "Around 400 tasks",
-          "Around 1,200 tasks"
+          "Around 1,200 tasks",
+          "Custom"
         ]
       },
       {
-        "label": "Customers, sales, admin, invoicing and channels",
+        "label": "CRM, ERP and social publishing included",
         "values": [
+          "Included",
           "Included",
           "Included",
           "Included"
@@ -496,6 +366,7 @@
         "values": [
           "Included",
           "Included",
+          "Included",
           "Included"
         ]
       },
@@ -504,7 +375,8 @@
         "values": [
           "1",
           "Up to 3",
-          "Up to 10"
+          "Up to 10",
+          "Custom"
         ]
       },
       {
@@ -512,7 +384,8 @@
         "values": [
           "By email",
           "Priority by email",
-          "Priority and a setup session"
+          "Priority and a setup session",
+          "Dedicated support"
         ]
       }
     ],
@@ -521,7 +394,10 @@
     "billingTitle": "How billing works",
     "billingBody": "Monthly prices excluding VAT. Before the first charge, we confirm your plan and its terms in writing.",
     "extrasTitle": "Costs from other providers",
-    "extrasBody": "Creating images or videos uses your own account with a provider such as Google or OpenAI, which bills you separately. The same goes for any ads you choose to pay for."
+    "extrasBody": "Creating images or videos uses your own account with a provider such as Google or OpenAI, which bills you separately. The same goes for any ads you choose to pay for.",
+    "customPrice": "Custom",
+    "customNote": "We'll prepare a proposal",
+    "customCta": "Let's talk"
   },
   "faq": {
     "title": "Worth knowing before you start.",
@@ -544,7 +420,7 @@
       },
       {
         "q": "What does the price include?",
-        "a": "The business tools, the full digital team and the volume of work in your plan. It doesn't include what other providers bill you, such as images and videos created with your account or ads you pay for. For now, each account is for one person: access for more people on your team isn't available yet."
+        "a": "The business tools (CRM, ERP, social publishing, tasks and calendar), the full digital team and the volume of work in your plan, with no separate tools to pay for. It doesn't include what other providers bill you, such as images and videos created with your account or ads you pay for. For now, each account is for one person: access for more people on your team isn't available yet."
       },
       {
         "q": "How do I start, and what happens if I decide to leave?",

@@ -17,221 +17,91 @@
     "themeLight": "Attiva la modalità chiara"
   },
   "hero": {
-    "audience": "Per attività da 1 a 15 persone",
+    "audience": "CRM, ERP e social inclusi",
     "title": "La tua attività non dovrebbe dipendere dal fatto che fai tutto tu.",
     "subtitle": "Riunisci clienti, vendite e gestione in un unico posto, con una squadra di dipendenti digitali che ti aiuta a portare avanti il lavoro.",
+    "forWhom": "Che tu gestisca l'attività da solo o guidi una squadra di 20 persone: tutto sotto controllo, senza impazzire.",
     "price": "Da 49 €/mese",
     "priceNote": "IVA esclusa",
     "cta": "Crea il mio account",
     "secondary": "Scopri come funziona",
     "reassurance": "Nessuna email e nessun post parte senza la tua approvazione.",
-    "panel": {
-      "greeting": "Buongiorno, Giulia.",
-      "summary": "2 decisioni ti aspettano. Stamattina la tua squadra ha completato 4 attività.",
-      "decisionsTitle": "Richiede la tua attenzione",
-      "runningTitle": "In corso",
-      "doneTitle": "Fatto oggi",
-      "review": "Vedi proposta",
-      "approve": "Approva",
-      "decisions": [
-        {
-          "title": "Inviare la proposta a Laura Bianchi",
-          "meta": "Ristrutturazione bagno · 2.480 €",
-          "by": "Vendite"
-        },
-        {
-          "title": "Pubblicare l'offerta di venerdì su Facebook",
-          "meta": "Testo e immagine pronti",
-          "by": "Marketing"
-        }
-      ],
-      "inProgress": [
-        {
-          "title": "Ordinare le richieste della settimana",
-          "by": "Assistenza clienti"
-        },
-        {
-          "title": "Sollecitare 3 preventivi senza risposta",
-          "by": "Amministrazione"
-        },
-        {
-          "title": "Analizzare il tuo sito per migliorare su Google",
-          "by": "SEO"
-        }
-      ],
-      "done": [
-        {
-          "title": "14 email ordinate per priorità",
-          "by": "Assistenza clienti",
-          "time": "8:14"
-        },
-        {
-          "title": "Sopralluogo da Paolo Rossi aggiunto all'agenda",
-          "by": "Amministrazione",
-          "time": "9:02"
-        },
-        {
-          "title": "Proposta in PDF per Laura Bianchi",
-          "by": "Vendite",
-          "time": "9:40"
-        },
-        {
-          "title": "Idee di contenuti per due settimane",
-          "by": "Marketing",
-          "time": "10:15"
-        }
-      ],
-      "url": "app.departify.app",
-      "company": "Bianchi Ristrutturazioni",
-      "user": "Giulia Bianchi",
-      "navItems": [
-        "Home",
-        "Chat",
-        "Attività",
-        "Approvazioni",
-        "Agenda",
-        "Clienti",
-        "Fatturazione"
-      ],
-      "requestWork": "Affida",
-      "date": "Martedì 4 novembre",
-      "example": "Esempio"
+    "showcase": {
+      "label": "Esempi per tipo di attività",
+      "example": "Schermata reale del portale · dati di esempio",
+      "shotAlt": "Home del portale Departify per {sector}, con dati di esempio",
+      "pause": "Metti in pausa gli esempi",
+      "play": "Riprendi gli esempi",
+      "sectors": {
+        "clinic": "Studio medico",
+        "shop": "Negozio online",
+        "advisory": "Studio commercialista",
+        "agency": "Agenzia",
+        "academy": "Scuola",
+        "service": "Assistenza tecnica"
+      }
     }
   },
-  "scene": {
-    "title": "Ecco come va avanti la tua attività quando non devi fare tutto tu.",
-    "lede": "Una richiesta che si chiude con una proposta inviata e un promemoria in agenda. Tu intervieni in un solo passaggio: quello che conta.",
-    "example": "Esempio con dati inventati",
-    "stepsLabel": "Passaggi dell'esempio",
-    "departify": "Departify",
-    "you": "Tu",
-    "actorTeam": "Se ne occupa la tua squadra digitale",
-    "actorYou": "Decidi tu",
-    "steps": [
+  "included": {
+    "title": "Tutto ciò che ti serve, incluso.",
+    "lede": "CRM, ERP e pubblicazione sui social dentro Departify, con la tua squadra digitale che ci lavora sopra. Nessuno strumento da pagare a parte: importi i tuoi dati e sei pronto.",
+    "items": [
       {
-        "title": "Arriva una richiesta",
-        "does": "Legge l'email nella tua casella, capisce che è un potenziale cliente e la mette in cima.",
-        "you": "Niente. Non devi tenere d'occhio la posta."
+        "name": "CRM",
+        "desc": "Clienti, opportunità e solleciti in ordine."
       },
       {
-        "title": "Si ordinano i dati del cliente",
-        "does": "Raccoglie in una scheda i suoi dati e la sua richiesta, pronta da salvare tra i tuoi clienti.",
-        "you": "Ancora niente. La scheda si salva quando approvi."
+        "name": "ERP",
+        "desc": "Preventivi, fatture, acquisti e magazzino."
       },
       {
-        "title": "Si prepara la proposta",
-        "does": "Scrive la risposta e prepara la proposta in PDF con i tuoi servizi e i tuoi prezzi.",
-        "you": "Niente. Lavora con le informazioni della tua attività."
+        "name": "Pubblicazione sui social",
+        "desc": "Crea, programma e pubblica sulla tua pagina Facebook."
       },
       {
-        "title": "Tu controlli e approvi",
-        "does": "Ti lascia tutto in Approvazioni: la risposta, la proposta e la scheda del cliente.",
-        "you": "Controlli. Se vuoi modifiche, le chiedi in chat. Poi approvi o rifiuti."
+        "name": "Chat con la tua squadra",
+        "desc": "Affida il lavoro con parole tue."
       },
       {
-        "title": "Il passo successivo resta registrato",
-        "does": "Invia la risposta, salva il cliente e aggiunge in agenda quando ricontattarlo.",
-        "you": "Nella Home vedi cosa è stato fatto e cosa resta da fare."
+        "name": "Attività e agenda",
+        "desc": "Attività, appuntamenti e promemoria collegati alla tua agenda."
+      },
+      {
+        "name": "Negozio online",
+        "desc": "Catalogo e ordini collegati al magazzino (in prova)."
       }
     ],
-    "mail": {
-      "from": "Laura Bianchi",
-      "received": "Oggi, 8:12",
-      "tag": "Potenziale cliente",
-      "subject": "Preventivo per ristrutturare un bagno",
-      "body": "Buongiorno, vorremmo ristrutturare il bagno di casa, circa 6 m². Potreste mandarci un preventivo e dirci quando potreste iniziare? Grazie.",
-      "to": "A: Bianchi Ristrutturazioni",
-      "inbox": "Posta in arrivo",
-      "others": [
-        {
-          "from": "Piastrelle Emilia",
-          "subject": "Fattura di ottobre",
-          "time": "7:55"
-        },
-        {
-          "from": "Comune di Bologna",
-          "subject": "Permesso di costruire: esito",
-          "time": "Ieri"
-        },
-        {
-          "from": "Paolo Rossi",
-          "subject": "Confermo il sopralluogo di giovedì",
-          "time": "Ieri"
-        }
-      ]
-    },
-    "contact": {
-      "name": "Laura Bianchi",
-      "company": "Privato · Bologna",
-      "stage": "Da salvare",
-      "fields": [
-        {
-          "label": "Email",
-          "value": "laura.bianchi@esempio.it"
-        },
-        {
-          "label": "Telefono",
-          "value": "347 123 4567"
-        },
-        {
-          "label": "Di cosa ha bisogno",
-          "value": "Ristrutturazione bagno, 6 m²"
-        },
-        {
-          "label": "Provenienza",
-          "value": "Email, oggi"
-        }
-      ]
-    },
-    "quote": {
-      "title": "Proposta · Ristrutturazione bagno",
-      "draft": "Bozza",
-      "lines": [
-        {
-          "item": "Demolizione e smaltimento",
-          "amount": "520 €"
-        },
-        {
-          "item": "Impianto idraulico e scarichi",
-          "amount": "690 €"
-        },
-        {
-          "item": "Rivestimenti e pavimento",
-          "amount": "870 €"
-        },
-        {
-          "item": "Sanitari e rubinetteria",
-          "amount": "400 €"
-        }
-      ],
-      "total": "Totale IVA esclusa",
-      "totalValue": "2.480 €",
-      "reply": "«Buongiorno Laura, grazie per averci scritto. In allegato trova la proposta per la ristrutturazione del bagno. Potremmo iniziare la settimana del 17…»",
-      "company": "Bianchi Ristrutturazioni",
-      "client": "Per Laura Bianchi",
-      "date": "4 novembre"
-    },
-    "approval": {
-      "title": "Richiede la tua attenzione",
-      "summary": "Inviare a Laura Bianchi la risposta con la proposta da 2.480 € e salvarla tra i tuoi clienti",
-      "reject": "Rifiuta",
-      "approve": "Approva",
-      "note": "Vuoi cambiare qualcosa? Dillo in chat prima di approvare: «Proponile di iniziare il 10».",
-      "items": [
-        "Risposta a Laura Bianchi",
-        "Proposta · Bagno (PDF)",
-        "Nuova scheda cliente"
-      ]
-    },
-    "next": {
-      "sent": "Risposta inviata a Laura Bianchi con la proposta",
-      "logged": "Laura Bianchi salvata tra i tuoi clienti",
-      "followUp": "Chiamare Laura Bianchi se non ha risposto",
-      "followUpDate": "Giovedì, 10:00 · nella tua agenda",
-      "alert": "Quando risponderà, lo vedrai nella tua casella di Departify.",
-      "day": "Gio",
-      "dayNumber": "6"
-    }
+    "note": "Incluso in tutti i piani."
+  },
+  "tools": {
+    "title": "Collega ciò che usi già",
+    "body": "La tua email, la tua agenda, i tuoi social e il tuo negozio restano dove sono. Departify lavora con loro.",
+    "note": "Alcuni collegamenti permettono solo di consultare i dati, non di modificarli.",
+    "pause": "Metti in pausa l’elenco degli strumenti",
+    "play": "Riprendi l’elenco degli strumenti"
+  },
+  "tour": {
+    "title": "Ecco come va avanti la tua attività quando non devi fare tutto tu.",
+    "lede": "Chiedi il lavoro alla tua squadra con parole tue, controlli ciò che conta e vedi in un unico posto ciò che è già fatto.",
+    "example": "Schermata reale del portale · dati di esempio",
+    "stepsLabel": "Come funziona",
+    "steps": [
+      {
+        "title": "Chiedi ciò che ti serve",
+        "body": "Scrivi in chat come faresti con una persona. La tua squadra usa i tuoi prezzi, la tua agenda e il tuo modo di comunicare.",
+        "alt": "Chat del portale: la titolare chiede una risposta per una cliente e la squadra la prepara"
+      },
+      {
+        "title": "Tu approvi ciò che conta",
+        "body": "Email, post e nuovi clienti aspettano in Approvazioni. Nulla parte senza il tuo ok.",
+        "alt": "Schermata Approvazioni del portale con tre proposte in attesa"
+      },
+      {
+        "title": "Vedi ciò che è stato fatto",
+        "body": "La Home mostra ciò che aspetta la tua decisione e ciò che la squadra ha già finito.",
+        "alt": "Home del portale con le decisioni del giorno"
+      }
+    ]
   },
   "connected": {
     "title": "Prima: tanti strumenti e tu in mezzo. Ora: tutto lavora insieme.",
@@ -289,19 +159,6 @@
         "link": "Oggi funziona in modalità di prova: puoi allestirlo e provare gli ordini, ma non incassa ancora pagamenti reali."
       }
     ],
-    "connectTitle": "Collega ciò che usi già",
-    "connectBody": "La tua email, la tua agenda e i tuoi documenti restano dove sono. Departify lavora con loro.",
-    "connectors": [
-      "Gmail",
-      "Outlook",
-      "Google Calendar",
-      "Google Drive",
-      "Facebook",
-      "Shopify",
-      "WordPress",
-      "Google Analytics"
-    ],
-    "connectNote": "Alcuni collegamenti permettono solo di consultare i dati, non di modificarli.",
     "beforeNodes": [
       "Foglio clienti",
       "Fatture",
@@ -446,7 +303,7 @@
         "for": "Per il titolare che inizia a delegare il lavoro di ogni giorno.",
         "summary": "Pensato per circa 100 attività al mese.",
         "points": [
-          "Clienti, vendite, gestione e fatturazione in un unico posto",
+          "CRM, ERP e pubblicazione sui social inclusi",
           "Tutta la squadra digitale, con le tue approvazioni",
           "1 account email collegato",
           "Assistenza via email"
@@ -471,6 +328,17 @@
           "Fino a 10 account email collegati",
           "Una sessione di avvio con il nostro team"
         ]
+      },
+      "empresa": {
+        "name": "Azienda",
+        "for": "Per attività con squadre di 20 persone o più, o con esigenze specifiche.",
+        "summary": "Volume di lavoro su misura per la tua attività.",
+        "points": [
+          "Tutto ciò che include Crescita",
+          "Più account email e canali",
+          "Avvio e affiancamento con il nostro team",
+          "Condizioni e fatturazione su misura"
+        ]
       }
     },
     "compareTitle": "Confronta i piani nel dettaglio",
@@ -480,12 +348,14 @@
         "values": [
           "Circa 100 attività",
           "Circa 400 attività",
-          "Circa 1.200 attività"
+          "Circa 1.200 attività",
+          "Su misura"
         ]
       },
       {
-        "label": "Clienti, vendite, gestione, fatturazione e canali",
+        "label": "CRM, ERP e pubblicazione sui social inclusi",
         "values": [
+          "Incluso",
           "Incluso",
           "Incluso",
           "Incluso"
@@ -496,6 +366,7 @@
         "values": [
           "Inclusa",
           "Inclusa",
+          "Inclusa",
           "Inclusa"
         ]
       },
@@ -504,7 +375,8 @@
         "values": [
           "1",
           "Fino a 3",
-          "Fino a 10"
+          "Fino a 10",
+          "Su misura"
         ]
       },
       {
@@ -512,7 +384,8 @@
         "values": [
           "Via email",
           "Prioritaria via email",
-          "Prioritaria e sessione di avvio"
+          "Prioritaria e sessione di avvio",
+          "Supporto dedicato"
         ]
       }
     ],
@@ -521,7 +394,10 @@
     "billingTitle": "Come si paga",
     "billingBody": "Prezzi mensili IVA esclusa. Prima del primo addebito ti confermiamo per iscritto il piano e le sue condizioni.",
     "extrasTitle": "Costi di altri fornitori",
-    "extrasBody": "Creare immagini o video usa il tuo account presso un fornitore, come Google o OpenAI, che ti fattura a parte. Lo stesso vale per la pubblicità che decidi di pagare."
+    "extrasBody": "Creare immagini o video usa il tuo account presso un fornitore, come Google o OpenAI, che ti fattura a parte. Lo stesso vale per la pubblicità che decidi di pagare.",
+    "customPrice": "Su misura",
+    "customNote": "Ti prepariamo una proposta",
+    "customCta": "Parliamone"
   },
   "faq": {
     "title": "Cosa sapere prima di iniziare.",
@@ -544,7 +420,7 @@
       },
       {
         "q": "Cosa include il prezzo?",
-        "a": "Gli strumenti per la tua attività, la squadra digitale completa e il volume di lavoro del tuo piano. Non include ciò che ti fatturano altri fornitori, come immagini e video creati con il tuo account o la pubblicità che paghi. Per ora ogni account è per una sola persona: l'accesso per altre persone del tuo team non è ancora disponibile."
+        "a": "Gli strumenti per la tua attività (CRM, ERP, pubblicazione sui social, attività e agenda), la squadra digitale completa e il volume di lavoro del tuo piano, senza strumenti da pagare a parte. Non include ciò che ti fatturano altri fornitori, come immagini e video creati con il tuo account o la pubblicità che paghi. Per ora ogni account è per una sola persona: l’accesso per altre persone del tuo team non è ancora disponibile."
       },
       {
         "q": "Come inizio e cosa succede se decido di smettere?",

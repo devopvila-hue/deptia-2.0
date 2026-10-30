@@ -4,6 +4,7 @@ export const plans = [
   { id: "esencial", price: 49, featured: false },
   { id: "negocio", price: 99, featured: true },
   { id: "crecimiento", price: 199, featured: false },
+  { id: "empresa", price: null, featured: false },
 ] as const;
 
 export type PlanId = (typeof plans)[number]["id"];

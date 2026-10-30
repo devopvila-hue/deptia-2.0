@@ -6,11 +6,11 @@ Rehacer la landing de Departify como propuesta comercial nueva (brief de Astra),
 
 ## Veredicto
 
-**PASS local** de implementación y calidad (v2: 67/67 en navegador, axe sin incidencias en ambos temas, Lighthouse móvil 92–95 / 100). **No publicado**: hay bloqueos de producto antes de que esta página pueda sustituir a `departify.app` (ver `docs/VERIFICACION-AFIRMACIONES.md`).
+**PASS local** de implementación y calidad (v3: 68/68 en navegador, axe sin incidencias en ambos temas, Lighthouse móvil 86–96 / 100, ver QA). **No publicado**: hay bloqueos de producto antes de que esta página pueda sustituir a `departify.app` (ver `docs/VERIFICACION-AFIRMACIONES.md`).
 
 ## Estado
 
-- Repositorio `devopvila-hue/deptia-2.0`: v1 en `main` (`667119c`). El operador la rechazó por el diseño («parece hecha con IA de prisa», sin modo oscuro). El rediseño v2 está en la rama `claude/elegant-heisenberg-7asako`, pendiente de su revisión.
+- Repositorio `devopvila-hue/deptia-2.0`: v1 en `main` (`667119c`). El operador la rechazó por el diseño («parece hecha con IA de prisa», sin modo oscuro). El operador también rechazó la v2 (público cerrado a reformas, interfaz inventada, dibujos infantiles). La v3 está en la rama `claude/elegant-heisenberg-7asako`: capturas reales del portal Glass White/Glass, seis sectores, «todo incluido», cinta de conectores y plan Empresa.
 
 - Proyecto independiente con la misma base técnica que la web actual (Next 14, Tailwind, next-intl, siete idiomas).
 - `noindex` por defecto (`NEXT_PUBLIC_INDEXABLE`).
