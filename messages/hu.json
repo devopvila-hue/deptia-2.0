@@ -17,15 +17,14 @@
     "themeLight": "Világos mód bekapcsolása"
   },
   "hero": {
-    "audience": "CRM, ERP és közösségi média benne van",
-    "title": "A vállalkozása ne azon múljon, hogy mindent Ön csinál.",
-    "subtitle": "Ügyfelei, értékesítése és ügyintézése egy helyen, egy digitális munkatársakból álló csapattal, amely segít elvégezni a munkát.",
-    "forWhom": "Akár egyedül viszi a vállalkozását, akár egy 20 fős csapatot vezet: minden kézben van, idegeskedés nélkül.",
+    "title": "Az egész vállalkozása",
+    "titleAccent": "egy helyen.",
+    "subtitle": "Ügyfelek, számlák, közösségi média és egy digitális csapat, amely elvégzi Önnel a munkát. Vigye egyedül anélkül, hogy beleőrülne, vagy tartson kézben egy 20 fős csapatot.",
+    "includedTag": "CRM, ERP és közösségi média benne van",
     "price": "Havi 49 €-tól",
     "priceNote": "az áfa nincs benne",
     "cta": "Fiók létrehozása",
     "secondary": "Hogyan működik",
-    "reassurance": "Az Ön jóváhagyása nélkül egyetlen e-mail vagy bejegyzés sem megy ki.",
     "showcase": {
       "label": "Példák a vállalkozás típusa szerint",
       "example": "Valódi képernyőkép a portálról · példaadatok",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Minden csomagban benne van."
+  },
+  "builder": {
+    "title": "Ami hiányzik, azt Alberto megépíti.",
+    "lede": "Alberto, az Ön fejlesztési vezetője, elkészíti a weboldalát, a webshopját és azokat a kis alkalmazásokat, amelyekre a vállalkozásának szüksége van – anélkül, hogy mindenért külön előfizetést fizetne.",
+    "name": "Alberto",
+    "role": "Fejlesztési vezető",
+    "builds": "Megépíti",
+    "outputs": [
+      "Weboldal",
+      "Webshop",
+      "Saját appok"
+    ],
+    "owned": "Az Ön fiókjaiban:",
+    "points": [
+      {
+        "name": "Weboldal és webshop",
+        "desc": "Elkészíti, fejleszti és naprakészen tartja, amikor csak kéri."
+      },
+      {
+        "name": "A vállalkozása appjai",
+        "desc": "Kis, testre szabott eszközök: például foglalási űrlap, rendeléskezelő felület vagy ügyfélportál."
+      },
+      {
+        "name": "Minden az Ön nevén marad",
+        "desc": "A kód az Ön GitHub-fiókjában van, és az Ön Vercel-fiókjában jelenik meg. Az Öné marad, akkor is, ha egyszer továbblép."
+      },
+      {
+        "name": "Ellenőrizve adja át",
+        "desc": "Teszteli, átnézi a biztonságot, és az Ön engedélye nélkül semmi újat nem hoz létre a fiókjaiban."
+      }
+    ],
+    "claim": "Függetlenség: ezt adja Önnek a Departify.",
+    "note": "A létrehozáshoz és közzétételhez kapcsolja össze GitHub- és Vercel-fiókját."
   },
   "tools": {
     "title": "Kapcsolja össze, amit már használ",
@@ -293,7 +325,7 @@
     "title": "Világos ár, havi 49 €-tól.",
     "lede": "Minden csomag tartalmazza az eszközöket és a teljes digitális csapatot. Az különbözik, mennyi munkára van szüksége, és mennyi támogatást szeretne.",
     "perMonth": "/hó",
-    "vat": "az áfa nincs benne · havi fizetés",
+    "vat": "Havi árak · az áfa nincs benne · havi fizetés",
     "featuredTag": "A mindennapi munkához",
     "cta": "Fiók létrehozása",
     "taskNote": "Egy feladat egy teljes munka: egy megkeresés megválaszolása, egy ajánlat elkészítése vagy egy bejegyzés megírása.",
@@ -303,7 +335,6 @@
         "for": "Tulajdonosoknak, akik most kezdik átadni a napi munkát.",
         "summary": "Nagyjából havi 100 feladatra tervezve.",
         "points": [
-          "CRM, ERP és közösségimédia-közzététel benne van",
           "A teljes digitális csapat, az Ön jóváhagyásaival",
           "1 összekapcsolt e-mail-fiók",
           "Segítség e-mailben"
@@ -397,7 +428,8 @@
     "extrasBody": "A képek és videók készítése a saját fiókját használja egy szolgáltatónál, például a Google-nél vagy az OpenAI-nál, amely ezt külön számlázza. Ugyanez érvényes a hirdetésekre, amelyekért fizetni dönt.",
     "customPrice": "Egyedi",
     "customNote": "Ajánlatot készítünk Önnek",
-    "customCta": "Beszéljünk"
+    "customCta": "Beszéljünk",
+    "includedAll": "Minden csomagban benne van: CRM, ERP, közösségimédia-közzététel, csevegés, a teljes digitális csapat és a jóváhagyások"
   },
   "faq": {
     "title": "Amit érdemes tudni, mielőtt elkezdi.",

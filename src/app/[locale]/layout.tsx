@@ -19,10 +19,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b0c0b" },
-  ],
+  themeColor: "#090b09",
 };
 
 export default function LocaleLayout({ children, params: { locale } }: { children: ReactNode; params: { locale: string } }) {

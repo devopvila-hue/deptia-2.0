@@ -7,6 +7,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Hero } from "@/components/hero";
 import { Tour } from "@/components/tour";
 import { Included } from "@/components/included";
+import { Builder } from "@/components/builder";
 import { ConnectorsMarquee } from "@/components/connectors-marquee";
 import { Connected } from "@/components/connected";
 import { Team } from "@/components/team";
@@ -65,6 +66,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
       <main id="main">
         <Hero copy={m.hero} shotLang={shotLang} />
         <Included copy={m.included} />
+        <Builder copy={m.builder} />
         <ConnectorsMarquee copy={m.tools} />
         <Tour copy={m.tour} lang={shotLang} />
         <Connected copy={m.connected} />

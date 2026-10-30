@@ -11,6 +11,7 @@ export type PricingCopy = {
   featuredTag: string;
   cta: string;
   taskNote: string;
+  includedAll: string;
   plans: Record<PlanId, { name: string; for: string; summary: string; points: string[] }>;
   compareTitle: string;
   compareRows: { label: string; values: string[] }[];
@@ -40,50 +41,66 @@ export function Pricing({ copy, locale, site }: { copy: PricingCopy; locale: str
           <p className="t-lede mt-5">{copy.lede}</p>
         </div>
 
-        <ul className="panel mt-14 grid overflow-hidden md:grid-cols-2 xl:grid-cols-4" data-reveal>
-          {plans.map((plan, i) => {
-            const p = copy.plans[plan.id];
-            return (
-              <li
-                key={plan.id}
-                className={`flex flex-col p-7 sm:p-8 ${i > 0 ? "border-t border-line" : ""} ${i % 2 === 1 ? "md:border-l" : ""} ${i === 1 ? "md:border-t-0" : ""} ${i >= 2 ? "xl:border-l" : ""} ${i > 0 ? "xl:border-t-0" : ""} ${plan.featured ? "bg-bg2" : ""}`}
-              >
-                <div className="flex min-h-[1.5rem] items-center justify-between gap-3">
-                  <h3 className="text-[1.0625rem] font-semibold tracking-[-0.015em]">{p.name}</h3>
-                  {plan.featured && <span className="text-[0.75rem] font-medium text-accenttext">{copy.featuredTag}</span>}
-                </div>
-                <p className="t-body mt-2 lg:min-h-[3rem]">{p.for}</p>
-                <p className="mt-7 flex items-baseline gap-1.5">
-                  {plan.price === null ? (
-                    <span className="text-[2.25rem] font-semibold leading-[1.33] tracking-[-0.04em]">{copy.customPrice}</span>
-                  ) : (
-                    <>
-                      <span className="text-[3rem] font-semibold leading-none tracking-[-0.045em] tabular-nums">{formatPrice(locale, plan.price)}</span>
-                      <span className="text-[0.9375rem] text-ink2">{copy.perMonth}</span>
-                    </>
-                  )}
-                </p>
-                <p className="t-small mt-2">{plan.price === null ? copy.customNote : copy.vat}</p>
-                <TrackLink
-                  href={plan.price === null ? contact : links.signup}
-                  event="plan_selected"
-                  placement="pricing"
-                  extra={{ plan: plan.id }}
-                  className={`${plan.featured ? "btn-primary" : "btn-quiet"} mt-7 w-full`}
+        <div className="panel mt-14 overflow-hidden" data-reveal>
+          <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 border-b border-line bg-bg2 px-5 py-3.5 text-center text-[0.9375rem]">
+            <span className="h-1.5 w-1.5 rounded-full bg-good" aria-hidden="true" />
+            <span className="font-medium">{copy.includedAll}</span>
+          </p>
+          {/* Subgrid: every card shares the same rows, so names, prices, buttons and lists line up. */}
+          <ul className="grid md:grid-cols-2 xl:grid-cols-4">
+            {plans.map((plan, i) => {
+              const p = copy.plans[plan.id];
+              const custom = plan.price === null;
+              return (
+                <li
+                  key={plan.id}
+                  className={`relative row-span-6 grid grid-rows-subgrid gap-0 p-7 sm:p-8 ${i > 0 ? "border-t border-line" : ""} ${i % 2 === 1 ? "md:border-l" : ""} ${i === 1 ? "md:border-t-0" : ""} ${i >= 2 ? "xl:border-l" : ""} ${i > 0 ? "xl:border-t-0" : ""} ${plan.featured ? "bg-accentsoft" : ""}`}
                 >
-                  {plan.price === null ? copy.customCta : copy.cta}
-                </TrackLink>
-                <p className="mt-8 text-[0.9375rem] font-medium">{p.summary}</p>
-                <ul className="mt-3 divide-y divide-line border-t border-line text-[0.9375rem] text-ink2">
-                  {p.points.map((pt) => (
-                    <li key={pt} className="py-2.5">{pt}</li>
-                  ))}
-                </ul>
-              </li>
-            );
-          })}
-        </ul>
+                  {plan.featured && <span aria-hidden="true" className="pointer-events-none absolute inset-0 shadow-[inset_0_0_0_1.5px_rgb(var(--accent))]" />}
+                  <div className="flex min-h-[1.75rem] items-center justify-between gap-3">
+                    <h3 className="text-[1.125rem] font-semibold tracking-[-0.02em]">{p.name}</h3>
+                    {plan.featured && (
+                      <span className="rounded-full bg-accent px-2.5 py-1 text-[0.6875rem] font-semibold leading-none text-onaccent">{copy.featuredTag}</span>
+                    )}
+                  </div>
+                  <p className="t-body mt-2">{p.for}</p>
+                  <div className="mt-6 self-end">
+                    {custom ? (
+                      <>
+                        <p className="text-[2.25rem] font-semibold leading-none tracking-[-0.04em]">{copy.customPrice}</p>
+                        <p className="t-small mt-2">{copy.customNote}</p>
+                      </>
+                    ) : (
+                      <p className="flex items-baseline gap-1.5">
+                        <span className="text-[2.75rem] font-semibold leading-none tracking-[-0.045em] tabular-nums">{formatPrice(locale, plan.price)}</span>
+                        <span className="text-[0.9375rem] text-ink2">{copy.perMonth}</span>
+                      </p>
+                    )}
+                  </div>
+                  <div className="mt-6">
+                    <TrackLink
+                      href={custom ? contact : links.signup}
+                      event="plan_selected"
+                      placement="pricing"
+                      extra={{ plan: plan.id }}
+                      className={`${plan.featured ? "btn-primary" : "btn-quiet"} w-full`}
+                    >
+                      {custom ? copy.customCta : copy.cta}
+                    </TrackLink>
+                  </div>
+                  <p className="mt-7 text-[0.9375rem] font-medium">{p.summary}</p>
+                  <ul className="mt-3 divide-y divide-line self-start border-t border-line text-[0.9375rem] text-ink2">
+                    {p.points.map((pt) => (
+                      <li key={pt} className="py-2.5">{pt}</li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
+        <p className="t-small mt-5 text-center">{copy.vat}</p>
         <p className="t-small mt-5 text-center">{copy.taskNote}</p>
 
         <details className="group mx-auto mt-12 max-w-[56rem] border-y border-line">

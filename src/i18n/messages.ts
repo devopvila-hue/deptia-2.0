@@ -1,6 +1,7 @@
 import type { HeroCopy } from "@/components/hero";
 import type { TourCopy } from "@/components/tour";
 import type { IncludedCopy } from "@/components/included";
+import type { BuilderCopy } from "@/components/builder";
 import type { MarqueeCopy } from "@/components/connectors-marquee";
 import type { ConnectedCopy } from "@/components/connected";
 import type { TeamCopy } from "@/components/team";
@@ -15,6 +16,7 @@ export type Messages = {
   nav: { how: string; included: string; plans: string; login: string; cta: string; menu: string; close: string; nav: string; skip: string; themeDark: string; themeLight: string };
   hero: HeroCopy;
   included: IncludedCopy;
+  builder: BuilderCopy;
   tools: MarqueeCopy;
   tour: TourCopy;
   connected: ConnectedCopy;

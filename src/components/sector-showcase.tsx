@@ -35,7 +35,7 @@ export function SectorShowcase({ copy, lang }: { copy: ShowcaseCopy; lang: ShotL
   // Warm the next screenshot so the switch is instant.
   useEffect(() => {
     const next = SECTORS[(active + 1) % SECTORS.length];
-    const theme = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+    const theme = document.documentElement.dataset.theme === "light" ? "light" : "dark";
     const im = new Image();
     im.src = `/shots/inicio-${next}-${lang}-${theme}.webp`;
   }, [active, lang]);
@@ -51,13 +51,16 @@ export function SectorShowcase({ copy, lang }: { copy: ShowcaseCopy; lang: ShotL
 
   return (
     <div>
-      <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-        <div
-          role="tablist"
-          aria-label={copy.label}
-          className="flex max-w-full gap-1 overflow-x-auto rounded-full border border-line bg-surface p-1 [scrollbar-width:none]"
-          style={{ boxShadow: "var(--rim), var(--shadow-card)" }}
-        >
+      <div id="sector-panel" role="tabpanel" aria-labelledby={`sector-tab-${sector}`}>
+        <BrowserFrame label={copy.example}>
+          <div key={sector} className="swap">
+            <ProductShot name={`inicio-${sector}`} lang={lang} alt={copy.shotAlt.replace("{sector}", copy.sectors[sector])} priority={active === 0} />
+          </div>
+        </BrowserFrame>
+      </div>
+
+      <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+        <div role="tablist" aria-label={copy.label} className="flex max-w-full gap-1 overflow-x-auto [scrollbar-width:none]">
           {SECTORS.map((id, i) => {
             const selected = i === active;
             return (
@@ -97,22 +100,14 @@ export function SectorShowcase({ copy, lang }: { copy: ShowcaseCopy; lang: ShotL
           onClick={() => setPlaying((p) => !p)}
           aria-label={playing ? copy.pause : copy.play}
           title={playing ? copy.pause : copy.play}
-          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line bg-surface text-ink2 hover:text-ink"
+          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-ink2 hover:text-ink"
         >
           <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             {playing ? <path d="M6 4h3v12H6zM11 4h3v12h-3z" /> : <path d="M6 4l10 6-10 6z" />}
           </svg>
         </button>
       </div>
-
-      <div id="sector-panel" role="tabpanel" aria-labelledby={`sector-tab-${sector}`} className="mt-5 sm:mt-6">
-        <BrowserFrame label={copy.example}>
-          <div key={sector} className="swap">
-            <ProductShot name={`inicio-${sector}`} lang={lang} alt={copy.shotAlt.replace("{sector}", copy.sectors[sector])} priority={active === 0} />
-          </div>
-        </BrowserFrame>
-        <p className="mt-3 text-center text-[0.8125rem] text-ink3 md:hidden">{copy.example}</p>
-      </div>
+      <p className="mt-3 text-center text-[0.8125rem] text-ink3 md:hidden">{copy.example}</p>
     </div>
   );
 }

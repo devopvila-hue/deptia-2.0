@@ -39,6 +39,17 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 | Plan Empresa «A medida» con «Hablemos» | PENDIENTE | Compromisos comerciales (volumen, acompañamiento, facturación a medida) a confirmar por el operador. El botón abre la página de contacto actual (`/contacto?plan=empresa`) |
 | Capturas de producto | VERIFICADO | Son el portal real (`apps/portal` compilado) en Glass White y Glass, con datos de ejemplo simulados; scripts en `scripts/portal-shots/` |
 
+## Añadido en la v4 (2026-10-30)
+
+| Afirmación | Veredicto | Evidencia o condición |
+|---|---|---|
+| Alberto, responsable de Desarrollo | VERIFICADO | `apps/backend/src/customer-zero/department-identity.ts:70-79` («Crea, mejora y mantiene la tecnología de tu empresa») |
+| Planifica, implementa sobre repositorios autorizados, verifica (tests, tipos, build), revisa y comprueba la seguridad | VERIFICADO | `developer-capabilities.ts:16-22`, estado `certified` tras el E2E real del 2026-08-30 |
+| Crea el repositorio en tu GitHub y el proyecto en tu Vercel, con tu aprobación | VERIFICADO (contrato) | `tool-contract-business-shadow.ts:212-213`: `requiresApproval: true`, certificación `PASS_CONTRACT` (contrato, no prueba real con cuenta de cliente) |
+| «El código es tuyo, aunque un día te vayas» | VERIFICADO (contrato) | El destino es la cuenta conectada del cliente (`targetType` en las mismas líneas) |
+| «Crea tu web, tu tienda online y pequeñas apps»; «sin pagar una suscripción por cada cosa» | CONDICIONADO | Petición del operador. La capacidad es genérica (implementar en un repositorio); no hay una prueba de extremo a extremo de una web o tienda completa para un cliente. Una tienda creada así no cobra sin un proveedor de pagos del cliente. Los ejemplos de apps (reservas, pedidos, portal) son ilustrativos y van marcados con «por ejemplo» |
+| Alberto incluido en todos los planes | PENDIENTE | En código, Desarrollo es `defaultIncluded: false` y `entitlement: "independent"` (`department-identity.ts:74-76`). La sección de planes dice «equipo digital completo» en todos: el operador debe confirmar el empaquetado |
+
 ## Lo que la landing NO afirma (y por qué)
 
 | Idea del encargo o de la web actual | Motivo |

@@ -27,7 +27,9 @@ for (const scheme of ["light", "dark"])
 for (const locale of locales) {
   const messages = JSON.parse(readFileSync(new URL(`../messages/${locale}.json`, import.meta.url), "utf8"));
   for (const width of widths) {
-    const ctx = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme });
+    const ctx = await browser.newContext({ viewport: { width, height: 900 } });
+    // Dark is the default; light is the stored choice.
+    if (scheme === "light") await ctx.addInitScript(() => { try { localStorage.setItem("theme", "light"); } catch {} });
     const page = await ctx.newPage();
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
@@ -63,7 +65,7 @@ for (const locale of locales) {
     const problems = [];
     if (errors.length) problems.push(`console: ${errors.join(" | ")}`);
     if (data.lang !== bcp[locale]) problems.push(`lang=${data.lang}`);
-    if (data.h1 !== messages.hero.title) problems.push(`h1 mismatch: ${data.h1}`);
+    if (data.h1 !== `${messages.hero.title} ${messages.hero.titleAccent}`) problems.push(`h1 mismatch: ${data.h1}`);
     if (data.h1Count !== 1) problems.push(`h1 count ${data.h1Count}`);
     if (data.overflow > 0) problems.push(`horizontal overflow ${data.overflow}px ${data.offenders.join(",")}`);
     if (data.signup < 4) problems.push(`signup CTAs ${data.signup}`);
@@ -173,17 +175,19 @@ for (const locale of locales) {
   const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: "light" });
   const page = await ctx.newPage();
   await page.goto(BASE + "/", { waitUntil: "networkidle" });
+  const initial = await page.evaluate(() => document.documentElement.dataset.theme);
+  initial === "dark" ? pass("theme: dark by default, even with a light system setting") : fail("theme default", String(initial));
   const toggle = page.locator("header button[aria-label]").first();
   await toggle.click();
   const after = await page.evaluate(() => ({
     theme: document.documentElement.dataset.theme,
     stored: localStorage.getItem("theme"),
-    darkLogo: getComputedStyle(document.querySelector("header .logo-for-dark")).display,
+    lightLogo: getComputedStyle(document.querySelector("header .logo-for-light")).display,
     bg: getComputedStyle(document.body).backgroundColor,
   }));
   await page.reload({ waitUntil: "networkidle" });
   const persisted = await page.evaluate(() => document.documentElement.dataset.theme);
-  after.theme === "dark" && after.stored === "dark" && after.darkLogo !== "none" && after.bg === "rgb(24, 24, 24)" && persisted === "dark"
+  after.theme === "light" && after.stored === "light" && after.lightLogo !== "none" && after.bg === "rgb(248, 249, 245)" && persisted === "light"
     ? pass("theme toggle: switches, swaps logo, persists")
     : fail("theme toggle", JSON.stringify({ ...after, persisted }));
   await ctx.close();

@@ -17,15 +17,14 @@
     "themeLight": "Hellmodus aktivieren"
   },
   "hero": {
-    "audience": "CRM, ERP und Social Media inklusive",
-    "title": "Ihr Betrieb sollte nicht davon abhängen, dass Sie alles selbst machen.",
-    "subtitle": "Bringen Sie Kunden, Vertrieb und Verwaltung an einem Ort zusammen – mit einem Team digitaler Mitarbeiter, das Ihnen hilft, die Arbeit zu erledigen.",
-    "forWhom": "Ob Sie Ihren Betrieb allein führen oder ein Team von 20 Personen leiten: alles im Griff, ohne Stress.",
+    "title": "Ihr ganzer Betrieb",
+    "titleAccent": "an einem Ort.",
+    "subtitle": "Kunden, Rechnungen, Social Media und ein digitales Team, das die Arbeit mit Ihnen erledigt. Führen Sie Ihren Betrieb allein, ohne verrückt zu werden – oder behalten Sie ein Team von 20 Personen im Griff.",
+    "includedTag": "CRM, ERP und Social Media inklusive",
     "price": "Ab 49 €/Monat",
     "priceNote": "zzgl. MwSt.",
     "cta": "Konto erstellen",
     "secondary": "So funktioniert's",
-    "reassurance": "Keine E-Mail und kein Beitrag geht ohne Ihre Freigabe raus.",
     "showcase": {
       "label": "Beispiele nach Art des Betriebs",
       "example": "Echter Screenshot des Portals · Beispieldaten",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "In allen Tarifen enthalten."
+  },
+  "builder": {
+    "title": "Was Ihnen fehlt, baut Alberto.",
+    "lede": "Alberto, Ihr Entwicklungsleiter, erstellt Ihre Website, Ihren Onlineshop und die kleinen Apps, die Ihr Betrieb braucht – ohne dass Sie für jede Kleinigkeit ein Abo bezahlen.",
+    "name": "Alberto",
+    "role": "Leitung Entwicklung",
+    "builds": "Baut",
+    "outputs": [
+      "Ihre Website",
+      "Ihr Onlineshop",
+      "Ihre Apps"
+    ],
+    "owned": "Auf Ihren Namen bei",
+    "points": [
+      {
+        "name": "Ihre Website und Ihr Shop",
+        "desc": "Erstellt, verbessert und aktuell gehalten, wann immer Sie es wünschen."
+      },
+      {
+        "name": "Die Apps für Ihren Betrieb",
+        "desc": "Kleine Werkzeuge nach Maß: zum Beispiel ein Buchungsformular, eine Bestellübersicht oder ein Kundenportal."
+      },
+      {
+        "name": "Alles bleibt auf Ihren Namen",
+        "desc": "Der Code liegt in Ihrem GitHub-Konto und wird über Ihr Vercel-Konto veröffentlicht. Er gehört Ihnen, auch wenn Sie eines Tages gehen."
+      },
+      {
+        "name": "Geprüft vor der Übergabe",
+        "desc": "Getestet und auf Sicherheit geprüft. Ohne Ihre Erlaubnis wird nichts Neues in Ihren Konten angelegt."
+      }
+    ],
+    "claim": "Unabhängigkeit: Das gibt Ihnen Departify.",
+    "note": "Zum Erstellen und Veröffentlichen verbinden Sie Ihre Konten bei GitHub und Vercel."
   },
   "tools": {
     "title": "Verbinden Sie, was Sie schon nutzen",
@@ -293,7 +325,7 @@
     "title": "Klare Preise, ab 49 € im Monat.",
     "lede": "Alle Tarife enthalten die Tools und das komplette digitale Team. Unterschiedlich ist, wie viel Arbeit anfällt und wie viel Begleitung Sie möchten.",
     "perMonth": "/Monat",
-    "vat": "zzgl. MwSt. · monatliche Zahlung",
+    "vat": "Preise pro Monat · zzgl. MwSt. · monatliche Zahlung",
     "featuredTag": "Für den Arbeitsalltag",
     "cta": "Konto erstellen",
     "taskNote": "Eine Aufgabe ist eine abgeschlossene Arbeit: eine Anfrage beantworten, ein Angebot vorbereiten oder einen Beitrag schreiben.",
@@ -303,7 +335,6 @@
         "for": "Für Inhaber, die beginnen, die tägliche Arbeit abzugeben.",
         "summary": "Ausgelegt auf etwa 100 Aufgaben im Monat.",
         "points": [
-          "CRM, ERP und Social-Media-Beiträge inklusive",
           "Das ganze digitale Team, mit Ihren Freigaben",
           "1 verbundenes E-Mail-Konto",
           "Hilfe per E-Mail"
@@ -397,7 +428,8 @@
     "extrasBody": "Bilder oder Videos entstehen über Ihr eigenes Konto bei einem Anbieter wie Google oder OpenAI, der Ihnen das gesondert berechnet. Dasselbe gilt für Anzeigen, die Sie bezahlen.",
     "customPrice": "Individuell",
     "customNote": "Wir erstellen Ihnen ein Angebot",
-    "customCta": "Sprechen wir"
+    "customCta": "Sprechen wir",
+    "includedAll": "In allen Tarifen enthalten: CRM, ERP, Social-Media-Beiträge, Chat, das komplette digitale Team und Freigaben"
   },
   "faq": {
     "title": "Gut zu wissen, bevor Sie starten.",

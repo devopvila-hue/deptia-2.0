@@ -2,7 +2,7 @@
 
 ## Cliente al que se habla
 
-Propietario de un negocio de 1 a 15 personas que ya vende pero sigue haciéndolo todo. La página lo dice en la primera línea («Para negocios de 1 a 15 personas») para que quien no encaje se dé cuenta pronto. No se escribe para desarrolladores ni para expertos en IA.
+Desde la v3, cualquier negocio que ya vende: desde quien lo lleva solo hasta quien dirige un equipo de 20 personas. Sin límite de tamaño en el mensaje (el «1 a 15 personas» de la v1 se retiró a petición del operador). No se escribe para desarrolladores ni para expertos en IA.
 
 ## Propuesta
 
@@ -31,12 +31,21 @@ La sustitución de herramientas sueltas (publicación en redes, tienda, gestor d
 - Prueba gratuita, «sin tarjeta», descuentos, testimonios, logos de clientes, cifras de ahorro y certificaciones.
 - Vocabulario técnico (agentes, LLM, orquestación, ecosistema, «potenciado por IA»). Un test lo vigila en los siete idiomas.
 
+## Diseño v4 (2026-10-30, tras la revisión del operador)
+
+Motivo: la primera pantalla de la v3 tenía siete piezas (píldora, titular, subtítulo, línea de público, botones, precio y garantía) y el conjunto era gris sobre gris.
+
+- **Primera pantalla con cuatro piezas:** titular «Todo tu negocio, en un solo lugar.», una frase (qué incluye, y que sirve tanto para quien va solo como para un equipo de 20), botón de alta con enlace «Ver cómo funciona», y una línea con el precio y «CRM, ERP y redes incluidos». Debajo, la ventana del producto. Los sectores van bajo la ventana, no encima.
+- **Color de marca:** carbón con un tinte verde y el lima del símbolo D en oscuro (por defecto); verde profundo del símbolo en claro. Halo verde detrás del producto, franjas verdes suaves para alternar secciones y la segunda línea del titular con el degradado del logo.
+- **El cristal, solo en la ventana del producto.** El resto de la página no imita el portal: tarjetas sólidas.
+- **Nueva sección «Independencia»:** Alberto, responsable de Desarrollo, crea la web, la tienda y pequeñas aplicaciones en las cuentas del propio cliente (GitHub y Vercel), con permiso antes de crear nada. Mensaje: menos suscripciones; lo creado es del cliente. Respaldo y condiciones en `VERIFICACION-AFIRMACIONES.md` (v4).
+
 ## Diseño v3 (2026-10-30, tras la revisión del operador)
 
 - **Público abierto.** Fuera «de 1 a 15 personas» y fuera el ejemplo único de reformas. La primera pantalla enseña seis tipos de negocio (clínica, tienda online, asesoría, agencia, academia y servicio técnico) y dice: «Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas».
 - **Todo incluido, explícito.** Etiqueta «CRM, ERP y redes incluidos» y sección «Todo lo que necesitas, incluido» justo después de la portada: CRM, ERP, publicación en redes, chat, tareas y agenda, y tienda en pruebas. Mensaje: sin pagar herramientas sueltas, importas tus datos y a trabajar.
 - **Producto real.** Todas las imágenes de producto son capturas del portal en Glass White (claro) y Glass (oscuro): Inicio por sector, Chat y Aprobaciones, en es/en/ro. Las páginas en francés, alemán, italiano y húngaro muestran el portal en inglés, porque es como lo verá ese cliente.
-- **Lenguaje visual del portal.** Gris #f6f6f6 con luz blanca, tarjetas blancas sólidas con filo y sombra suave, acento negro (blanco en oscuro) y tipografía Geist, la del portal.
+- **Lenguaje visual del portal.** Gris #f6f6f6 con luz blanca, tarjetas blancas sólidas con filo y sombra suave, acento negro (blanco en oscuro) y tipografía Geist, la del portal. (Sustituido en la v4: el operador lo vio plano.)
 - **Se recupera la cinta de herramientas** de la web anterior, con pausa y estática si se pide menos movimiento, y con los 21 conectores reales del catálogo (los de la web anterior incluían herramientas que no se conectan).
 - **Se conserva** el diagrama antes/después que el operador aprobó.
 - **Cuarto plan «Empresa»**, a medida, con «Hablemos».

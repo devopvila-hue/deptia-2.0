@@ -17,15 +17,14 @@
     "themeLight": "Switch to light mode"
   },
   "hero": {
-    "audience": "CRM, ERP and social publishing included",
-    "title": "Your business shouldn't depend on you doing everything.",
-    "subtitle": "Bring your customers, your sales and your admin together in one place, with a team of digital employees that helps you get the work done.",
-    "forWhom": "Whether you run your business on your own or lead a team of 20: everything under control, without losing your mind.",
+    "title": "Your whole business,",
+    "titleAccent": "in one place.",
+    "subtitle": "Customers, invoices, social media and a digital team that does the work with you. Run it on your own without losing your mind, or keep a team of 20 under control.",
+    "includedTag": "CRM, ERP and social publishing included",
     "price": "From €49/month",
     "priceNote": "VAT not included",
     "cta": "Create my account",
     "secondary": "See how it works",
-    "reassurance": "No email or post goes out without your approval.",
     "showcase": {
       "label": "Examples by type of business",
       "example": "Real portal screenshot · example data",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Included in every plan."
+  },
+  "builder": {
+    "title": "Whatever you're missing, Alberto builds it.",
+    "lede": "Alberto, your development lead, builds your website, your online shop and the small apps your business needs, so you don't pay a subscription for every single thing.",
+    "name": "Alberto",
+    "role": "Development lead",
+    "builds": "Builds",
+    "outputs": [
+      "Your website",
+      "Your online shop",
+      "Your apps"
+    ],
+    "owned": "In your name on",
+    "points": [
+      {
+        "name": "Your website and shop",
+        "desc": "Built, improved and kept up to date whenever you ask."
+      },
+      {
+        "name": "The apps your business needs",
+        "desc": "Small tools made to measure: a booking form, an order dashboard or a customer portal, for example."
+      },
+      {
+        "name": "Everything stays in your name",
+        "desc": "The code lives in your GitHub account and is published on your Vercel account. It's yours, even if you leave one day."
+      },
+      {
+        "name": "Checked before delivery",
+        "desc": "Tested and reviewed for security, and nothing new is created in your accounts without your permission."
+      }
+    ],
+    "claim": "Independence: that's what Departify gives you.",
+    "note": "To build and publish, connect your GitHub and Vercel accounts."
   },
   "tools": {
     "title": "Connect what you already use",
@@ -293,7 +325,7 @@
     "title": "Clear pricing, from €49 a month.",
     "lede": "Every plan includes the tools and the full digital team. What changes is how much work you need and how much support you want.",
     "perMonth": "/month",
-    "vat": "VAT not included · billed monthly",
+    "vat": "Prices per month · VAT not included · billed monthly",
     "featuredTag": "For day-to-day work",
     "cta": "Create my account",
     "taskNote": "A task is a complete piece of work: answering an enquiry, preparing a proposal or writing a post.",
@@ -303,7 +335,6 @@
         "for": "For owners starting to hand off everyday work.",
         "summary": "Designed for around 100 tasks a month.",
         "points": [
-          "CRM, ERP and social publishing included",
           "The full digital team, with your approvals",
           "1 connected email account",
           "Help by email"
@@ -397,7 +428,8 @@
     "extrasBody": "Creating images or videos uses your own account with a provider such as Google or OpenAI, which bills you separately. The same goes for any ads you choose to pay for.",
     "customPrice": "Custom",
     "customNote": "We'll prepare a proposal",
-    "customCta": "Let's talk"
+    "customCta": "Let's talk",
+    "includedAll": "Included in every plan: CRM, ERP, social publishing, chat, the full digital team and approvals"
   },
   "faq": {
     "title": "Worth knowing before you start.",

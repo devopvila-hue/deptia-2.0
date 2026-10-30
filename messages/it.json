@@ -17,15 +17,14 @@
     "themeLight": "Attiva la modalità chiara"
   },
   "hero": {
-    "audience": "CRM, ERP e social inclusi",
-    "title": "La tua attività non dovrebbe dipendere dal fatto che fai tutto tu.",
-    "subtitle": "Riunisci clienti, vendite e gestione in un unico posto, con una squadra di dipendenti digitali che ti aiuta a portare avanti il lavoro.",
-    "forWhom": "Che tu gestisca l'attività da solo o guidi una squadra di 20 persone: tutto sotto controllo, senza impazzire.",
+    "title": "Tutta la tua attività,",
+    "titleAccent": "in un solo posto.",
+    "subtitle": "Clienti, fatture, social e un team digitale che lavora con te. Gestiscila da solo senza impazzire, o tieni sotto controllo un team di 20 persone.",
+    "includedTag": "CRM, ERP e social inclusi",
     "price": "Da 49 €/mese",
     "priceNote": "IVA esclusa",
     "cta": "Crea il mio account",
     "secondary": "Scopri come funziona",
-    "reassurance": "Nessuna email e nessun post parte senza la tua approvazione.",
     "showcase": {
       "label": "Esempi per tipo di attività",
       "example": "Schermata reale del portale · dati di esempio",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Incluso in tutti i piani."
+  },
+  "builder": {
+    "title": "Quello che ti manca, lo costruisce Alberto.",
+    "lede": "Alberto, il tuo responsabile dello sviluppo, crea il tuo sito web, il tuo negozio online e le piccole app che servono alla tua attività, senza pagare un abbonamento per ogni cosa.",
+    "name": "Alberto",
+    "role": "Responsabile dello sviluppo",
+    "builds": "Costruisce",
+    "outputs": [
+      "Il tuo sito",
+      "Il tuo negozio online",
+      "Le tue app"
+    ],
+    "owned": "A tuo nome su",
+    "points": [
+      {
+        "name": "Il tuo sito e il tuo negozio",
+        "desc": "Creati, migliorati e tenuti aggiornati quando lo chiedi."
+      },
+      {
+        "name": "Le app della tua attività",
+        "desc": "Piccoli strumenti su misura: un modulo di prenotazione, un pannello ordini o un portale clienti, per esempio."
+      },
+      {
+        "name": "Tutto resta a tuo nome",
+        "desc": "Il codice vive nel tuo account GitHub e si pubblica sul tuo account Vercel. È tuo, anche se un giorno te ne vai."
+      },
+      {
+        "name": "Verificato prima della consegna",
+        "desc": "Testato e controllato per la sicurezza; nulla di nuovo viene creato nei tuoi account senza il tuo permesso."
+      }
+    ],
+    "claim": "Indipendenza: ecco cosa ti dà Departify.",
+    "note": "Per creare e pubblicare, collega i tuoi account GitHub e Vercel."
   },
   "tools": {
     "title": "Collega ciò che usi già",
@@ -293,7 +325,7 @@
     "title": "Un prezzo chiaro, da 49 € al mese.",
     "lede": "Tutti i piani includono gli strumenti e la squadra digitale completa. Cambia quanto lavoro ti serve e quanto supporto desideri.",
     "perMonth": "/mese",
-    "vat": "IVA esclusa · pagamento mensile",
+    "vat": "Prezzi al mese · IVA esclusa · pagamento mensile",
     "featuredTag": "Per il lavoro di ogni giorno",
     "cta": "Crea il mio account",
     "taskNote": "Un'attività è un lavoro completo: rispondere a una richiesta, preparare una proposta o scrivere un post.",
@@ -303,7 +335,6 @@
         "for": "Per il titolare che inizia a delegare il lavoro di ogni giorno.",
         "summary": "Pensato per circa 100 attività al mese.",
         "points": [
-          "CRM, ERP e pubblicazione sui social inclusi",
           "Tutta la squadra digitale, con le tue approvazioni",
           "1 account email collegato",
           "Assistenza via email"
@@ -397,7 +428,8 @@
     "extrasBody": "Creare immagini o video usa il tuo account presso un fornitore, come Google o OpenAI, che ti fattura a parte. Lo stesso vale per la pubblicità che decidi di pagare.",
     "customPrice": "Su misura",
     "customNote": "Ti prepariamo una proposta",
-    "customCta": "Parliamone"
+    "customCta": "Parliamone",
+    "includedAll": "Incluso in tutti i piani: CRM, ERP, pubblicazione sui social, chat, squadra digitale completa e approvazioni"
   },
   "faq": {
     "title": "Cosa sapere prima di iniziare.",

@@ -17,15 +17,14 @@
     "themeLight": "Activează modul luminos"
   },
   "hero": {
-    "audience": "CRM, ERP și rețele incluse",
-    "title": "Afacerea ta nu ar trebui să depindă de faptul că faci totul tu.",
-    "subtitle": "Adună-ți clienții, vânzările și administrarea într-un singur loc, cu o echipă de angajați digitali care te ajută să duci munca la capăt.",
-    "forWhom": "Fie că îți conduci singur afacerea, fie că ai o echipă de 20 de oameni: totul sub control, fără stres.",
+    "title": "Toată afacerea ta,",
+    "titleAccent": "într-un singur loc.",
+    "subtitle": "Clienți, facturi, rețele sociale și o echipă digitală care face treaba cu tine. Condu-o singur fără să înnebunești sau ține sub control o echipă de 20 de oameni.",
+    "includedTag": "CRM, ERP și rețele incluse",
     "price": "De la 49 €/lună",
     "priceNote": "TVA neinclus",
     "cta": "Creează-mi contul",
     "secondary": "Vezi cum funcționează",
-    "reassurance": "Niciun e-mail și nicio postare nu pleacă fără aprobarea ta.",
     "showcase": {
       "label": "Exemple după tipul afacerii",
       "example": "Captură reală din portal · date de exemplu",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Inclus în toate planurile."
+  },
+  "builder": {
+    "title": "Ce îți lipsește, construiește Alberto.",
+    "lede": "Alberto, responsabilul tău de dezvoltare, îți creează site-ul, magazinul online și aplicațiile mici de care are nevoie firma ta, fără să plătești un abonament pentru fiecare lucru.",
+    "name": "Alberto",
+    "role": "Responsabil de dezvoltare",
+    "builds": "Construiește",
+    "outputs": [
+      "Site-ul tău",
+      "Magazinul online",
+      "Aplicațiile tale"
+    ],
+    "owned": "Pe numele tău în",
+    "points": [
+      {
+        "name": "Site-ul și magazinul tău",
+        "desc": "Create, îmbunătățite și ținute la zi oricând ceri."
+      },
+      {
+        "name": "Aplicațiile firmei tale",
+        "desc": "Instrumente mici, făcute pe măsură: un formular de rezervări, un panou de comenzi sau un portal pentru clienți, de exemplu."
+      },
+      {
+        "name": "Totul rămâne pe numele tău",
+        "desc": "Codul stă în contul tău GitHub și se publică în contul tău Vercel. E al tău, chiar dacă într-o zi pleci."
+      },
+      {
+        "name": "Verificat înainte de livrare",
+        "desc": "Testat și verificat din punct de vedere al securității; nimic nou nu se creează în conturile tale fără permisiunea ta."
+      }
+    ],
+    "claim": "Independența: asta îți oferă Departify.",
+    "note": "Ca să creeze și să publice, conectează-ți conturile GitHub și Vercel."
   },
   "tools": {
     "title": "Conectează ce folosești deja",
@@ -293,7 +325,7 @@
     "title": "Un preț clar, de la 49 € pe lună.",
     "lede": "Toate planurile includ instrumentele și întreaga echipă digitală. Diferă cât de multă muncă ai nevoie și cât sprijin vrei.",
     "perMonth": "/lună",
-    "vat": "TVA neinclus · plată lunară",
+    "vat": "Prețuri pe lună · TVA neinclus · plată lunară",
     "featuredTag": "Pentru munca de zi cu zi",
     "cta": "Creează-mi contul",
     "taskNote": "O sarcină este o lucrare completă: răspunsul la o cerere, pregătirea unei oferte sau scrierea unei postări.",
@@ -303,7 +335,6 @@
         "for": "Pentru proprietarul care începe să delege munca de zi cu zi.",
         "summary": "Gândit pentru aproximativ 100 de sarcini pe lună.",
         "points": [
-          "CRM, ERP și publicare pe rețele incluse",
           "Toată echipa digitală, cu aprobările tale",
           "1 cont de e-mail conectat",
           "Ajutor prin e-mail"
@@ -397,7 +428,8 @@
     "extrasBody": "Crearea de imagini sau videoclipuri folosește propriul tău cont la un furnizor, precum Google sau OpenAI, care îți facturează separat. La fel și reclamele pe care decizi să le plătești.",
     "customPrice": "La cerere",
     "customNote": "Îți pregătim o ofertă",
-    "customCta": "Hai să vorbim"
+    "customCta": "Hai să vorbim",
+    "includedAll": "Inclus în toate planurile: CRM, ERP, publicare pe rețele, chat, întreaga echipă digitală și aprobări"
   },
   "faq": {
     "title": "Ce e bine să știi înainte să începi.",

@@ -20,9 +20,12 @@ export default async function OpengraphImage({ params: { locale } }: { params: {
       <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", background: "#ffffff", padding: "72px 80px", color: "#121412" }}>
         {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
         <img src={logo} width={216} height={48} />
-        <div style={{ display: "flex", fontSize: 68, fontWeight: 700, letterSpacing: "-0.03em", lineHeight: 1.05, maxWidth: 1000 }}>{m.hero.title}</div>
+        <div style={{ display: "flex", flexDirection: "column", fontSize: 76, fontWeight: 700, letterSpacing: "-0.035em", lineHeight: 1.04, maxWidth: 1000 }}>
+          <span>{m.hero.title}</span>
+          <span style={{ color: "#057e2f" }}>{m.hero.titleAccent}</span>
+        </div>
         <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 30, color: "#4a4e47" }}>
-          <div style={{ display: "flex", background: "#0b7a3b", color: "#fff", borderRadius: 999, padding: "10px 24px" }}>{m.hero.price}</div>
+          <div style={{ display: "flex", background: "#055526", color: "#fff", borderRadius: 999, padding: "10px 24px" }}>{m.hero.price}</div>
           <div style={{ display: "flex" }}>{m.hero.priceNote}</div>
         </div>
       </div>

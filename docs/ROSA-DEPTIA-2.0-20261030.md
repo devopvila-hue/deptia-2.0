@@ -6,11 +6,11 @@ Rehacer la landing de Departify como propuesta comercial nueva (brief de Astra),
 
 ## Veredicto
 
-**PASS local** de implementación y calidad (v3: 68/68 en navegador, axe sin incidencias en ambos temas, Lighthouse móvil 86–96 / 100, ver QA). **No publicado**: hay bloqueos de producto antes de que esta página pueda sustituir a `departify.app` (ver `docs/VERIFICACION-AFIRMACIONES.md`).
+**PASS local** de implementación y calidad (v4: 69/69 en navegador, axe sin incidencias en ambos temas, Lighthouse móvil 92–95 / 100, ver QA). **No publicado**: hay bloqueos de producto antes de que esta página pueda sustituir a `departify.app` (ver `docs/VERIFICACION-AFIRMACIONES.md`).
 
 ## Estado
 
-- Repositorio `devopvila-hue/deptia-2.0`: v1 en `main` (`667119c`). El operador la rechazó por el diseño («parece hecha con IA de prisa», sin modo oscuro). El operador también rechazó la v2 (público cerrado a reformas, interfaz inventada, dibujos infantiles). La v3 está en la rama `claude/elegant-heisenberg-7asako`: capturas reales del portal Glass White/Glass, seis sectores, «todo incluido», cinta de conectores y plan Empresa.
+- Repositorio `devopvila-hue/deptia-2.0`: v1 en `main` (`667119c`). El operador la rechazó por el diseño («parece hecha con IA de prisa», sin modo oscuro). El operador también rechazó la v2 (público cerrado a reformas, interfaz inventada, dibujos infantiles). La v3 y la v4 están en la rama `claude/elegant-heisenberg-7asako`. La v3 añadió capturas reales del portal, seis sectores, «todo incluido», cinta de conectores y plan Empresa. El operador vio la v3 amontonada y plana. La v4 deja la primera pantalla en cuatro piezas, oscura por defecto y con el verde de marca, guarda el cristal para la ventana del producto, alinea los planes y añade la sección «Independencia» con Alberto.
 
 - Proyecto independiente con la misma base técnica que la web actual (Next 14, Tailwind, next-intl, siete idiomas).
 - `noindex` por defecto (`NEXT_PUBLIC_INDEXABLE`).
@@ -30,4 +30,5 @@ Rehacer la landing de Departify como propuesta comercial nueva (brief de Astra),
 2. Confirmar en producción el aprovisionamiento de CRM y ERP para cuentas nuevas.
 3. Validar los supuestos de `docs/PRECIOS-SUPUESTOS.md` con el registro de uso de Customer Zero.
 4. Prueba de comprensión con cinco propietarios del perfil.
-5. Con OK del operador: desplegar como vista previa (con `noindex`), revisar, migrar páginas legales y decidir la sustitución de `departify.app`.
+5. Operador: confirmar si Alberto (Desarrollo) entra en todos los planes; en código es `independent`.
+6. Con OK del operador: desplegar como vista previa (con `noindex`), revisar, migrar páginas legales y decidir la sustitución de `departify.app`.

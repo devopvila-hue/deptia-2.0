@@ -17,15 +17,14 @@
     "themeLight": "Activer le mode clair"
   },
   "hero": {
-    "audience": "CRM, ERP et réseaux inclus",
-    "title": "Votre entreprise ne devrait pas dépendre de vous pour tout.",
-    "subtitle": "Réunissez vos clients, vos ventes et votre gestion au même endroit, avec une équipe d'employés numériques qui vous aide à faire avancer le travail.",
-    "forWhom": "Que vous gériez votre entreprise seul ou une équipe de 20 personnes : tout sous contrôle, sans vous épuiser.",
+    "title": "Toute votre entreprise,",
+    "titleAccent": "au même endroit.",
+    "subtitle": "Clients, factures, réseaux sociaux et une équipe numérique qui fait le travail avec vous. Gérez seul sans vous épuiser, ou gardez une équipe de 20 personnes sous contrôle.",
+    "includedTag": "CRM, ERP et réseaux inclus",
     "price": "À partir de 49 €/mois",
     "priceNote": "HT",
     "cta": "Créer mon compte",
     "secondary": "Voir comment ça marche",
-    "reassurance": "Aucun e-mail ni aucune publication ne part sans votre accord.",
     "showcase": {
       "label": "Exemples par type d’entreprise",
       "example": "Capture réelle du portail · données d’exemple",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Inclus dans toutes les offres."
+  },
+  "builder": {
+    "title": "Ce qui vous manque, Alberto le construit.",
+    "lede": "Alberto, votre responsable du développement, crée votre site web, votre boutique en ligne et les petites applications dont votre entreprise a besoin, sans payer un abonnement pour chaque chose.",
+    "name": "Alberto",
+    "role": "Responsable du développement",
+    "builds": "Construit",
+    "outputs": [
+      "Votre site web",
+      "Votre boutique en ligne",
+      "Vos applications"
+    ],
+    "owned": "À votre nom sur",
+    "points": [
+      {
+        "name": "Votre site et votre boutique",
+        "desc": "Créés, améliorés et tenus à jour dès que vous le demandez."
+      },
+      {
+        "name": "Les applications de votre entreprise",
+        "desc": "De petits outils sur mesure : un formulaire de réservation, un tableau de commandes ou un portail client, par exemple."
+      },
+      {
+        "name": "Tout reste à votre nom",
+        "desc": "Le code vit dans votre compte GitHub et se publie sur votre compte Vercel. Il est à vous, même si vous partez un jour."
+      },
+      {
+        "name": "Vérifié avant la livraison",
+        "desc": "Testé, revu côté sécurité, et rien de nouveau n'est créé dans vos comptes sans votre accord."
+      }
+    ],
+    "claim": "L'indépendance : voilà ce que vous apporte Departify.",
+    "note": "Pour créer et publier, connectez vos comptes GitHub et Vercel."
   },
   "tools": {
     "title": "Connectez ce que vous utilisez déjà",
@@ -293,7 +325,7 @@
     "title": "Un prix clair, à partir de 49 € par mois.",
     "lede": "Toutes les offres incluent les outils et l'équipe numérique complète. Ce qui change, c'est le volume de travail et le niveau d'accompagnement.",
     "perMonth": "/mois",
-    "vat": "HT · paiement mensuel",
+    "vat": "Prix par mois · HT · paiement mensuel",
     "featuredTag": "Pour le quotidien",
     "cta": "Créer mon compte",
     "taskNote": "Une tâche est un travail complet : répondre à une demande, préparer une proposition ou rédiger une publication.",
@@ -303,7 +335,6 @@
         "for": "Pour le dirigeant qui commence à déléguer le travail de tous les jours.",
         "summary": "Prévu pour environ 100 tâches par mois.",
         "points": [
-          "CRM, ERP et publication sur les réseaux inclus",
           "Toute l'équipe numérique, avec vos validations",
           "1 compte e-mail connecté",
           "Aide par e-mail"
@@ -397,7 +428,8 @@
     "extrasBody": "La création d'images ou de vidéos utilise votre propre compte chez un fournisseur, comme Google ou OpenAI, qui vous facture à part. Il en va de même pour les publicités que vous décidez de payer.",
     "customPrice": "Sur mesure",
     "customNote": "Nous vous préparons une proposition",
-    "customCta": "Parlons-en"
+    "customCta": "Parlons-en",
+    "includedAll": "Inclus dans toutes les offres : CRM, ERP, publication sur les réseaux, chat, équipe numérique complète et validations"
   },
   "faq": {
     "title": "Ce qu'il faut savoir avant de commencer.",

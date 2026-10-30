@@ -17,15 +17,14 @@
     "themeLight": "Activar modo claro"
   },
   "hero": {
-    "audience": "CRM, ERP y redes incluidos",
-    "title": "Tu negocio no debería depender de que tú lo hagas todo.",
-    "subtitle": "Reúne tus clientes, tus ventas y tu gestión en un solo lugar, con un equipo de empleados digitales que te ayuda a sacar el trabajo adelante.",
-    "forWhom": "Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas: todo bajo control, sin volverse loco.",
+    "title": "Todo tu negocio,",
+    "titleAccent": "en un solo lugar.",
+    "subtitle": "Clientes, facturas, redes y un equipo digital que hace el trabajo contigo. Llévalo tú solo sin volverte loco, o con un equipo de 20 bajo control.",
+    "includedTag": "CRM, ERP y redes incluidos",
     "price": "Desde 49 €/mes",
     "priceNote": "IVA no incluido",
     "cta": "Crear mi cuenta",
     "secondary": "Ver cómo funciona",
-    "reassurance": "Ningún correo ni publicación sale sin tu aprobación.",
     "showcase": {
       "label": "Ejemplos por tipo de negocio",
       "example": "Captura real del portal · datos de ejemplo",
@@ -72,6 +71,39 @@
       }
     ],
     "note": "Incluido en todos los planes."
+  },
+  "builder": {
+    "title": "Lo que te falte, Alberto lo construye.",
+    "lede": "Alberto es tu responsable de desarrollo. Crea tu web, tu tienda online y las pequeñas aplicaciones que necesita tu empresa, sin que tengas que pagar una suscripción por cada cosa.",
+    "name": "Alberto",
+    "role": "Responsable de Desarrollo",
+    "builds": "Construye",
+    "outputs": [
+      "Tu web",
+      "Tu tienda online",
+      "Tus apps"
+    ],
+    "owned": "A tu nombre en",
+    "points": [
+      {
+        "name": "Tu web y tu tienda",
+        "desc": "Las crea, las mejora y las mantiene al día cuando se lo pides."
+      },
+      {
+        "name": "Las apps de tu empresa",
+        "desc": "Pequeñas herramientas a medida: un formulario de reservas, un panel de pedidos o un portal para tus clientes, por ejemplo."
+      },
+      {
+        "name": "Todo queda a tu nombre",
+        "desc": "El código vive en tu cuenta de GitHub y se publica en tu cuenta de Vercel. Es tuyo, aunque un día te vayas."
+      },
+      {
+        "name": "Comprobado antes de entregarlo",
+        "desc": "Lo prueba, revisa la seguridad y te pide permiso antes de crear nada nuevo en tus cuentas."
+      }
+    ],
+    "claim": "Independencia: eso es lo que te da Departify.",
+    "note": "Para crear y publicar, conecta tus cuentas de GitHub y Vercel."
   },
   "tools": {
     "title": "Conecta lo que ya usas",
@@ -293,7 +325,7 @@
     "title": "Un precio claro, desde 49 € al mes.",
     "lede": "Todos los planes incluyen las herramientas y el equipo digital completo. Lo que cambia es cuánto trabajo necesitas y cuánto acompañamiento quieres.",
     "perMonth": "/mes",
-    "vat": "IVA no incluido · pago mensual",
+    "vat": "Precios por mes · IVA no incluido · pago mensual",
     "featuredTag": "Para el día a día",
     "cta": "Crear mi cuenta",
     "taskNote": "Una tarea es un trabajo completo: responder una consulta, preparar una propuesta o redactar una publicación.",
@@ -303,7 +335,6 @@
         "for": "Para el propietario que empieza a delegar el trabajo de cada día.",
         "summary": "Pensado para unas 100 tareas al mes.",
         "points": [
-          "CRM, ERP y publicación en redes incluidos",
           "Todo el equipo digital, con tus aprobaciones",
           "1 cuenta de correo conectada",
           "Ayuda por correo"
@@ -397,7 +428,8 @@
     "extrasBody": "Crear imágenes o vídeos usa tu propia cuenta de un proveedor, como Google u OpenAI, que te lo factura aparte. Lo mismo ocurre con los anuncios que decidas pagar.",
     "customPrice": "A medida",
     "customNote": "Te preparamos una propuesta",
-    "customCta": "Hablemos"
+    "customCta": "Hablemos",
+    "includedAll": "Incluido en todos los planes: CRM, ERP, publicación en redes, chat, equipo digital completo y aprobaciones"
   },
   "faq": {
     "title": "Lo que conviene saber antes de empezar.",

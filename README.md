@@ -2,7 +2,7 @@
 
 Nueva landing comercial, separada de `devopvila-hue/deptia` (la web actual en `departify.app` no se toca).
 
-Next.js 14 (App Router) + Tailwind + next-intl, la misma base técnica que la web actual. Una sola página en siete idiomas: es (por defecto, sin prefijo), en, fr, de, it, ro, hu. Tema claro y oscuro (preferencia del sistema + selector). Tipografía Inter con eje óptico, alojada.
+Next.js 14 (App Router) + Tailwind + next-intl, la misma base técnica que la web actual. Una sola página en siete idiomas: es (por defecto, sin prefijo), en, fr, de, it, ro, hu. Oscuro por defecto, con selector a claro que se recuerda. Tipografía Geist (la del portal), alojada.
 
 ## Uso
 

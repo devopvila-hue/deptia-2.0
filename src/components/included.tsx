@@ -21,7 +21,7 @@ export function Included({ copy }: { copy: IncludedCopy }) {
         <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
           {copy.items.map((it, i) => (
             <li key={it.name} className="surface flex gap-4 p-5 sm:p-6">
-              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-line bg-bg text-ink" aria-hidden="true">
+              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accentsoft text-accenttext" aria-hidden="true">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d={glyphs[i % glyphs.length]} />
                 </svg>

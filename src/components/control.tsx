@@ -13,7 +13,7 @@ export function Control({ copy }: { copy: ControlCopy }) {
     { lane: copy.lanes.yours, dot: "bg-ink" },
   ];
   return (
-    <section aria-labelledby="control-title" className="py-24 sm:py-32">
+    <section aria-labelledby="control-title" className="band py-24 sm:py-32">
       <div className="wrap">
         <div className="max-w-[46rem]" data-reveal>
           <h2 id="control-title" className="t-section">{copy.title}</h2>
