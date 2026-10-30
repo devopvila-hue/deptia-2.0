@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "title": "Departify — Stop doing everything yourself",
+    "description": "Customers, sales, quotes, invoices and email in one place, with a team of digital employees that gets the work done. You approve what matters. From €49/month + VAT."
+  },
+  "nav": {
+    "how": "How it works",
+    "included": "What's included",
+    "plans": "Plans",
+    "login": "Log in",
+    "cta": "Create my account",
+    "menu": "Open menu",
+    "close": "Close menu",
+    "nav": "Main navigation",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "audience": "For businesses of 1 to 15 people",
+    "title": "Your business shouldn't depend on you doing everything.",
+    "subtitle": "Bring your customers, your sales and your admin together in one place, with a team of digital employees that helps you get the work done.",
+    "price": "From €49/month",
+    "priceNote": "VAT not included",
+    "cta": "Create my account",
+    "secondary": "See how it works",
+    "reassurance": "No email or post goes out without your approval.",
+    "panel": {
+      "example": "Example",
+      "appSection": "Home",
+      "greeting": "Good morning, Sarah.",
+      "summary": "2 decisions are waiting for you. Your team finished 4 things this morning.",
+      "decisionsTitle": "Needs your attention",
+      "runningTitle": "In progress",
+      "doneTitle": "Done today",
+      "review": "View proposal",
+      "approve": "Approve",
+      "decisions": [
+        { "title": "Send the proposal to Laura Hughes", "meta": "Bathroom renovation · €2,480", "by": "Sales" },
+        { "title": "Post Friday's offer on Facebook", "meta": "Text and image ready", "by": "Marketing" }
+      ],
+      "inProgress": [
+        { "title": "Sort this week's enquiries", "by": "Customer service" },
+        { "title": "Follow up on 3 unanswered quotes", "by": "Admin" },
+        { "title": "Review your website to rank better on Google", "by": "SEO" }
+      ],
+      "done": [
+        { "title": "14 emails sorted by priority", "by": "Customer service" },
+        { "title": "Site visit to Paul Byrne's home added to your calendar", "by": "Admin" },
+        { "title": "PDF proposal for Laura Hughes", "by": "Sales" },
+        { "title": "Content ideas for the next two weeks", "by": "Marketing" }
+      ]
+    }
+  },
+  "scene": {
+    "eyebrow": "How it works",
+    "title": "This is how your business runs when you don't have to do it all.",
+    "lede": "An enquiry that ends with a proposal sent and a follow-up in your calendar. You only step in once: where it matters.",
+    "example": "Example with fictional data",
+    "stepsLabel": "Steps in the example",
+    "departify": "Departify",
+    "you": "You",
+    "actorTeam": "Your digital team does this",
+    "actorYou": "You decide",
+    "steps": [
+      {
+        "title": "An enquiry comes in",
+        "does": "Reads the email in your inbox, sees it's a potential customer and moves it to the top.",
+        "you": "Nothing. You don't have to keep an eye on your inbox."
+      },
+      {
+        "title": "The customer's details get organised",
+        "does": "Puts their details and what they asked for into a record, ready to save to your customers.",
+        "you": "Nothing yet. The record is saved once you approve."
+      },
+      {
+        "title": "The proposal gets prepared",
+        "does": "Drafts the reply and prepares a PDF proposal with your services and your prices.",
+        "you": "Nothing. It works from your business information."
+      },
+      {
+        "title": "You review and approve",
+        "does": "Leaves everything in Approvals: the reply, the proposal and the customer record.",
+        "you": "You review it. If you want changes, you ask in the chat. Then you approve or reject."
+      },
+      {
+        "title": "The next step is recorded",
+        "does": "Sends the reply, saves the customer and adds the follow-up to your calendar.",
+        "you": "You see on Home what's been done and what's still pending."
+      }
+    ],
+    "mail": {
+      "from": "Laura Hughes",
+      "received": "Today, 8:12",
+      "tag": "Potential customer",
+      "subject": "Quote for a bathroom renovation",
+      "body": "Hi, we'd like to renovate our bathroom at home, about 6 m². Could you send us a quote and let us know when you could start? Thanks."
+    },
+    "contact": {
+      "name": "Laura Hughes",
+      "company": "Private customer · Dublin",
+      "stage": "Waiting to be saved",
+      "fields": [
+        { "label": "Email", "value": "laura.hughes@example.com" },
+        { "label": "Phone", "value": "087 123 4567" },
+        { "label": "What she needs", "value": "Bathroom renovation, 6 m²" },
+        { "label": "How she found you", "value": "Email, today" }
+      ]
+    },
+    "quote": {
+      "title": "Proposal · Bathroom renovation",
+      "draft": "Draft",
+      "lines": [
+        { "item": "Demolition and removal", "amount": "€520" },
+        { "item": "Plumbing and drainage", "amount": "€690" },
+        { "item": "Tiling and flooring", "amount": "€870" },
+        { "item": "Sanitaryware and taps", "amount": "€400" }
+      ],
+      "total": "Total excl. VAT",
+      "totalValue": "€2,480",
+      "reply": "“Hi Laura, thanks for getting in touch. Please find attached the proposal for your bathroom renovation. We could start the week of the 17th…”"
+    },
+    "approval": {
+      "title": "Needs your attention",
+      "summary": "Send Laura Hughes the reply with the €2,480 proposal and save her to your customers",
+      "edit": "View proposal",
+      "reject": "Reject",
+      "approve": "Approve",
+      "note": "Want to change something? Say so in the chat before approving: “Offer to start on the 10th.”"
+    },
+    "next": {
+      "sent": "Reply sent to Laura Hughes with the proposal",
+      "logged": "Laura Hughes saved to your customers",
+      "followUp": "Call Laura Hughes if she hasn't replied",
+      "followUpDate": "Thursday, 10:00 · in your calendar",
+      "alert": "When she replies, you'll see it in your Departify inbox."
+    }
+  },
+  "connected": {
+    "eyebrow": "What's included",
+    "title": "Before: several tools with you in the middle. Now: everything works together.",
+    "lede": "Departify brings together what you need to run the business. Because everything shares the same information, nobody copies data from one place to another and you never have to explain the same thing twice.",
+    "beforeLabel": "Before",
+    "beforeItems": ["Customers in a spreadsheet", "Invoices in another program", "Email and calendar apart", "Social media when you remember"],
+    "beforeYou": "You, in the middle of it all",
+    "afterLabel": "With Departify",
+    "afterItems": ["Customers and sales", "Admin and invoicing", "Marketing and channels", "Shop and orders"],
+    "sharedLabel": "The same information for your whole team",
+    "afterBody": "One place, your data connected and a digital team working on top of it.",
+    "blocks": [
+      {
+        "title": "Customers and sales",
+        "line": "Your customers and upcoming sales, in order.",
+        "points": [
+          "Every customer with their details, conversations and next steps",
+          "All your email in one inbox, sorted by priority",
+          "Your calendar connected so no follow-up slips"
+        ],
+        "link": "When a customer writes in, your team already knows who they are and where things stand."
+      },
+      {
+        "title": "Admin and invoicing",
+        "line": "Quotes, invoices and accounts in the same place.",
+        "points": [
+          "Quotes, invoices, purchasing and stock",
+          "Tasks with an owner and a due date",
+          "Job sheets signed by your customer"
+        ],
+        "link": "A signed job sheet is ready to invoice, with the customer details you already have."
+      },
+      {
+        "title": "Marketing and channels",
+        "line": "Keep your business visible without having to remember every week.",
+        "points": [
+          "Ideas, copy and a posting calendar",
+          "Posts on your Facebook page at the time you choose",
+          "A review of your website so people find you on Google"
+        ],
+        "link": "Posts start from what your team already knows about your business, and you approve them before they go out."
+      },
+      {
+        "title": "Shop and orders",
+        "badge": "In testing",
+        "line": "Your catalogue and your orders, linked to your stock.",
+        "points": [
+          "An online storefront with your products",
+          "Orders recorded in your admin",
+          "Stock shared with your inventory"
+        ],
+        "link": "Today it runs in test mode: you can set it up and try orders, but it doesn't take real payments yet."
+      }
+    ],
+    "connectTitle": "Connect what you already use",
+    "connectBody": "Your email, calendar and documents stay where they are. Departify works with them.",
+    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
+    "connectNote": "Some connections can only read data, not make changes."
+  },
+  "team": {
+    "eyebrow": "Your digital team",
+    "title": "A specialist for each area. One shared understanding of your business.",
+    "lede": "Each digital employee handles one kind of work. They all draw on the same information: your customers, your services, your prices and the way you talk.",
+    "whatTitle": "What is a digital employee?",
+    "whatBody": "An artificial intelligence assistant specialised in one area. It works inside Departify, with your data and the tools you connect. It isn't a person and it can make mistakes: that's why the important things go through you.",
+    "doesLabel": "Takes care of",
+    "deliversLabel": "Gives you",
+    "asksLabel": "Asks your approval to",
+    "digitalLabel": "digital employee",
+    "primary": [
+      {
+        "area": "Customer service",
+        "name": "Julio",
+        "does": "Reading and sorting enquiries, and drafting replies.",
+        "delivers": "Your email sorted by priority and replies ready to send.",
+        "asks": "Send any reply to a customer."
+      },
+      {
+        "area": "Sales",
+        "name": "Marcos",
+        "does": "Spotting potential customers and preparing proposals.",
+        "delivers": "Qualified contacts and proposals ready to review.",
+        "asks": "Save new customers and send proposals."
+      },
+      {
+        "area": "Admin",
+        "name": "Ana",
+        "does": "Email, calendar, documents and follow-ups.",
+        "delivers": "Appointments in your calendar, tidy documents and timely reminders.",
+        "asks": "Send emails and write to your Drive documents."
+      },
+      {
+        "area": "Marketing",
+        "name": "Elvira",
+        "does": "Content, social media and campaigns, with specialists in content, social media and advertising.",
+        "delivers": "Ideas, copy, a posting calendar and a read-out of results.",
+        "asks": "Post on your Facebook page."
+      }
+    ],
+    "more": [
+      {
+        "area": "SEO",
+        "name": "Sandra",
+        "does": "Helping your website show up better on Google.",
+        "delivers": "A review of your website with concrete improvements, ranked by importance.",
+        "asks": "She suggests the improvements; you decide which ones are made."
+      },
+      {
+        "area": "Website and technology",
+        "name": "Alberto",
+        "does": "Building and maintaining your website and business tools.",
+        "delivers": "Changes prepared and explained in plain language.",
+        "asks": "Create new projects in your accounts."
+      },
+      {
+        "area": "Management",
+        "name": "",
+        "does": "Sharing out work between areas and giving you the big picture.",
+        "delivers": "The state of your business and the decisions waiting for you, in one place.",
+        "asks": "Nothing on its own: it prepares the decisions for you."
+      }
+    ],
+    "expand": "See the full team"
+  },
+  "control": {
+    "eyebrow": "You decide",
+    "title": "Your team takes care of the work. You decide what matters.",
+    "lede": "The rules are clear from day one: what it does on its own, what it asks you first and what never leaves your hands.",
+    "lanes": {
+      "own": {
+        "title": "Does on its own",
+        "body": "Internal work that doesn't reach anyone outside your business.",
+        "items": ["Reading and sorting your email", "Preparing drafts, proposals and documents", "Creating tasks and calendar appointments", "Analysing your website and your results"]
+      },
+      "approve": {
+        "title": "Asks you first",
+        "body": "Anything that goes out to other people or changes important data.",
+        "items": ["Sending or replying to emails", "Posting on your Facebook page", "Saving new customers and switching on automatic follow-ups", "Writing to your Drive documents"]
+      },
+      "yours": {
+        "title": "Always yours",
+        "body": "The decisions that define your business.",
+        "items": ["Your prices and your terms", "Who you sell to and how", "What is published in your name", "Any decision about money"]
+      }
+    },
+    "qa": [
+      {
+        "q": "What can it do on its own?",
+        "a": "Internal work: sorting, preparing, summarising, analysing and creating tasks or appointments. Anything you've already approved and scheduled, like a post, goes out on time even when you're offline."
+      },
+      {
+        "q": "What do I have to approve?",
+        "a": "Emails, posts, new customers on your list and changes to your Drive documents. You'll find everything in Approvals, with the information you need to decide."
+      },
+      {
+        "q": "Can I review and correct the work?",
+        "a": "Yes. You see the full proposal before deciding and, if you want changes, you ask in the chat in your own words. If you approve by mistake, you have a few seconds to undo it."
+      },
+      {
+        "q": "How do I start with my data and tools?",
+        "a": "You create your account, describe your business and connect your email. Your team starts with what you already have: there's nothing to migrate on day one."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Plans",
+    "title": "Clear pricing, from €49 a month.",
+    "lede": "Every plan includes the tools and the full digital team. What changes is how much work you need and how much support you want.",
+    "perMonth": "/month",
+    "vat": "VAT not included · billed monthly",
+    "featuredTag": "For day-to-day work",
+    "cta": "Create my account",
+    "taskNote": "A task is a complete piece of work: answering an enquiry, preparing a proposal or writing a post.",
+    "plans": {
+      "esencial": {
+        "name": "Essential",
+        "for": "For owners starting to hand off everyday work.",
+        "summary": "Designed for around 100 tasks a month.",
+        "points": ["Customers, sales, admin and invoicing in one place", "The full digital team, with your approvals", "1 connected email account", "Help by email"]
+      },
+      "negocio": {
+        "name": "Business",
+        "for": "For a business with daily activity across several areas.",
+        "summary": "Designed for around 400 tasks a month.",
+        "points": ["Everything in Essential", "Up to 3 connected email accounts", "Priority help by email"]
+      },
+      "crecimiento": {
+        "name": "Growth",
+        "for": "For more work and more channels.",
+        "summary": "Designed for around 1,200 tasks a month.",
+        "points": ["Everything in Business", "Up to 10 connected email accounts", "A setup session with our team"]
+      }
+    },
+    "compareTitle": "Compare plans in detail",
+    "compareRows": [
+      { "label": "Work included per month", "values": ["Around 100 tasks", "Around 400 tasks", "Around 1,200 tasks"] },
+      { "label": "Customers, sales, admin, invoicing and channels", "values": ["Included", "Included", "Included"] },
+      { "label": "Full digital team", "values": ["Included", "Included", "Included"] },
+      { "label": "Connected email accounts", "values": ["1", "Up to 3", "Up to 10"] },
+      { "label": "Help", "values": ["By email", "Priority by email", "Priority and a setup session"] }
+    ],
+    "limitTitle": "If you reach the limit",
+    "limitBody": "We'll let you know beforehand. You can change plan or wait until next month. We never charge anything extra without your permission.",
+    "billingTitle": "How billing works",
+    "billingBody": "Monthly prices excluding VAT. Before the first charge, we confirm your plan and its terms in writing.",
+    "extrasTitle": "Costs from other providers",
+    "extrasBody": "Creating images or videos uses your own account with a provider such as Google or OpenAI, which bills you separately. The same goes for any ads you choose to pay for."
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Worth knowing before you start.",
+    "items": [
+      {
+        "q": "Do I need technical knowledge?",
+        "a": "No. You ask your team for things in writing, in your own words, as you would ask a person. Connecting your email takes a few clicks."
+      },
+      {
+        "q": "What work can my digital team do?",
+        "a": "Sort and answer enquiries, prepare proposals and documents, organise your calendar, follow up with customers, create content and post it on your Facebook page, and review your website. Always with your business information."
+      },
+      {
+        "q": "Which decisions stay mine?",
+        "a": "All the important ones. No email or post goes out without your approval, and your prices, your terms and any decision about money are always yours."
+      },
+      {
+        "q": "Can I keep using my tools?",
+        "a": "Yes. Departify connects to Gmail, Outlook, Google Calendar, Google Drive and Facebook, among others. You don't have to change your email or your calendar."
+      },
+      {
+        "q": "What does the price include?",
+        "a": "The business tools, the full digital team and the volume of work in your plan. It doesn't include what other providers bill you, such as images and videos created with your account or ads you pay for. For now, each account is for one person: access for more people on your team isn't available yet."
+      },
+      {
+        "q": "How do I start, and what happens if I decide to leave?",
+        "a": "Create your account with Google, Microsoft or your email, describe your business and give your team its first task. The app is available in Spanish, English and Romanian, and your team answers in the language you write in. If you decide to leave, you can ask us to delete your company's data; we confirm the cancellation terms in writing before the first charge."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Get back to running your business.",
+    "body": "Your team takes care of the work. You decide what matters.",
+    "cta": "Create my account",
+    "note": "From €49/month · VAT not included"
+  },
+  "footer": {
+    "tagline": "Your business tools and a team of digital employees that works with them.",
+    "product": "Product",
+    "how": "How it works",
+    "included": "What's included",
+    "plans": "Plans",
+    "login": "Log in",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms",
+    "security": "Security",
+    "contact": "Contact",
+    "language": "Language",
+    "rights": "All rights reserved."
+  }
+}

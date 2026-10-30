@@ -1,0 +1,532 @@
+{
+  "meta": {
+    "title": "Departify — Hören Sie auf, alles selbst zu machen",
+    "description": "Kunden, Vertrieb, Angebote, Rechnungen und E-Mail an einem Ort, mit einem Team digitaler Mitarbeiter, das die Arbeit erledigt. Sie geben das Wichtige frei. Ab 49 €/Monat zzgl. MwSt."
+  },
+  "nav": {
+    "how": "So funktioniert's",
+    "included": "Was enthalten ist",
+    "plans": "Tarife",
+    "login": "Anmelden",
+    "cta": "Konto erstellen",
+    "menu": "Menü öffnen",
+    "close": "Menü schließen",
+    "nav": "Hauptnavigation",
+    "skip": "Zum Inhalt springen"
+  },
+  "hero": {
+    "audience": "Für Betriebe mit 1 bis 15 Personen",
+    "title": "Ihr Betrieb sollte nicht davon abhängen, dass Sie alles selbst machen.",
+    "subtitle": "Bringen Sie Kunden, Vertrieb und Verwaltung an einem Ort zusammen – mit einem Team digitaler Mitarbeiter, das Ihnen hilft, die Arbeit zu erledigen.",
+    "price": "Ab 49 €/Monat",
+    "priceNote": "zzgl. MwSt.",
+    "cta": "Konto erstellen",
+    "secondary": "So funktioniert's",
+    "reassurance": "Keine E-Mail und kein Beitrag geht ohne Ihre Freigabe raus.",
+    "panel": {
+      "example": "Beispiel",
+      "appSection": "Start",
+      "greeting": "Guten Morgen, Julia.",
+      "summary": "2 Entscheidungen warten auf Sie. Ihr Team hat heute Vormittag 4 Dinge erledigt.",
+      "decisionsTitle": "Braucht Ihre Aufmerksamkeit",
+      "runningTitle": "In Arbeit",
+      "doneTitle": "Heute erledigt",
+      "review": "Vorschlag ansehen",
+      "approve": "Freigeben",
+      "decisions": [
+        {
+          "title": "Angebot an Laura Becker senden",
+          "meta": "Badsanierung · 2.480 €",
+          "by": "Vertrieb"
+        },
+        {
+          "title": "Freitagsangebot auf Facebook posten",
+          "meta": "Text und Bild fertig",
+          "by": "Marketing"
+        }
+      ],
+      "inProgress": [
+        {
+          "title": "Anfragen dieser Woche sortieren",
+          "by": "Kundenservice"
+        },
+        {
+          "title": "3 unbeantwortete Angebote nachfassen",
+          "by": "Verwaltung"
+        },
+        {
+          "title": "Ihre Website für Google prüfen",
+          "by": "SEO"
+        }
+      ],
+      "done": [
+        {
+          "title": "14 E-Mails nach Priorität sortiert",
+          "by": "Kundenservice"
+        },
+        {
+          "title": "Vor-Ort-Termin bei Paul Weber im Kalender",
+          "by": "Verwaltung"
+        },
+        {
+          "title": "PDF-Angebot für Laura Becker",
+          "by": "Vertrieb"
+        },
+        {
+          "title": "Content-Ideen für zwei Wochen",
+          "by": "Marketing"
+        }
+      ]
+    }
+  },
+  "scene": {
+    "eyebrow": "So funktioniert's",
+    "title": "So läuft Ihr Betrieb, wenn Sie nicht mehr alles selbst machen müssen.",
+    "lede": "Eine Anfrage, die mit einem versendeten Angebot und einer Wiedervorlage im Kalender endet. Sie greifen nur an einer Stelle ein: dort, wo es zählt.",
+    "example": "Beispiel mit erfundenen Daten",
+    "stepsLabel": "Schritte im Beispiel",
+    "departify": "Departify",
+    "you": "Sie",
+    "actorTeam": "Das erledigt Ihr digitales Team",
+    "actorYou": "Das entscheiden Sie",
+    "steps": [
+      {
+        "title": "Eine Anfrage kommt herein",
+        "does": "Liest die E-Mail in Ihrem Postfach, erkennt einen möglichen Kunden und setzt ihn nach oben.",
+        "you": "Nichts. Sie müssen Ihr Postfach nicht im Blick behalten."
+      },
+      {
+        "title": "Die Kundendaten werden geordnet",
+        "does": "Fasst Kontaktdaten und Anliegen in einer Karte zusammen, bereit zum Speichern in Ihren Kunden.",
+        "you": "Noch nichts. Die Karte wird gespeichert, sobald Sie freigeben."
+      },
+      {
+        "title": "Das Angebot wird vorbereitet",
+        "does": "Entwirft die Antwort und erstellt das Angebot als PDF mit Ihren Leistungen und Preisen.",
+        "you": "Nichts. Es arbeitet mit den Informationen Ihres Betriebs."
+      },
+      {
+        "title": "Sie prüfen und geben frei",
+        "does": "Legt alles unter Freigaben ab: Antwort, Angebot und Kundenkarte.",
+        "you": "Sie prüfen. Änderungen wünschen Sie sich im Chat. Dann geben Sie frei oder lehnen ab."
+      },
+      {
+        "title": "Der nächste Schritt wird festgehalten",
+        "does": "Sendet die Antwort, speichert den Kunden und trägt die Wiedervorlage in Ihren Kalender ein.",
+        "you": "Auf der Startseite sehen Sie, was erledigt ist und was noch offen ist."
+      }
+    ],
+    "mail": {
+      "from": "Laura Becker",
+      "received": "Heute, 8:12",
+      "tag": "Möglicher Kunde",
+      "subject": "Angebot für eine Badsanierung",
+      "body": "Hallo, wir möchten unser Bad sanieren, etwa 6 m². Können Sie uns ein Angebot schicken und sagen, wann Sie anfangen könnten? Danke."
+    },
+    "contact": {
+      "name": "Laura Becker",
+      "company": "Privatkundin · Köln",
+      "stage": "Noch nicht gespeichert",
+      "fields": [
+        {
+          "label": "E-Mail",
+          "value": "laura.becker@beispiel.de"
+        },
+        {
+          "label": "Telefon",
+          "value": "0151 2345 6789"
+        },
+        {
+          "label": "Anliegen",
+          "value": "Badsanierung, 6 m²"
+        },
+        {
+          "label": "Herkunft",
+          "value": "E-Mail, heute"
+        }
+      ]
+    },
+    "quote": {
+      "title": "Angebot · Badsanierung",
+      "draft": "Entwurf",
+      "lines": [
+        {
+          "item": "Abbruch und Entsorgung",
+          "amount": "520 €"
+        },
+        {
+          "item": "Sanitärinstallation",
+          "amount": "690 €"
+        },
+        {
+          "item": "Fliesen und Boden",
+          "amount": "870 €"
+        },
+        {
+          "item": "Sanitärobjekte und Armaturen",
+          "amount": "400 €"
+        }
+      ],
+      "total": "Summe netto",
+      "totalValue": "2.480 €",
+      "reply": "„Hallo Frau Becker, vielen Dank für Ihre Anfrage. Anbei finden Sie unser Angebot für die Badsanierung. Wir könnten in der Woche ab dem 17. beginnen …“"
+    },
+    "approval": {
+      "title": "Braucht Ihre Aufmerksamkeit",
+      "summary": "Laura Becker die Antwort mit dem Angebot über 2.480 € senden und sie in Ihren Kunden speichern",
+      "edit": "Vorschlag ansehen",
+      "reject": "Ablehnen",
+      "approve": "Freigeben",
+      "note": "Möchten Sie etwas ändern? Sagen Sie es vor der Freigabe im Chat: „Biete ihr den Start am 10. an.“"
+    },
+    "next": {
+      "sent": "Antwort mit Angebot an Laura Becker gesendet",
+      "logged": "Laura Becker in Ihren Kunden gespeichert",
+      "followUp": "Laura Becker anrufen, falls sie nicht geantwortet hat",
+      "followUpDate": "Donnerstag, 10:00 · in Ihrem Kalender",
+      "alert": "Sobald sie antwortet, sehen Sie es in Ihrem Departify-Posteingang."
+    }
+  },
+  "connected": {
+    "eyebrow": "Was enthalten ist",
+    "title": "Vorher: viele Tools und Sie mittendrin. Jetzt: alles arbeitet zusammen.",
+    "lede": "Departify bündelt, was Sie zum Führen Ihres Betriebs brauchen. Weil alles dieselben Informationen nutzt, überträgt niemand Daten von Hand und Sie müssen nichts zweimal erklären.",
+    "beforeLabel": "Vorher",
+    "beforeItems": [
+      "Kunden in einer Tabelle",
+      "Rechnungen in einem anderen Programm",
+      "E-Mail und Kalender getrennt",
+      "Social Media, wenn Zeit ist"
+    ],
+    "beforeYou": "Sie, mitten in allem",
+    "afterLabel": "Mit Departify",
+    "afterItems": [
+      "Kunden und Vertrieb",
+      "Verwaltung und Rechnungen",
+      "Marketing und Kanäle",
+      "Shop und Bestellungen"
+    ],
+    "sharedLabel": "Dieselben Informationen für Ihr ganzes Team",
+    "afterBody": "Ein Ort, Ihre Daten verbunden und ein digitales Team, das damit arbeitet.",
+    "blocks": [
+      {
+        "title": "Kunden und Vertrieb",
+        "line": "Ihre Kunden und die nächsten Verkäufe, geordnet.",
+        "points": [
+          "Jeder Kunde mit Daten, Gesprächsverlauf und nächsten Schritten",
+          "Alle E-Mails in einem Postfach, nach Priorität sortiert",
+          "Ihr Kalender verbunden, damit keine Wiedervorlage untergeht"
+        ],
+        "link": "Wenn ein Kunde schreibt, weiß Ihr Team schon, wer er ist und wo Sie stehen."
+      },
+      {
+        "title": "Verwaltung und Rechnungen",
+        "line": "Angebote, Rechnungen und Finanzen an einem Ort.",
+        "points": [
+          "Angebote, Rechnungen, Einkauf und Lager",
+          "Aufgaben mit Verantwortlichem und Termin",
+          "Arbeitsberichte mit Unterschrift Ihres Kunden"
+        ],
+        "link": "Ein unterschriebener Arbeitsbericht ist bereit zur Abrechnung, mit den Kundendaten, die Sie schon haben."
+      },
+      {
+        "title": "Marketing und Kanäle",
+        "line": "Ihr Betrieb bleibt sichtbar, ohne dass Sie jede Woche daran denken müssen.",
+        "points": [
+          "Ideen, Texte und ein Redaktionsplan",
+          "Beiträge auf Ihrer Facebook-Seite zur gewünschten Zeit",
+          "Prüfung Ihrer Website, damit man Sie bei Google findet"
+        ],
+        "link": "Die Texte bauen auf dem auf, was Ihr Team über Ihren Betrieb weiß – und Sie geben sie vor der Veröffentlichung frei."
+      },
+      {
+        "title": "Shop und Bestellungen",
+        "badge": "Im Test",
+        "line": "Ihr Katalog und Ihre Bestellungen, verbunden mit Ihrem Lager.",
+        "points": [
+          "Online-Schaufenster mit Ihren Produkten",
+          "Bestellungen landen in Ihrer Verwaltung",
+          "Bestände gemeinsam mit Ihrem Lager"
+        ],
+        "link": "Aktuell läuft er im Testmodus: Sie können ihn einrichten und Bestellungen testen, echte Zahlungen nimmt er noch nicht an."
+      }
+    ],
+    "connectTitle": "Verbinden Sie, was Sie schon nutzen",
+    "connectBody": "E-Mail, Kalender und Dokumente bleiben, wo sie sind. Departify arbeitet damit.",
+    "connectors": [
+      "Gmail",
+      "Outlook",
+      "Google Calendar",
+      "Google Drive",
+      "Facebook",
+      "Shopify",
+      "WordPress",
+      "Google Analytics"
+    ],
+    "connectNote": "Manche Verbindungen erlauben nur das Lesen von Daten, keine Änderungen."
+  },
+  "team": {
+    "eyebrow": "Ihr digitales Team",
+    "title": "Spezialisten für jeden Bereich. Dasselbe Wissen über Ihren Betrieb.",
+    "lede": "Jeder digitale Mitarbeiter kümmert sich um eine Art von Arbeit. Alle greifen auf dieselben Informationen zu: Ihre Kunden, Ihre Leistungen, Ihre Preise und Ihren Tonfall.",
+    "whatTitle": "Was ist ein digitaler Mitarbeiter?",
+    "whatBody": "Ein auf einen Bereich spezialisierter Assistent mit künstlicher Intelligenz. Er arbeitet in Departify, mit Ihren Daten und den Tools, die Sie verbinden. Er ist kein Mensch und kann sich irren: Deshalb geht alles Wichtige über Ihren Tisch.",
+    "doesLabel": "Kümmert sich um",
+    "deliversLabel": "Liefert Ihnen",
+    "asksLabel": "Braucht Ihre Freigabe für",
+    "digitalLabel": "digitaler Mitarbeiter",
+    "primary": [
+      {
+        "area": "Kundenservice",
+        "name": "Julio",
+        "does": "Anfragen lesen und sortieren, Antworten vorbereiten.",
+        "delivers": "Ihr Postfach nach Priorität sortiert und Antworten, die versandbereit sind.",
+        "asks": "Jede Antwort an einen Kunden."
+      },
+      {
+        "area": "Vertrieb",
+        "name": "Marcos",
+        "does": "Mögliche Kunden erkennen und Angebote vorbereiten.",
+        "delivers": "Bewertete Kontakte und Angebote zur Prüfung.",
+        "asks": "Neue Kunden und den Versand von Angeboten."
+      },
+      {
+        "area": "Verwaltung",
+        "name": "Ana",
+        "does": "E-Mail, Kalender, Dokumente und Wiedervorlagen.",
+        "delivers": "Termine im Kalender, geordnete Dokumente und rechtzeitige Erinnerungen.",
+        "asks": "E-Mails und Änderungen an Ihren Drive-Dokumenten."
+      },
+      {
+        "area": "Marketing",
+        "name": "Elvira",
+        "does": "Inhalte, Social Media und Kampagnen, mit Spezialisten für Content, Social Media und Werbung.",
+        "delivers": "Ideen, Texte, Redaktionsplan und Auswertung der Ergebnisse.",
+        "asks": "Beiträge auf Ihrer Facebook-Seite."
+      }
+    ],
+    "more": [
+      {
+        "area": "SEO",
+        "name": "Sandra",
+        "does": "Dass Ihre Website bei Google besser gefunden wird.",
+        "delivers": "Eine Prüfung Ihrer Website mit konkreten Verbesserungen, nach Wichtigkeit sortiert.",
+        "asks": "Nichts direkt: Sie entscheiden, welche Verbesserungen umgesetzt werden."
+      },
+      {
+        "area": "Website und Technik",
+        "name": "Alberto",
+        "does": "Website und Tools Ihres Betriebs aufbauen und pflegen.",
+        "delivers": "Vorbereitete Änderungen, verständlich erklärt.",
+        "asks": "Neue Projekte in Ihren Konten."
+      },
+      {
+        "area": "Leitung",
+        "name": "",
+        "does": "Arbeit auf die Bereiche verteilen und Ihnen den Überblick geben.",
+        "delivers": "Den Stand Ihres Betriebs und die offenen Entscheidungen an einem Ort.",
+        "asks": "Nichts von sich aus: Sie bereitet Ihnen die Entscheidungen vor."
+      }
+    ],
+    "expand": "Das ganze Team ansehen"
+  },
+  "control": {
+    "eyebrow": "Sie entscheiden",
+    "title": "Ihr Team kümmert sich um die Arbeit. Sie entscheiden, was wichtig ist.",
+    "lede": "Die Regeln sind vom ersten Tag an klar: was es selbst erledigt, was es vorher fragt und was immer in Ihrer Hand bleibt.",
+    "lanes": {
+      "own": {
+        "title": "Erledigt es selbst",
+        "body": "Interne Arbeit, die niemanden außerhalb Ihres Betriebs erreicht.",
+        "items": [
+          "E-Mails lesen und sortieren",
+          "Entwürfe, Angebote und Dokumente vorbereiten",
+          "Aufgaben und Termine im Kalender anlegen",
+          "Website und Ergebnisse analysieren"
+        ]
+      },
+      "approve": {
+        "title": "Fragt Sie vorher",
+        "body": "Alles, was an andere geht oder wichtige Daten ändert.",
+        "items": [
+          "E-Mails senden oder beantworten",
+          "Auf Ihrer Facebook-Seite posten",
+          "Neue Kunden speichern und automatische Wiedervorlagen starten",
+          "In Ihre Drive-Dokumente schreiben"
+        ]
+      },
+      "yours": {
+        "title": "Bleibt immer bei Ihnen",
+        "body": "Die Entscheidungen, die Ihren Betrieb ausmachen.",
+        "items": [
+          "Ihre Preise und Konditionen",
+          "An wen und wie Sie verkaufen",
+          "Was in Ihrem Namen veröffentlicht wird",
+          "Jede Entscheidung über Geld"
+        ]
+      }
+    },
+    "qa": [
+      {
+        "q": "Was kann es selbst erledigen?",
+        "a": "Interne Arbeit: sortieren, vorbereiten, zusammenfassen, analysieren und Aufgaben oder Termine anlegen. Was Sie bereits freigegeben und eingeplant haben, etwa ein Beitrag, geht pünktlich raus – auch wenn Sie offline sind."
+      },
+      {
+        "q": "Was muss ich freigeben?",
+        "a": "E-Mails, Beiträge, neue Kunden in Ihrer Liste und Änderungen an Ihren Drive-Dokumenten. Alles finden Sie unter Freigaben, mit den Informationen, die Sie für die Entscheidung brauchen."
+      },
+      {
+        "q": "Kann ich die Arbeit prüfen und korrigieren?",
+        "a": "Ja. Sie sehen den vollständigen Vorschlag vor der Entscheidung und wünschen sich Änderungen im Chat, in Ihren eigenen Worten. Wenn Sie versehentlich freigeben, haben Sie ein paar Sekunden, um es rückgängig zu machen."
+      },
+      {
+        "q": "Wie starte ich mit meinen Daten und Tools?",
+        "a": "Sie erstellen Ihr Konto, beschreiben Ihren Betrieb und verbinden Ihr E-Mail-Postfach. Ihr Team startet mit dem, was Sie schon haben: Am ersten Tag muss nichts umgezogen werden."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Tarife",
+    "title": "Klare Preise, ab 49 € im Monat.",
+    "lede": "Alle Tarife enthalten die Tools und das komplette digitale Team. Unterschiedlich ist, wie viel Arbeit anfällt und wie viel Begleitung Sie möchten.",
+    "perMonth": "/Monat",
+    "vat": "zzgl. MwSt. · monatliche Zahlung",
+    "featuredTag": "Für den Arbeitsalltag",
+    "cta": "Konto erstellen",
+    "taskNote": "Eine Aufgabe ist eine abgeschlossene Arbeit: eine Anfrage beantworten, ein Angebot vorbereiten oder einen Beitrag schreiben.",
+    "plans": {
+      "esencial": {
+        "name": "Basis",
+        "for": "Für Inhaber, die beginnen, die tägliche Arbeit abzugeben.",
+        "summary": "Ausgelegt auf etwa 100 Aufgaben im Monat.",
+        "points": [
+          "Kunden, Vertrieb, Verwaltung und Rechnungen an einem Ort",
+          "Das ganze digitale Team, mit Ihren Freigaben",
+          "1 verbundenes E-Mail-Konto",
+          "Hilfe per E-Mail"
+        ]
+      },
+      "negocio": {
+        "name": "Betrieb",
+        "for": "Für einen Betrieb mit täglicher Arbeit in mehreren Bereichen.",
+        "summary": "Ausgelegt auf etwa 400 Aufgaben im Monat.",
+        "points": [
+          "Alles aus Basis",
+          "Bis zu 3 verbundene E-Mail-Konten",
+          "Bevorzugte Hilfe per E-Mail"
+        ]
+      },
+      "crecimiento": {
+        "name": "Wachstum",
+        "for": "Für mehr Arbeitsvolumen und mehr Kanäle.",
+        "summary": "Ausgelegt auf etwa 1.200 Aufgaben im Monat.",
+        "points": [
+          "Alles aus Betrieb",
+          "Bis zu 10 verbundene E-Mail-Konten",
+          "Eine Einrichtungssitzung mit unserem Team"
+        ]
+      }
+    },
+    "compareTitle": "Tarife im Detail vergleichen",
+    "compareRows": [
+      {
+        "label": "Enthaltene Arbeit pro Monat",
+        "values": [
+          "Etwa 100 Aufgaben",
+          "Etwa 400 Aufgaben",
+          "Etwa 1.200 Aufgaben"
+        ]
+      },
+      {
+        "label": "Kunden, Vertrieb, Verwaltung, Rechnungen und Kanäle",
+        "values": [
+          "Enthalten",
+          "Enthalten",
+          "Enthalten"
+        ]
+      },
+      {
+        "label": "Komplettes digitales Team",
+        "values": [
+          "Enthalten",
+          "Enthalten",
+          "Enthalten"
+        ]
+      },
+      {
+        "label": "Verbundene E-Mail-Konten",
+        "values": [
+          "1",
+          "Bis zu 3",
+          "Bis zu 10"
+        ]
+      },
+      {
+        "label": "Hilfe",
+        "values": [
+          "Per E-Mail",
+          "Bevorzugt per E-Mail",
+          "Bevorzugt und Einrichtungssitzung"
+        ]
+      }
+    ],
+    "limitTitle": "Wenn Sie das Limit erreichen",
+    "limitBody": "Wir sagen Ihnen vorher Bescheid. Sie können den Tarif wechseln oder bis zum nächsten Monat warten. Wir berechnen nie etwas zusätzlich ohne Ihre Zustimmung.",
+    "billingTitle": "Abrechnung",
+    "billingBody": "Monatliche Preise zzgl. MwSt. Vor der ersten Abbuchung bestätigen wir Ihnen Tarif und Bedingungen schriftlich.",
+    "extrasTitle": "Kosten anderer Anbieter",
+    "extrasBody": "Bilder oder Videos entstehen über Ihr eigenes Konto bei einem Anbieter wie Google oder OpenAI, der Ihnen das gesondert berechnet. Dasselbe gilt für Anzeigen, die Sie bezahlen."
+  },
+  "faq": {
+    "eyebrow": "Häufige Fragen",
+    "title": "Gut zu wissen, bevor Sie starten.",
+    "items": [
+      {
+        "q": "Brauche ich technische Kenntnisse?",
+        "a": "Nein. Sie bitten Ihr Team schriftlich und in Ihren eigenen Worten um etwas, so wie Sie es bei einem Menschen tun würden. Ihr E-Mail-Postfach verbinden Sie mit wenigen Klicks."
+      },
+      {
+        "q": "Welche Arbeit kann mein digitales Team übernehmen?",
+        "a": "Anfragen sortieren und beantworten, Angebote und Dokumente vorbereiten, Ihren Kalender organisieren, bei Kunden nachfassen, Inhalte erstellen und auf Ihrer Facebook-Seite veröffentlichen sowie Ihre Website prüfen. Immer mit den Informationen Ihres Betriebs."
+      },
+      {
+        "q": "Welche Entscheidungen bleiben bei mir?",
+        "a": "Alle wichtigen. Keine E-Mail und kein Beitrag geht ohne Ihre Freigabe raus, und Ihre Preise, Ihre Konditionen und jede Entscheidung über Geld bleiben bei Ihnen."
+      },
+      {
+        "q": "Kann ich meine Tools weiter nutzen?",
+        "a": "Ja. Departify verbindet sich unter anderem mit Gmail, Outlook, Google Calendar, Google Drive und Facebook. Sie müssen weder E-Mail-Anbieter noch Kalender wechseln."
+      },
+      {
+        "q": "Was ist im Preis enthalten?",
+        "a": "Die Tools für Ihren Betrieb, das komplette digitale Team und das Arbeitsvolumen Ihres Tarifs. Nicht enthalten ist, was andere Anbieter Ihnen berechnen, etwa Bilder und Videos über Ihr eigenes Konto oder bezahlte Anzeigen. Vorerst ist jedes Konto für eine Person gedacht: Zugang für weitere Personen aus Ihrem Team gibt es noch nicht."
+      },
+      {
+        "q": "Wie fange ich an und was passiert, wenn ich aufhöre?",
+        "a": "Sie erstellen Ihr Konto mit Google, Microsoft oder Ihrer E-Mail-Adresse, beschreiben Ihren Betrieb und geben die erste Aufgabe. Die App gibt es auf Spanisch, Englisch und Rumänisch; Ihr Team antwortet in der Sprache, in der Sie schreiben. Wenn Sie aufhören, können Sie die Löschung der Daten Ihres Betriebs beantragen; die Kündigungsbedingungen bestätigen wir Ihnen vor der ersten Abbuchung schriftlich."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Kümmern Sie sich wieder darum, Ihren Betrieb zu führen.",
+    "body": "Ihr Team kümmert sich um die Arbeit. Sie entscheiden, was wichtig ist.",
+    "cta": "Konto erstellen",
+    "note": "Ab 49 €/Monat · zzgl. MwSt."
+  },
+  "footer": {
+    "tagline": "Die Tools Ihres Betriebs und ein Team digitaler Mitarbeiter, das damit arbeitet.",
+    "product": "Produkt",
+    "how": "So funktioniert's",
+    "included": "Was enthalten ist",
+    "plans": "Tarife",
+    "login": "Anmelden",
+    "legal": "Rechtliches",
+    "privacy": "Datenschutz",
+    "cookies": "Cookies",
+    "terms": "AGB",
+    "security": "Sicherheit",
+    "contact": "Kontakt",
+    "language": "Sprache",
+    "rights": "Alle Rechte vorbehalten."
+  }
+}

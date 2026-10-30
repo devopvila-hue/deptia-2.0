@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "title": "Departify — Ne csináljon mindent egyedül",
+    "description": "Ügyfelek, értékesítés, árajánlatok, számlák és e-mail egy helyen, digitális munkatársak csapatával, amely elvégzi a munkát. A fontos dolgokat Ön hagyja jóvá. Havi 49 €-tól + áfa."
+  },
+  "nav": {
+    "how": "Hogyan működik",
+    "included": "Mit tartalmaz",
+    "plans": "Csomagok",
+    "login": "Belépés",
+    "cta": "Fiók létrehozása",
+    "menu": "Menü megnyitása",
+    "close": "Menü bezárása",
+    "nav": "Fő navigáció",
+    "skip": "Ugrás a tartalomhoz"
+  },
+  "hero": {
+    "audience": "1–15 fős vállalkozásoknak",
+    "title": "A vállalkozása ne azon múljon, hogy mindent Ön csinál.",
+    "subtitle": "Ügyfelei, értékesítése és ügyintézése egy helyen, egy digitális munkatársakból álló csapattal, amely segít elvégezni a munkát.",
+    "price": "Havi 49 €-tól",
+    "priceNote": "az áfa nincs benne",
+    "cta": "Fiók létrehozása",
+    "secondary": "Hogyan működik",
+    "reassurance": "Az Ön jóváhagyása nélkül egyetlen e-mail vagy bejegyzés sem megy ki.",
+    "panel": {
+      "example": "Példa",
+      "appSection": "Kezdőlap",
+      "greeting": "Jó reggelt, Eszter!",
+      "summary": "2 döntés vár Önre. A csapata ma délelőtt 4 feladatot végzett el.",
+      "decisionsTitle": "Az Ön figyelmét igényli",
+      "runningTitle": "Folyamatban",
+      "doneTitle": "Ma elkészült",
+      "review": "Javaslat megtekintése",
+      "approve": "Jóváhagyás",
+      "decisions": [
+        { "title": "Ajánlat küldése Kovács Annának", "meta": "Fürdőszoba-felújítás · 2 480 €", "by": "Értékesítés" },
+        { "title": "A pénteki ajánlat közzététele a Facebookon", "meta": "Szöveg és kép kész", "by": "Marketing" }
+      ],
+      "inProgress": [
+        { "title": "A heti megkeresések rendezése", "by": "Ügyfélszolgálat" },
+        { "title": "3 megválaszolatlan árajánlat követése", "by": "Adminisztráció" },
+        { "title": "A weboldal átnézése a Google-hoz", "by": "SEO" }
+      ],
+      "done": [
+        { "title": "14 e-mail fontossági sorrendben", "by": "Ügyfélszolgálat" },
+        { "title": "Helyszíni felmérés Nagy Péternél a naptárban", "by": "Adminisztráció" },
+        { "title": "PDF-ajánlat Kovács Annának", "by": "Értékesítés" },
+        { "title": "Tartalomötletek két hétre", "by": "Marketing" }
+      ]
+    }
+  },
+  "scene": {
+    "eyebrow": "Hogyan működik",
+    "title": "Így halad a vállalkozása, amikor nem Önnek kell mindent csinálnia.",
+    "lede": "Egy megkeresés, amely elküldött ajánlattal és egy naptárba írt utánkövetéssel zárul. Ön csak egy lépésnél lép közbe: ott, ahol számít.",
+    "example": "Példa kitalált adatokkal",
+    "stepsLabel": "A példa lépései",
+    "departify": "Departify",
+    "you": "Ön",
+    "actorTeam": "Ezt a digitális csapata végzi",
+    "actorYou": "Ezt Ön dönti el",
+    "steps": [
+      {
+        "title": "Beérkezik egy megkeresés",
+        "does": "Elolvassa az e-mailt a postafiókjában, felismeri a lehetséges ügyfelet, és a lista elejére teszi.",
+        "you": "Semmit. Nem kell folyton a postafiókját figyelnie."
+      },
+      {
+        "title": "Rendeződnek az ügyfél adatai",
+        "does": "Egy adatlapra gyűjti az elérhetőségeit és a kérését, mentésre készen az ügyfelei közé.",
+        "you": "Még semmit. Az adatlap a jóváhagyásakor mentődik."
+      },
+      {
+        "title": "Elkészül az ajánlat",
+        "does": "Megírja a választ, és PDF-ben elkészíti az ajánlatot az Ön szolgáltatásaival és áraival.",
+        "you": "Semmit. A vállalkozása adataival dolgozik."
+      },
+      {
+        "title": "Ön átnézi és jóváhagyja",
+        "does": "Mindent a Jóváhagyások közé tesz: a választ, az ajánlatot és az ügyféladatlapot.",
+        "you": "Átnézi. Ha változtatást szeretne, a csevegésben kéri. Aztán jóváhagyja vagy elutasítja."
+      },
+      {
+        "title": "Rögzül a következő lépés",
+        "does": "Elküldi a választ, elmenti az ügyfelet, és a naptárába írja az utánkövetést.",
+        "you": "A Kezdőlapon látja, mi készült el és mi van még hátra."
+      }
+    ],
+    "mail": {
+      "from": "Kovács Anna",
+      "received": "Ma, 8:12",
+      "tag": "Lehetséges ügyfél",
+      "subject": "Árajánlat fürdőszoba-felújításra",
+      "body": "Jó napot! Szeretnénk felújítani az otthoni fürdőszobát, nagyjából 6 m². Küldenének árajánlatot, és megírnák, mikor tudnának kezdeni? Köszönöm."
+    },
+    "contact": {
+      "name": "Kovács Anna",
+      "company": "Magánszemély · Debrecen",
+      "stage": "Mentésre vár",
+      "fields": [
+        { "label": "E-mail", "value": "kovacs.anna@pelda.hu" },
+        { "label": "Telefon", "value": "+36 30 123 4567" },
+        { "label": "Amire szüksége van", "value": "Fürdőszoba-felújítás, 6 m²" },
+        { "label": "Honnan jött", "value": "E-mail, ma" }
+      ]
+    },
+    "quote": {
+      "title": "Ajánlat · Fürdőszoba-felújítás",
+      "draft": "Piszkozat",
+      "lines": [
+        { "item": "Bontás és elszállítás", "amount": "520 €" },
+        { "item": "Víz- és lefolyószerelés", "amount": "690 €" },
+        { "item": "Burkolás", "amount": "870 €" },
+        { "item": "Szaniterek és csaptelepek", "amount": "400 €" }
+      ],
+      "total": "Összesen, áfa nélkül",
+      "totalValue": "2 480 €",
+      "reply": "„Kedves Anna! Köszönjük megkeresését. Mellékelten küldjük a fürdőszoba-felújításra vonatkozó ajánlatunkat. A 17-ével kezdődő héten tudnánk kezdeni…”"
+    },
+    "approval": {
+      "title": "Az Ön figyelmét igényli",
+      "summary": "A válasz és a 2 480 €-s ajánlat elküldése Kovács Annának, valamint mentése az ügyfelek közé",
+      "edit": "Javaslat megtekintése",
+      "reject": "Elutasítás",
+      "approve": "Jóváhagyás",
+      "note": "Változtatna valamin? Jóváhagyás előtt írja meg a csevegésben: „Ajánld fel, hogy 10-én kezdünk.”"
+    },
+    "next": {
+      "sent": "A válasz és az ajánlat elküldve Kovács Annának",
+      "logged": "Kovács Anna mentve az ügyfelek közé",
+      "followUp": "Kovács Anna felhívása, ha nem válaszolt",
+      "followUpDate": "Csütörtök, 10:00 · a naptárában",
+      "alert": "Amikor válaszol, a Departify postafiókjában látni fogja."
+    }
+  },
+  "connected": {
+    "eyebrow": "Mit tartalmaz",
+    "title": "Korábban több eszköz, Ön középen. Most minden együtt működik.",
+    "lede": "A Departify összegyűjti, amire a vállalkozás vezetéséhez szüksége van. Mivel minden ugyanazokat az adatokat használja, senki nem másolgat adatokat, és semmit sem kell kétszer elmagyaráznia.",
+    "beforeLabel": "Korábban",
+    "beforeItems": ["Ügyfelek egy táblázatban", "Számlák egy másik programban", "E-mail és naptár külön", "Közösségi média, ha eszébe jut"],
+    "beforeYou": "Ön, mindennek a közepén",
+    "afterLabel": "A Departifyjal",
+    "afterItems": ["Ügyfelek és értékesítés", "Ügyintézés és számlázás", "Marketing és csatornák", "Webshop és rendelések"],
+    "sharedLabel": "Ugyanazok az adatok az egész csapatnak",
+    "afterBody": "Egy hely, összekapcsolt adatok és egy digitális csapat, amely ezekkel dolgozik.",
+    "blocks": [
+      {
+        "title": "Ügyfelek és értékesítés",
+        "line": "Ügyfelei és a következő eladások, rendben.",
+        "points": [
+          "Minden ügyfél adatokkal, beszélgetésekkel és következő lépésekkel",
+          "Minden e-mail egy postafiókban, fontossági sorrendben",
+          "Összekapcsolt naptár, hogy egy utánkövetés se maradjon el"
+        ],
+        "link": "Amikor egy ügyfél ír, a csapata már tudja, ki ő és hol tartanak."
+      },
+      {
+        "title": "Ügyintézés és számlázás",
+        "line": "Árajánlatok, számlák és pénzügyek egy helyen.",
+        "points": [
+          "Árajánlatok, számlák, beszerzés és készlet",
+          "Feladatok felelőssel és határidővel",
+          "Munkalapok az ügyfél aláírásával"
+        ],
+        "link": "Az aláírt munkalap számlázásra kész, a már meglévő ügyféladatokkal."
+      },
+      {
+        "title": "Marketing és csatornák",
+        "line": "A vállalkozása látható marad anélkül, hogy minden héten erre kellene gondolnia.",
+        "points": [
+          "Ötletek, szövegek és bejegyzésnaptár",
+          "Közzététel a Facebook-oldalán a választott időpontban",
+          "A weboldal átnézése, hogy megtalálják a Google-ben"
+        ],
+        "link": "A szövegek abból indulnak ki, amit a csapata már tud a vállalkozásáról, és közzététel előtt Ön hagyja jóvá őket."
+      },
+      {
+        "title": "Webshop és rendelések",
+        "badge": "Tesztüzemben",
+        "line": "Termékkínálata és rendelései, a készlethez kapcsolva.",
+        "points": [
+          "Online kirakat a termékeivel",
+          "A rendelések bekerülnek az ügyintézésbe",
+          "Közös készlet a nyilvántartással"
+        ],
+        "link": "Jelenleg tesztüzemben működik: beállíthatja és kipróbálhatja a rendeléseket, de valódi fizetést még nem fogad."
+      }
+    ],
+    "connectTitle": "Kapcsolja össze, amit már használ",
+    "connectBody": "Az e-mailje, a naptára és a dokumentumai ott maradnak, ahol vannak. A Departify dolgozik velük.",
+    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
+    "connectNote": "Egyes kapcsolatok csak az adatok megtekintését teszik lehetővé, a módosításukat nem."
+  },
+  "team": {
+    "eyebrow": "Az Ön digitális csapata",
+    "title": "Szakértő minden területre. Ugyanaz a tudás a vállalkozásáról.",
+    "lede": "Minden digitális munkatárs egyféle munkával foglalkozik. Mindannyian ugyanazokat az adatokat használják: ügyfeleit, szolgáltatásait, árait és a kommunikációs stílusát.",
+    "whatTitle": "Mi az a digitális munkatárs?",
+    "whatBody": "Egy adott területre szakosodott, mesterséges intelligenciával működő asszisztens. A Departifyban dolgozik, az Ön adataival és az összekapcsolt eszközökkel. Nem ember, és tévedhet: ezért a fontos dolgok Önön mennek át.",
+    "doesLabel": "Feladata",
+    "deliversLabel": "Amit átad",
+    "asksLabel": "Jóváhagyást kér ehhez",
+    "digitalLabel": "digitális munkatárs",
+    "primary": [
+      {
+        "area": "Ügyfélszolgálat",
+        "name": "Julio",
+        "does": "A megkeresések olvasása, rendezése és a válaszok előkészítése.",
+        "delivers": "Fontossági sorrendbe rendezett postafiók és küldésre kész válaszok.",
+        "asks": "Bármilyen válasz elküldése egy ügyfélnek."
+      },
+      {
+        "area": "Értékesítés",
+        "name": "Marcos",
+        "does": "Lehetséges ügyfelek felismerése és ajánlatok előkészítése.",
+        "delivers": "Értékelt kapcsolatok és átnézésre kész ajánlatok.",
+        "asks": "Új ügyfelek mentése és ajánlatok elküldése."
+      },
+      {
+        "area": "Adminisztráció",
+        "name": "Ana",
+        "does": "E-mail, naptár, dokumentumok és utánkövetés.",
+        "delivers": "Időpontok a naptárban, rendezett dokumentumok és időben érkező emlékeztetők.",
+        "asks": "E-mailek küldése és írás a Drive-dokumentumaiba."
+      },
+      {
+        "area": "Marketing",
+        "name": "Elvira",
+        "does": "Tartalom, közösségi média és kampányok, tartalom-, közösségimédia- és hirdetési szakértőkkel.",
+        "delivers": "Ötletek, szövegek, bejegyzésnaptár és az eredmények értelmezése.",
+        "asks": "Közzététel a Facebook-oldalán."
+      }
+    ],
+    "more": [
+      {
+        "area": "SEO",
+        "name": "Sandra",
+        "does": "Hogy a weboldala jobban megjelenjen a Google-ben.",
+        "delivers": "A weboldal átvizsgálása konkrét, fontossági sorrendbe állított javításokkal.",
+        "asks": "Javaslatokat tesz; Ön dönti el, melyik valósuljon meg."
+      },
+      {
+        "area": "Weboldal és technológia",
+        "name": "Alberto",
+        "does": "A vállalkozás weboldalának és eszközeinek elkészítése és karbantartása.",
+        "delivers": "Előkészített, közérthetően elmagyarázott változtatások.",
+        "asks": "Új projektek létrehozása a fiókjaiban."
+      },
+      {
+        "area": "Vezetés",
+        "name": "",
+        "does": "A munka elosztása a területek között és az átfogó kép biztosítása.",
+        "delivers": "A vállalkozás állapota és a döntések, amelyek Önre várnak, egy helyen.",
+        "asks": "Önállóan semmihez: előkészíti Önnek a döntéseket."
+      }
+    ],
+    "expand": "A teljes csapat megtekintése"
+  },
+  "control": {
+    "eyebrow": "Ön dönt",
+    "title": "A csapata elvégzi a munkát. Ön dönt arról, ami fontos.",
+    "lede": "A szabályok az első naptól világosak: mit végez el önállóan, mit kérdez meg előbb, és mi marad mindig az Ön kezében.",
+    "lanes": {
+      "own": {
+        "title": "Önállóan elvégzi",
+        "body": "Belső munka, amely nem jut el senkihez a vállalkozáson kívül.",
+        "items": ["Az e-mailek olvasása és rendezése", "Piszkozatok, ajánlatok és dokumentumok előkészítése", "Feladatok és időpontok létrehozása a naptárban", "A weboldal és az eredmények elemzése"]
+      },
+      "approve": {
+        "title": "Előbb megkérdezi",
+        "body": "Ami más emberekhez jut el, vagy fontos adatokat módosít.",
+        "items": ["E-mailek küldése vagy megválaszolása", "Közzététel a Facebook-oldalán", "Új ügyfelek mentése és automatikus utánkövetés indítása", "Írás a Drive-dokumentumaiba"]
+      },
+      "yours": {
+        "title": "Mindig az Öné",
+        "body": "A döntések, amelyek meghatározzák a vállalkozását.",
+        "items": ["Az árai és a feltételei", "Kinek és hogyan értékesít", "Mi jelenik meg az Ön nevében", "Minden pénzügyi döntés"]
+      }
+    },
+    "qa": [
+      {
+        "q": "Mit végezhet el önállóan?",
+        "a": "Belső munkát: rendez, előkészít, összefoglal, elemez, feladatokat és időpontokat hoz létre. Amit már jóváhagyott és ütemezett, például egy bejegyzés, időben megjelenik akkor is, ha Ön nincs bejelentkezve."
+      },
+      {
+        "q": "Mit kell jóváhagynom?",
+        "a": "Az e-maileket, a bejegyzéseket, az új ügyfeleket a listáján és a Drive-dokumentumai módosításait. Mindent a Jóváhagyások között talál, a döntéshez szükséges információkkal."
+      },
+      {
+        "q": "Átnézhetem és javíthatom a munkát?",
+        "a": "Igen. Döntés előtt a teljes javaslatot látja, és ha változtatást szeretne, a csevegésben a saját szavaival kéri. Ha tévedésből hagy jóvá valamit, néhány másodpercig visszavonhatja."
+      },
+      {
+        "q": "Hogyan kezdjek a saját adataimmal és eszközeimmel?",
+        "a": "Létrehozza a fiókját, elmondja, milyen a vállalkozása, és összekapcsolja az e-mailjét. A csapata abból indul ki, ami már megvan: az első napon semmit sem kell áthelyezni."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Csomagok",
+    "title": "Világos ár, havi 49 €-tól.",
+    "lede": "Minden csomag tartalmazza az eszközöket és a teljes digitális csapatot. Az különbözik, mennyi munkára van szüksége, és mennyi támogatást szeretne.",
+    "perMonth": "/hó",
+    "vat": "az áfa nincs benne · havi fizetés",
+    "featuredTag": "A mindennapi munkához",
+    "cta": "Fiók létrehozása",
+    "taskNote": "Egy feladat egy teljes munka: egy megkeresés megválaszolása, egy ajánlat elkészítése vagy egy bejegyzés megírása.",
+    "plans": {
+      "esencial": {
+        "name": "Alap",
+        "for": "Tulajdonosoknak, akik most kezdik átadni a napi munkát.",
+        "summary": "Nagyjából havi 100 feladatra tervezve.",
+        "points": ["Ügyfelek, értékesítés, ügyintézés és számlázás egy helyen", "A teljes digitális csapat, az Ön jóváhagyásaival", "1 összekapcsolt e-mail-fiók", "Segítség e-mailben"]
+      },
+      "negocio": {
+        "name": "Üzlet",
+        "for": "Több területen napi aktivitással működő vállalkozásnak.",
+        "summary": "Nagyjából havi 400 feladatra tervezve.",
+        "points": ["Minden, ami az Alapban", "Legfeljebb 3 összekapcsolt e-mail-fiók", "Kiemelt segítség e-mailben"]
+      },
+      "crecimiento": {
+        "name": "Növekedés",
+        "for": "Nagyobb munkamennyiséghez és több csatornához.",
+        "summary": "Nagyjából havi 1 200 feladatra tervezve.",
+        "points": ["Minden, ami az Üzletben", "Legfeljebb 10 összekapcsolt e-mail-fiók", "Indító konzultáció a csapatunkkal"]
+      }
+    },
+    "compareTitle": "A csomagok részletes összehasonlítása",
+    "compareRows": [
+      { "label": "Havonta benne foglalt munka", "values": ["Kb. 100 feladat", "Kb. 400 feladat", "Kb. 1 200 feladat"] },
+      { "label": "Ügyfelek, értékesítés, ügyintézés, számlázás és csatornák", "values": ["Benne van", "Benne van", "Benne van"] },
+      { "label": "Teljes digitális csapat", "values": ["Benne van", "Benne van", "Benne van"] },
+      { "label": "Összekapcsolt e-mail-fiókok", "values": ["1", "Legfeljebb 3", "Legfeljebb 10"] },
+      { "label": "Segítség", "values": ["E-mailben", "Kiemelten, e-mailben", "Kiemelten, indító konzultációval"] }
+    ],
+    "limitTitle": "Ha eléri a keretet",
+    "limitBody": "Előre szólunk. Válthat csomagot, vagy megvárhatja a következő hónapot. Az Ön engedélye nélkül soha nem számolunk fel semmi pluszt.",
+    "billingTitle": "Hogyan fizet",
+    "billingBody": "Havi árak, áfa nélkül. Az első terhelés előtt írásban megerősítjük a csomagot és a feltételeit.",
+    "extrasTitle": "Más szolgáltatók költségei",
+    "extrasBody": "A képek és videók készítése a saját fiókját használja egy szolgáltatónál, például a Google-nél vagy az OpenAI-nál, amely ezt külön számlázza. Ugyanez érvényes a hirdetésekre, amelyekért fizetni dönt."
+  },
+  "faq": {
+    "eyebrow": "Gyakori kérdések",
+    "title": "Amit érdemes tudni, mielőtt elkezdi.",
+    "items": [
+      {
+        "q": "Szükségem van műszaki tudásra?",
+        "a": "Nem. Írásban, a saját szavaival kér dolgokat a csapatától, ahogy egy embertől kérné. Az e-mailje összekapcsolása néhány kattintás."
+      },
+      {
+        "q": "Milyen munkát végezhet a digitális csapatom?",
+        "a": "Rendezi és megválaszolja a megkereséseket, ajánlatokat és dokumentumokat készít elő, szervezi a naptárát, követi az ügyfeleket, tartalmat készít és közzéteszi a Facebook-oldalán, valamint átnézi a weboldalát. Mindig a vállalkozása adataival."
+      },
+      {
+        "q": "Mely döntések maradnak nálam?",
+        "a": "Minden fontos döntés. Az Ön jóváhagyása nélkül egyetlen e-mail vagy bejegyzés sem megy ki, az árai, a feltételei és minden pénzügyi döntés pedig mindig az Öné."
+      },
+      {
+        "q": "Használhatom tovább a saját eszközeimet?",
+        "a": "Igen. A Departify többek között a Gmailhez, az Outlookhoz, a Google Calendarhoz, a Google Drive-hoz és a Facebookhoz kapcsolódik. Nem kell sem e-mail-szolgáltatót, sem naptárat váltania."
+      },
+      {
+        "q": "Mit tartalmaz az ár?",
+        "a": "A vállalkozás eszközeit, a teljes digitális csapatot és a csomagjában foglalt munkamennyiséget. Nem tartalmazza, amit más szolgáltatók számláznak Önnek, például a saját fiókjával készített képeket és videókat vagy a kifizetett hirdetéseket. Egyelőre minden fiók egy személyé: további csapattagok hozzáférése még nem érhető el."
+      },
+      {
+        "q": "Hogyan kezdjem, és mi történik, ha abbahagyom?",
+        "a": "Létrehozza a fiókját Google-, Microsoft-fiókkal vagy e-mail-címmel, elmondja, milyen a vállalkozása, és kiadja az első feladatot. Az alkalmazás spanyol, angol és román nyelven érhető el, a csapata pedig azon a nyelven válaszol, amelyen ír neki. Ha abbahagyja, kérheti cége adatainak törlését; a felmondási feltételeket az első terhelés előtt írásban megerősítjük."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Foglalkozzon újra a vállalkozása irányításával.",
+    "body": "A csapata elvégzi a munkát. Ön dönt arról, ami fontos.",
+    "cta": "Fiók létrehozása",
+    "note": "Havi 49 €-tól · az áfa nincs benne"
+  },
+  "footer": {
+    "tagline": "A vállalkozása eszközei és egy digitális munkatársakból álló csapat, amely ezekkel dolgozik.",
+    "product": "Termék",
+    "how": "Hogyan működik",
+    "included": "Mit tartalmaz",
+    "plans": "Csomagok",
+    "login": "Belépés",
+    "legal": "Jogi információk",
+    "privacy": "Adatvédelem",
+    "cookies": "Sütik",
+    "terms": "Feltételek",
+    "security": "Biztonság",
+    "contact": "Kapcsolat",
+    "language": "Nyelv",
+    "rights": "Minden jog fenntartva."
+  }
+}

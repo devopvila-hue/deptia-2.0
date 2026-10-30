@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "title": "Departify — Nu mai face totul singur",
+    "description": "Clienți, vânzări, oferte, facturi și e-mail într-un singur loc, cu o echipă de angajați digitali care duce munca la capăt. Tu aprobi ce contează. De la 49 €/lună + TVA."
+  },
+  "nav": {
+    "how": "Cum funcționează",
+    "included": "Ce include",
+    "plans": "Planuri",
+    "login": "Autentificare",
+    "cta": "Creează-mi contul",
+    "menu": "Deschide meniul",
+    "close": "Închide meniul",
+    "nav": "Navigare principală",
+    "skip": "Sari la conținut"
+  },
+  "hero": {
+    "audience": "Pentru afaceri cu 1–15 oameni",
+    "title": "Afacerea ta nu ar trebui să depindă de faptul că faci totul tu.",
+    "subtitle": "Adună-ți clienții, vânzările și administrarea într-un singur loc, cu o echipă de angajați digitali care te ajută să duci munca la capăt.",
+    "price": "De la 49 €/lună",
+    "priceNote": "TVA neinclus",
+    "cta": "Creează-mi contul",
+    "secondary": "Vezi cum funcționează",
+    "reassurance": "Niciun e-mail și nicio postare nu pleacă fără aprobarea ta.",
+    "panel": {
+      "example": "Exemplu",
+      "appSection": "Acasă",
+      "greeting": "Bună dimineața, Andreea.",
+      "summary": "Te așteaptă 2 decizii. Echipa ta a terminat 4 lucruri în această dimineață.",
+      "decisionsTitle": "Are nevoie de atenția ta",
+      "runningTitle": "În lucru",
+      "doneTitle": "Gata azi",
+      "review": "Vezi propunerea",
+      "approve": "Aprobă",
+      "decisions": [
+        { "title": "Trimite oferta către Ioana Popescu", "meta": "Renovare baie · 2.480 €", "by": "Vânzări" },
+        { "title": "Publică oferta de vineri pe Facebook", "meta": "Text și imagine gata", "by": "Marketing" }
+      ],
+      "inProgress": [
+        { "title": "Ordonarea cererilor din această săptămână", "by": "Relații cu clienții" },
+        { "title": "Revenire la 3 oferte fără răspuns", "by": "Administrație" },
+        { "title": "Analiza site-ului pentru Google", "by": "SEO" }
+      ],
+      "done": [
+        { "title": "14 e-mailuri ordonate după prioritate", "by": "Relații cu clienții" },
+        { "title": "Vizită la Mihai Ionescu adăugată în calendar", "by": "Administrație" },
+        { "title": "Ofertă PDF pentru Ioana Popescu", "by": "Vânzări" },
+        { "title": "Idei de conținut pentru două săptămâni", "by": "Marketing" }
+      ]
+    }
+  },
+  "scene": {
+    "eyebrow": "Cum funcționează",
+    "title": "Așa merge afacerea ta când nu mai trebuie să faci totul tu.",
+    "lede": "O cerere care se încheie cu o ofertă trimisă și o revenire în calendar. Tu intervii într-un singur pas: cel care contează.",
+    "example": "Exemplu cu date fictive",
+    "stepsLabel": "Pașii exemplului",
+    "departify": "Departify",
+    "you": "Tu",
+    "actorTeam": "Se ocupă echipa ta digitală",
+    "actorYou": "Decizi tu",
+    "steps": [
+      {
+        "title": "Sosește o cerere",
+        "does": "Citește e-mailul din căsuța ta, vede că e un posibil client și îl pune primul.",
+        "you": "Nimic. Nu trebuie să stai cu ochii pe e-mail."
+      },
+      {
+        "title": "Se ordonează datele clientului",
+        "does": "Adună într-o fișă datele lui și ce a cerut, gata de salvat în lista ta de clienți.",
+        "you": "Nimic deocamdată. Fișa se salvează când aprobi."
+      },
+      {
+        "title": "Se pregătește oferta",
+        "does": "Scrie răspunsul și pregătește oferta în PDF, cu serviciile și prețurile tale.",
+        "you": "Nimic. Lucrează cu informațiile afacerii tale."
+      },
+      {
+        "title": "Tu verifici și aprobi",
+        "does": "Îți lasă totul în Aprobări: răspunsul, oferta și fișa clientului.",
+        "you": "Verifici. Dacă vrei modificări, le ceri în chat. Apoi aprobi sau respingi."
+      },
+      {
+        "title": "Pasul următor rămâne notat",
+        "does": "Trimite răspunsul, salvează clientul și adaugă în calendar când să revii.",
+        "you": "Vezi în Acasă ce s-a făcut și ce mai rămâne."
+      }
+    ],
+    "mail": {
+      "from": "Ioana Popescu",
+      "received": "Azi, 8:12",
+      "tag": "Posibil client",
+      "subject": "Ofertă pentru renovarea unei băi",
+      "body": "Bună ziua, vrem să renovăm baia de acasă, cam 6 m². Ne puteți trimite o ofertă și să ne spuneți când ați putea începe? Mulțumim."
+    },
+    "contact": {
+      "name": "Ioana Popescu",
+      "company": "Persoană fizică · Cluj-Napoca",
+      "stage": "De salvat",
+      "fields": [
+        { "label": "E-mail", "value": "ioana.popescu@exemplu.ro" },
+        { "label": "Telefon", "value": "0721 234 567" },
+        { "label": "Ce are nevoie", "value": "Renovare baie, 6 m²" },
+        { "label": "Cum a ajuns", "value": "E-mail, azi" }
+      ]
+    },
+    "quote": {
+      "title": "Ofertă · Renovare baie",
+      "draft": "Ciornă",
+      "lines": [
+        { "item": "Demolare și evacuare", "amount": "520 €" },
+        { "item": "Instalații sanitare și scurgeri", "amount": "690 €" },
+        { "item": "Faianță și pardoseală", "amount": "870 €" },
+        { "item": "Obiecte sanitare și baterii", "amount": "400 €" }
+      ],
+      "total": "Total fără TVA",
+      "totalValue": "2.480 €",
+      "reply": "„Bună ziua, Ioana, vă mulțumim pentru mesaj. Vă trimitem atașat oferta pentru renovarea băii. Am putea începe în săptămâna de 17…”"
+    },
+    "approval": {
+      "title": "Are nevoie de atenția ta",
+      "summary": "Trimite Ioanei Popescu răspunsul cu oferta de 2.480 € și salveaz-o în clienții tăi",
+      "edit": "Vezi propunerea",
+      "reject": "Respinge",
+      "approve": "Aprobă",
+      "note": "Vrei să schimbi ceva? Spune în chat înainte să aprobi: „Propune-i să începem pe 10”."
+    },
+    "next": {
+      "sent": "Răspuns trimis Ioanei Popescu, cu oferta",
+      "logged": "Ioana Popescu salvată în clienții tăi",
+      "followUp": "Sună-o pe Ioana Popescu dacă nu a răspuns",
+      "followUpDate": "Joi, 10:00 · în calendarul tău",
+      "alert": "Când răspunde, vei vedea mesajul în căsuța ta din Departify."
+    }
+  },
+  "connected": {
+    "eyebrow": "Ce include",
+    "title": "Înainte: mai multe aplicații și tu la mijloc. Acum: totul lucrează împreună.",
+    "lede": "Departify adună ce îți trebuie ca să conduci afacerea. Pentru că totul folosește aceleași informații, nimeni nu copiază date dintr-un loc în altul și nu trebuie să explici același lucru de două ori.",
+    "beforeLabel": "Înainte",
+    "beforeItems": ["Clienți într-un tabel", "Facturi în alt program", "E-mail și calendar separate", "Rețele sociale când îți amintești"],
+    "beforeYou": "Tu, în mijlocul tuturor",
+    "afterLabel": "Cu Departify",
+    "afterItems": ["Clienți și vânzări", "Administrare și facturare", "Marketing și canale", "Magazin și comenzi"],
+    "sharedLabel": "Aceleași informații pentru toată echipa",
+    "afterBody": "Un singur loc, datele tale legate între ele și o echipă digitală care lucrează cu ele.",
+    "blocks": [
+      {
+        "title": "Clienți și vânzări",
+        "line": "Clienții și vânzările care urmează, în ordine.",
+        "points": [
+          "Fiecare client cu datele, conversațiile și pașii următori",
+          "Tot e-mailul într-o singură căsuță, ordonat după prioritate",
+          "Calendarul conectat, ca să nu uiți nicio revenire"
+        ],
+        "link": "Când un client îți scrie, echipa ta știe deja cine este și unde ați rămas."
+      },
+      {
+        "title": "Administrare și facturare",
+        "line": "Oferte, facturi și conturi în același loc.",
+        "points": [
+          "Oferte, facturi, achiziții și stocuri",
+          "Sarcini cu responsabil și termen",
+          "Fișe de lucru semnate de client"
+        ],
+        "link": "O fișă de lucru semnată e gata de facturat, cu datele clientului pe care le ai deja."
+      },
+      {
+        "title": "Marketing și canale",
+        "line": "Afacerea ta rămâne vizibilă fără să-ți amintești în fiecare săptămână.",
+        "points": [
+          "Idei, texte și calendar de postări",
+          "Postare pe pagina ta de Facebook la ora aleasă",
+          "Analiza site-ului, ca să fii găsit pe Google"
+        ],
+        "link": "Textele pornesc de la ce știe deja echipa despre afacerea ta, iar tu le aprobi înainte de publicare."
+      },
+      {
+        "title": "Magazin și comenzi",
+        "badge": "În test",
+        "line": "Catalogul și comenzile tale, legate de stoc.",
+        "points": [
+          "Vitrină online cu produsele tale",
+          "Comenzi înregistrate în administrare",
+          "Stoc comun cu inventarul tău"
+        ],
+        "link": "Acum funcționează în mod de test: îl poți configura și poți încerca comenzi, dar încă nu încasează plăți reale."
+      }
+    ],
+    "connectTitle": "Conectează ce folosești deja",
+    "connectBody": "E-mailul, calendarul și documentele tale rămân unde sunt. Departify lucrează cu ele.",
+    "connectors": ["Gmail", "Outlook", "Google Calendar", "Google Drive", "Facebook", "Shopify", "WordPress", "Google Analytics"],
+    "connectNote": "Unele conexiuni permit doar consultarea datelor, nu și modificarea lor."
+  },
+  "team": {
+    "eyebrow": "Echipa ta digitală",
+    "title": "Specialiști pentru fiecare domeniu. Aceeași cunoaștere a afacerii tale.",
+    "lede": "Fiecare angajat digital se ocupă de un tip de muncă. Toți folosesc aceleași informații: clienții, serviciile, prețurile și felul tău de a comunica.",
+    "whatTitle": "Ce este un angajat digital?",
+    "whatBody": "Un asistent de inteligență artificială specializat într-un domeniu. Lucrează în Departify, cu datele tale și cu instrumentele pe care le conectezi. Nu este o persoană și poate greși: de aceea, lucrurile importante trec pe la tine.",
+    "doesLabel": "Se ocupă de",
+    "deliversLabel": "Îți livrează",
+    "asksLabel": "Îți cere aprobarea pentru",
+    "digitalLabel": "angajat digital",
+    "primary": [
+      {
+        "area": "Relații cu clienții",
+        "name": "Julio",
+        "does": "Citește și ordonează cererile și pregătește răspunsurile.",
+        "delivers": "E-mailul ordonat după prioritate și răspunsuri gata de trimis.",
+        "asks": "Orice răspuns trimis unui client."
+      },
+      {
+        "area": "Vânzări",
+        "name": "Marcos",
+        "does": "Identifică posibili clienți și pregătește oferte.",
+        "delivers": "Contacte evaluate și oferte gata de verificat.",
+        "asks": "Salvarea clienților noi și trimiterea ofertelor."
+      },
+      {
+        "area": "Administrație",
+        "name": "Ana",
+        "does": "E-mail, calendar, documente și reveniri.",
+        "delivers": "Programări în calendar, documente ordonate și mementouri la timp.",
+        "asks": "Trimiterea e-mailurilor și scrierea în documentele tale din Drive."
+      },
+      {
+        "area": "Marketing",
+        "name": "Elvira",
+        "does": "Conținut, rețele sociale și campanii, cu specialiști în conținut, rețele sociale și publicitate.",
+        "delivers": "Idei, texte, calendar de postări și interpretarea rezultatelor.",
+        "asks": "Postarea pe pagina ta de Facebook."
+      }
+    ],
+    "more": [
+      {
+        "area": "SEO",
+        "name": "Sandra",
+        "does": "Ca site-ul tău să apară mai bine pe Google.",
+        "delivers": "O analiză a site-ului cu îmbunătățiri concrete, ordonate după importanță.",
+        "asks": "Îți propune îmbunătățirile; tu decizi care se aplică."
+      },
+      {
+        "area": "Site și tehnologie",
+        "name": "Alberto",
+        "does": "Construiește și întreține site-ul și instrumentele afacerii.",
+        "delivers": "Modificări pregătite și explicate pe înțeles.",
+        "asks": "Crearea de proiecte noi în conturile tale."
+      },
+      {
+        "area": "Direcțiune",
+        "name": "",
+        "does": "Împarte munca între domenii și îți oferă imaginea de ansamblu.",
+        "delivers": "Starea afacerii și deciziile care te așteaptă, într-un singur loc.",
+        "asks": "Nimic din proprie inițiativă: îți pregătește deciziile."
+      }
+    ],
+    "expand": "Vezi toată echipa"
+  },
+  "control": {
+    "eyebrow": "Tu decizi",
+    "title": "Echipa ta se ocupă de muncă. Tu decizi ce contează.",
+    "lede": "Regulile sunt clare din prima zi: ce face singură, ce te întreabă înainte și ce rămâne mereu în mâinile tale.",
+    "lanes": {
+      "own": {
+        "title": "Face singură",
+        "body": "Muncă internă, care nu ajunge la nimeni din afara afacerii.",
+        "items": ["Citește și ordonează e-mailul", "Pregătește ciorne, oferte și documente", "Creează sarcini și programări în calendar", "Analizează site-ul și rezultatele"]
+      },
+      "approve": {
+        "title": "Te întreabă înainte",
+        "body": "Ce pleacă spre alte persoane sau schimbă date importante.",
+        "items": ["Trimiterea sau răspunsul la e-mailuri", "Postarea pe pagina ta de Facebook", "Salvarea clienților noi și pornirea revenirilor automate", "Scrierea în documentele tale din Drive"]
+      },
+      "yours": {
+        "title": "Rămâne mereu al tău",
+        "body": "Deciziile care definesc afacerea ta.",
+        "items": ["Prețurile și condițiile tale", "Cui vinzi și cum", "Ce se publică în numele tău", "Orice decizie legată de bani"]
+      }
+    },
+    "qa": [
+      {
+        "q": "Ce poate face singură?",
+        "a": "Muncă internă: ordonează, pregătește, rezumă, analizează și creează sarcini sau programări. Ce ai aprobat și programat deja, de exemplu o postare, pleacă la ora stabilită chiar dacă nu ești conectat."
+      },
+      {
+        "q": "Ce trebuie să aprob?",
+        "a": "E-mailuri, postări, clienți noi în lista ta și modificări în documentele din Drive. Găsești totul în Aprobări, cu informațiile necesare ca să decizi."
+      },
+      {
+        "q": "Pot verifica și corecta munca?",
+        "a": "Da. Vezi propunerea completă înainte să decizi și, dacă vrei modificări, le ceri în chat, cu cuvintele tale. Dacă aprobi din greșeală, ai câteva secunde să anulezi."
+      },
+      {
+        "q": "Cum încep cu datele și instrumentele mele?",
+        "a": "Îți creezi contul, povestești cum e afacerea ta și îți conectezi e-mailul. Echipa pornește de la ce ai deja: în prima zi nu trebuie să muți nimic."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Planuri",
+    "title": "Un preț clar, de la 49 € pe lună.",
+    "lede": "Toate planurile includ instrumentele și întreaga echipă digitală. Diferă cât de multă muncă ai nevoie și cât sprijin vrei.",
+    "perMonth": "/lună",
+    "vat": "TVA neinclus · plată lunară",
+    "featuredTag": "Pentru munca de zi cu zi",
+    "cta": "Creează-mi contul",
+    "taskNote": "O sarcină este o lucrare completă: răspunsul la o cerere, pregătirea unei oferte sau scrierea unei postări.",
+    "plans": {
+      "esencial": {
+        "name": "Esențial",
+        "for": "Pentru proprietarul care începe să delege munca de zi cu zi.",
+        "summary": "Gândit pentru aproximativ 100 de sarcini pe lună.",
+        "points": ["Clienți, vânzări, administrare și facturare într-un singur loc", "Toată echipa digitală, cu aprobările tale", "1 cont de e-mail conectat", "Ajutor prin e-mail"]
+      },
+      "negocio": {
+        "name": "Afacere",
+        "for": "Pentru o afacere cu activitate zilnică în mai multe domenii.",
+        "summary": "Gândit pentru aproximativ 400 de sarcini pe lună.",
+        "points": ["Tot ce include Esențial", "Până la 3 conturi de e-mail conectate", "Ajutor prioritar prin e-mail"]
+      },
+      "crecimiento": {
+        "name": "Creștere",
+        "for": "Pentru mai mult volum de muncă și mai multe canale.",
+        "summary": "Gândit pentru aproximativ 1.200 de sarcini pe lună.",
+        "points": ["Tot ce include Afacere", "Până la 10 conturi de e-mail conectate", "O sesiune de pornire cu echipa noastră"]
+      }
+    },
+    "compareTitle": "Compară planurile în detaliu",
+    "compareRows": [
+      { "label": "Muncă inclusă pe lună", "values": ["Circa 100 de sarcini", "Circa 400 de sarcini", "Circa 1.200 de sarcini"] },
+      { "label": "Clienți, vânzări, administrare, facturare și canale", "values": ["Inclus", "Inclus", "Inclus"] },
+      { "label": "Echipa digitală completă", "values": ["Inclusă", "Inclusă", "Inclusă"] },
+      { "label": "Conturi de e-mail conectate", "values": ["1", "Până la 3", "Până la 10"] },
+      { "label": "Ajutor", "values": ["Prin e-mail", "Prioritar prin e-mail", "Prioritar și sesiune de pornire"] }
+    ],
+    "limitTitle": "Dacă ajungi la limită",
+    "limitBody": "Te anunțăm din timp. Poți schimba planul sau poți aștepta luna următoare. Nu încasăm niciodată nimic în plus fără acordul tău.",
+    "billingTitle": "Cum se plătește",
+    "billingBody": "Prețuri lunare fără TVA. Înainte de prima plată îți confirmăm în scris planul și condițiile lui.",
+    "extrasTitle": "Costuri de la alți furnizori",
+    "extrasBody": "Crearea de imagini sau videoclipuri folosește propriul tău cont la un furnizor, precum Google sau OpenAI, care îți facturează separat. La fel și reclamele pe care decizi să le plătești."
+  },
+  "faq": {
+    "eyebrow": "Întrebări frecvente",
+    "title": "Ce e bine să știi înainte să începi.",
+    "items": [
+      {
+        "q": "Am nevoie de cunoștințe tehnice?",
+        "a": "Nu. Îi ceri lucruri echipei tale în scris, cu cuvintele tale, cum i-ai cere unui om. Conectarea e-mailului durează câteva clicuri."
+      },
+      {
+        "q": "Ce muncă poate face echipa mea digitală?",
+        "a": "Ordonează și răspunde la cereri, pregătește oferte și documente, îți organizează calendarul, revine la clienți, creează conținut și îl publică pe pagina ta de Facebook și îți analizează site-ul. Mereu cu informațiile afacerii tale."
+      },
+      {
+        "q": "Ce decizii rămân ale mele?",
+        "a": "Toate cele importante. Niciun e-mail și nicio postare nu pleacă fără aprobarea ta, iar prețurile, condițiile și orice decizie legată de bani rămân mereu ale tale."
+      },
+      {
+        "q": "Pot folosi în continuare instrumentele mele?",
+        "a": "Da. Departify se conectează, printre altele, la Gmail, Outlook, Google Calendar, Google Drive și Facebook. Nu trebuie să schimbi e-mailul sau calendarul."
+      },
+      {
+        "q": "Ce include prețul?",
+        "a": "Instrumentele afacerii, întreaga echipă digitală și volumul de muncă din planul tău. Nu include ce îți facturează alți furnizori, cum ar fi imaginile și videoclipurile create cu contul tău sau reclamele pe care le plătești. Deocamdată, fiecare cont este pentru o singură persoană: accesul pentru alți membri ai echipei tale nu este încă disponibil."
+      },
+      {
+        "q": "Cum încep și ce se întâmplă dacă renunț?",
+        "a": "Îți creezi contul cu Google, Microsoft sau e-mailul tău, povestești cum e afacerea ta și dai prima sarcină. Aplicația este disponibilă în spaniolă, engleză și română, iar echipa îți răspunde în limba în care îi scrii. Dacă renunți, poți cere ștergerea datelor firmei tale; condițiile de reziliere ți le confirmăm în scris înainte de prima plată."
+      }
+    ]
+  },
+  "closing": {
+    "title": "Întoarce-te la conducerea afacerii tale.",
+    "body": "Echipa ta se ocupă de muncă. Tu decizi ce contează.",
+    "cta": "Creează-mi contul",
+    "note": "De la 49 €/lună · TVA neinclus"
+  },
+  "footer": {
+    "tagline": "Instrumentele afacerii tale și o echipă de angajați digitali care lucrează cu ele.",
+    "product": "Produs",
+    "how": "Cum funcționează",
+    "included": "Ce include",
+    "plans": "Planuri",
+    "login": "Autentificare",
+    "legal": "Informații legale",
+    "privacy": "Confidențialitate",
+    "cookies": "Cookie-uri",
+    "terms": "Termeni",
+    "security": "Securitate",
+    "contact": "Contact",
+    "language": "Limbă",
+    "rights": "Toate drepturile rezervate."
+  }
+}

@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: 255 255 255;
+  --sand: 246 245 241;
+  --ink: 18 20 18;
+  --ink-2: 74 78 71;
+  --ink-3: 98 102 94;
+  --line: 230 228 221;
+  --line-strong: 211 208 199;
+  --accent: 11 122 59;
+  --accent-ink: 6 90 42;
+  --accent-soft: 232 245 224;
+  --amber: 154 74 6;
+  --amber-soft: 253 241 225;
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-padding-top: 5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection { background: rgb(var(--accent-soft)); color: rgb(var(--accent-ink)); }
+  :focus-visible {
+    outline: 2px solid rgb(var(--accent));
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+}
+
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-page px-4 sm:px-6 lg:px-8; }
+  .display-1 {
+    font-size: clamp(2.375rem, 5.6vw, 4.5rem);
+    line-height: 1.02;
+    letter-spacing: -0.038em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .display-hero {
+    font-size: clamp(2.375rem, 4.3vw, 4rem);
+    line-height: 1.03;
+    letter-spacing: -0.038em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .display-2 {
+    font-size: clamp(1.875rem, 3.8vw, 3rem);
+    line-height: 1.06;
+    letter-spacing: -0.032em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .display-3 {
+    font-size: clamp(1.375rem, 2.2vw, 1.75rem);
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: clamp(1.0625rem, 1.5vw, 1.25rem);
+    line-height: 1.55;
+    letter-spacing: -0.006em;
+    @apply text-ink-2;
+    text-wrap: pretty;
+  }
+  .eyebrow {
+    @apply text-[0.8125rem] font-medium tracking-[0.01em] text-accent;
+  }
+  .btn {
+    @apply inline-flex min-h-[2.75rem] items-center justify-center gap-2 rounded-full px-5 text-[0.9375rem] font-medium transition-colors duration-150;
+  }
+  .btn-primary { @apply btn bg-accent text-white hover:bg-accent-ink; }
+  .btn-secondary { @apply btn border border-line-strong bg-canvas text-ink hover:border-ink-3 hover:bg-sand; }
+  .btn-ghost { @apply btn px-3 text-ink-2 hover:text-ink; }
+  .card { @apply rounded-2xl border border-line bg-canvas; }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.75rem] font-medium leading-none;
+  }
+}
+
+/* Reveal: only hides content when JS has confirmed motion is welcome. */
+.motion-ok [data-reveal] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.motion-ok [data-reveal].is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.motion-ok .scene-swap { animation: scene-in 0.32s cubic-bezier(0.2, 0.7, 0.2, 1); }
+@keyframes scene-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
