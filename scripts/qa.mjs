@@ -29,7 +29,7 @@ for (const locale of locales) {
   for (const width of widths) {
     const ctx = await browser.newContext({ viewport: { width, height: 900 } });
     // Dark is the default; light is the stored choice.
-    if (scheme === "light") await ctx.addInitScript(() => { try { localStorage.setItem("theme", "light"); } catch {} });
+    if (scheme === "light") await ctx.addInitScript(() => { try { localStorage.setItem("deptia-theme", "light"); } catch {} });
     const page = await ctx.newPage();
     const errors = [];
     page.on("pageerror", (e) => errors.push(e.message));
@@ -181,7 +181,7 @@ for (const locale of locales) {
   await toggle.click();
   const after = await page.evaluate(() => ({
     theme: document.documentElement.dataset.theme,
-    stored: localStorage.getItem("theme"),
+    stored: localStorage.getItem("deptia-theme"),
     lightLogo: getComputedStyle(document.querySelector("header .logo-for-light")).display,
     bg: getComputedStyle(document.body).backgroundColor,
   }));

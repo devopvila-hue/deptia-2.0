@@ -20,7 +20,7 @@ export function ThemeToggle({ toDark, toLight }: { toDark: string; toLight: stri
       onClick={() => {
         document.documentElement.dataset.theme = next;
         try {
-          localStorage.setItem("theme", next);
+          localStorage.setItem("deptia-theme", next);
         } catch {}
         setTheme(next);
       }}
