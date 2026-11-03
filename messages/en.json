@@ -257,6 +257,20 @@
         "asks": "Create new projects in your accounts."
       },
       {
+        "area": "Operations",
+        "name": "",
+        "does": "Processes, suppliers, orders and day-to-day internal work.",
+        "delivers": "Internal tasks prepared and a heads-up when something stalls.",
+        "asks": "Place an order with a supplier or change a process."
+      },
+      {
+        "area": "Human resources",
+        "name": "",
+        "does": "Job offers, onboarding of new people and the absence calendar.",
+        "delivers": "Drafts of job offers and welcome documents, and team absences kept up to date.",
+        "asks": "Publish a job offer or send a document to someone on the team."
+      },
+      {
         "area": "Management",
         "name": "",
         "does": "Sharing out work between areas and giving you the big picture.",

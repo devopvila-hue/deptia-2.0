@@ -257,6 +257,20 @@
         "asks": "Créer de nouveaux projets dans vos comptes."
       },
       {
+        "area": "Opérations",
+        "name": "",
+        "does": "Processus, fournisseurs, commandes et fonctionnement interne au quotidien.",
+        "delivers": "Tâches internes préparées et une alerte quand quelque chose est bloqué.",
+        "asks": "Passer une commande à un fournisseur ou modifier un processus."
+      },
+      {
+        "area": "Ressources humaines",
+        "name": "",
+        "does": "Offres d'emploi, accueil des nouvelles recrues et calendrier des absences.",
+        "delivers": "Brouillons d'offres et de documents d'accueil, et absences de l'équipe à jour.",
+        "asks": "Publier une offre ou envoyer un document à un membre de l'équipe."
+      },
+      {
         "area": "Direction",
         "name": "",
         "does": "Répartir le travail entre les domaines et vous donner une vue d'ensemble.",

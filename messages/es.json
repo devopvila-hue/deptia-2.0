@@ -257,6 +257,20 @@
         "asks": "Crear proyectos nuevos en tus cuentas."
       },
       {
+        "area": "Operaciones",
+        "name": "",
+        "does": "Procesos, proveedores, pedidos y el día a día interno.",
+        "delivers": "Tareas internas preparadas y un aviso cuando algo se queda parado.",
+        "asks": "Hacer un pedido a un proveedor o cambiar un proceso."
+      },
+      {
+        "area": "Recursos humanos",
+        "name": "",
+        "does": "Ofertas de empleo, incorporación de personas nuevas y calendario de ausencias.",
+        "delivers": "Borradores de ofertas y de documentos de bienvenida, y las ausencias del equipo al día.",
+        "asks": "Publicar una oferta o enviar un documento a una persona del equipo."
+      },
+      {
         "area": "Dirección",
         "name": "",
         "does": "Repartir el trabajo entre áreas y darte una visión de conjunto.",

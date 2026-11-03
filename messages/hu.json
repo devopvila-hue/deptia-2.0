@@ -257,6 +257,20 @@
         "asks": "Új projektek létrehozása a fiókjaiban."
       },
       {
+        "area": "Működés",
+        "name": "",
+        "does": "Folyamatok, beszállítók, rendelések és a napi belső ügyvitel.",
+        "delivers": "Előkészített belső feladatok, és jelzés, ha valami megakad.",
+        "asks": "Rendelés leadása beszállítónál vagy egy folyamat megváltoztatása."
+      },
+      {
+        "area": "Emberi erőforrások",
+        "name": "",
+        "does": "Álláshirdetések, új emberek beillesztése és a hiányzások naptára.",
+        "delivers": "Álláshirdetés- és üdvözlődokumentum-tervezetek, és a csapat hiányzásai naprakészen.",
+        "asks": "Álláshirdetés közzététele vagy dokumentum küldése egy csapattag számára."
+      },
+      {
         "area": "Vezetés",
         "name": "",
         "does": "A munka elosztása a területek között és az átfogó kép biztosítása.",

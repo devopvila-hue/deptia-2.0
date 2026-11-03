@@ -15,6 +15,7 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 | Pedir cambios en el chat antes de aprobar | VERIFICADO (correo) | `apps/backend/src/customer-zero/pending-email.ts:20-29,275-280`. No existe botón «pedir cambios»: la página no lo promete |
 | Lo programado sale a su hora sin estar conectado (publicación) | VERIFICADO si los workers están activos | `apps/backend/src/server/server.ts:137-170` |
 | 7 áreas: Dirección, Marketing, SEO, Ventas, Atención al cliente, Administración, Desarrollo; nombres Elvira, Sandra, Marcos, Julio, Ana, Alberto; especialistas de contenido, redes y publicidad | VERIFICADO | `apps/backend/src/customer-zero/department-identity.ts:29-37,108-179`; `marketing-roster.ts:13-33` |
+| Áreas «Operaciones» y «Recursos humanos» (9 en total con las 7 anteriores), sin nombre de empleado | PENDIENTE: staging, sin verificar | Dato del operador (2026-11-03): añadidas en el portal, aún en staging. No se ha consultado el código a petición suya. Textos de la web redactados como propuesta y sin nombre propio; confirmar qué hace cada área y su nombre antes de publicar. No publicar la web con estas dos filas hasta verificarlas |
 | Bandeja de correo unificada | VERIFICADO | `apps/portal/src/app/router.tsx` (`/inbox`) |
 | Calendario conectado (Google Calendar: leer y crear eventos) | VERIFICADO | `apps/backend/src/customer-zero/gmail-adapter.ts:40-121` |
 | Tareas con responsable y fecha | VERIFICADO | `/tareas` en `router.tsx` |

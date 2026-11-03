@@ -257,6 +257,20 @@
         "asks": "Neue Projekte in Ihren Konten."
       },
       {
+        "area": "Betrieb",
+        "name": "",
+        "does": "Abläufe, Lieferanten, Bestellungen und der interne Tagesbetrieb.",
+        "delivers": "Vorbereitete interne Aufgaben und ein Hinweis, wenn etwas stockt.",
+        "asks": "Bestellungen bei Lieferanten und Änderungen an Abläufen."
+      },
+      {
+        "area": "Personalwesen",
+        "name": "",
+        "does": "Stellenangebote, Einarbeitung neuer Personen und der Abwesenheitskalender.",
+        "delivers": "Entwürfe für Stellenangebote und Willkommensdokumente sowie aktuelle Abwesenheiten im Team.",
+        "asks": "Veröffentlichen eines Stellenangebots und Versand von Dokumenten an Teammitglieder."
+      },
+      {
         "area": "Leitung",
         "name": "",
         "does": "Arbeit auf die Bereiche verteilen und Ihnen den Überblick geben.",

@@ -257,6 +257,20 @@
         "asks": "Creare nuovi progetti nei tuoi account."
       },
       {
+        "area": "Operazioni",
+        "name": "",
+        "does": "Processi, fornitori, ordini e attività interne di ogni giorno.",
+        "delivers": "Attività interne preparate e un avviso quando qualcosa si ferma.",
+        "asks": "Fare un ordine a un fornitore o cambiare un processo."
+      },
+      {
+        "area": "Risorse umane",
+        "name": "",
+        "does": "Offerte di lavoro, inserimento di nuove persone e calendario delle assenze.",
+        "delivers": "Bozze di offerte e di documenti di benvenuto, e assenze del team aggiornate.",
+        "asks": "Pubblicare un'offerta o inviare un documento a una persona del team."
+      },
+      {
         "area": "Direzione",
         "name": "",
         "does": "Distribuire il lavoro tra le aree e darti una visione d'insieme.",

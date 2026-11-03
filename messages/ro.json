@@ -257,6 +257,20 @@
         "asks": "Crearea de proiecte noi în conturile tale."
       },
       {
+        "area": "Operațiuni",
+        "name": "",
+        "does": "Procese, furnizori, comenzi și treburile interne de zi cu zi.",
+        "delivers": "Sarcini interne pregătite și o alertă când ceva se blochează.",
+        "asks": "Plasarea unei comenzi la un furnizor sau schimbarea unui proces."
+      },
+      {
+        "area": "Resurse umane",
+        "name": "",
+        "does": "Oferte de angajare, integrarea persoanelor noi și calendarul absențelor.",
+        "delivers": "Ciorne de oferte și de documente de bun venit, plus absențele echipei la zi.",
+        "asks": "Publicarea unei oferte sau trimiterea unui document către cineva din echipă."
+      },
+      {
         "area": "Direcțiune",
         "name": "",
         "does": "Împarte munca între domenii și îți oferă imaginea de ansamblu.",
