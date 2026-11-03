@@ -18,21 +18,42 @@ export function Included({ copy }: { copy: IncludedCopy }) {
           <h2 id="included-title" className="t-section">{copy.title}</h2>
           <p className="t-lede mt-5">{copy.lede}</p>
         </div>
-        <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
-          {copy.items.map((it, i) => (
-            <li key={it.name} className="surface flex gap-4 p-5 sm:p-6">
-              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accentsoft text-accenttext" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d={glyphs[i % glyphs.length]} />
-                </svg>
-              </span>
-              <span>
-                <span className="block text-[1.0625rem] font-semibold tracking-[-0.02em]">{it.name}</span>
-                <span className="mt-1 block text-[0.9375rem] leading-relaxed text-ink2">{it.desc}</span>
-              </span>
-            </li>
-          ))}
-        </ul>
+
+        <div className="mt-12 grid items-stretch gap-4 lg:grid-cols-12 lg:gap-5" data-reveal>
+          {/* Everything converges into the same core: one piece of glass, one stack. */}
+          <figure className="glass-window overflow-hidden lg:col-span-5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/plans/stack-hero.webp"
+              srcSet="/plans/stack-hero-720.webp 800w, /plans/stack-hero.webp 1200w"
+              sizes="(min-width: 1024px) 420px, 92vw"
+              alt=""
+              aria-hidden="true"
+              width={1200}
+              height={896}
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover"
+            />
+          </figure>
+
+          <ul className="grid gap-3 sm:grid-cols-2 lg:col-span-7">
+            {copy.items.map((it, i) => (
+              <li key={it.name} className="surface flex gap-4 p-5 sm:p-6">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accentsoft text-accenttext" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d={glyphs[i % glyphs.length]} />
+                  </svg>
+                </span>
+                <span>
+                  <span className="block text-[1.0625rem] font-semibold tracking-[-0.02em]">{it.name}</span>
+                  <span className="mt-1 block text-[0.9375rem] leading-relaxed text-ink2">{it.desc}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <p className="t-small mt-6 text-center">{copy.note}</p>
       </div>
     </section>

@@ -34,7 +34,7 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 
 | Afirmación | Veredicto | Evidencia o condición |
 |---|---|---|
-| «CRM, ERP y redes incluidos» en todos los planes | CONDICIONADO | CRM y ERP existen y se abren en el portal, pero dependen del aprovisionamiento por empresa (`crm-workspace-gateway.ts:40-52`, `product-catalog.ts:84-97`). Redes = Facebook Pages (`studio-channel-capabilities.ts:4-15`) |
+| «CRM, ERP y redes incluidos» en todos los planes | CONDICIONADO | CRM y ERP existen y se abren en el portal, pero dependen del aprovisionamiento por empresa (`crm-workspace-gateway.ts:40-52`, `product-catalog.ts:84-97`). Redes = Facebook Pages (`studio-channel-capabilities.ts:4-15`). Desde el 2026-11-03 la tira de planes lista las seis áreas con nombre propio bajo la etiqueta «El mismo producto en los cuatro planes»: es la misma afirmación, más visible. Mismo veredicto |
 | «Importas tus datos y a trabajar», «sin pagar herramientas sueltas» | PENDIENTE | Petición del operador. Falta verificar la importación de clientes en el CRM y de artículos/facturas en el ERP (repos `departify-crm` y `departify-erp`, no accesibles en esta sesión) |
 | «Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas» | CONDICIONADO | Habla del tamaño del negocio. Hoy cada cuenta es para una persona y no hay invitaciones (`connections.json:288`); la FAQ lo dice |
 | Plan Empresa «A medida» con «Hablemos» | PENDIENTE | Compromisos comerciales (volumen, acompañamiento, facturación a medida) a confirmar por el operador. El botón abre la página de contacto actual (`/contacto?plan=empresa`) |
@@ -63,6 +63,7 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 | Publicar en Instagram, LinkedIn, TikTok o X | Bloqueado en código |
 | Reglas de aprobación configurables | «La edición de estas reglas todavía no está disponible» (`connections.json:308-312`) |
 | Avisos por correo o móvil | Push solo con claves VAPID/FCM configuradas; el portal dice que no se envían avisos por email |
+| Las ilustraciones de los planes y del cierre muestran el portal | Son arte decorativo generado (`public/plans/*.webp`, `public/closing-horizon.webp`): vidrio, aluminio, piedra y luz. No son capturas del producto ni muestran ninguna pantalla. No sostienen ninguna afirmación comercial: el producto real sigue mostrándose en las capturas verificadas de `scripts/portal-shots/` |
 
 ## Bloqueos antes de publicar
 

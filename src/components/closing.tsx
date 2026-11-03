@@ -7,6 +7,21 @@ export function Closing({ copy }: { copy: ClosingCopy }) {
   return (
     <section aria-labelledby="closing-title" className="relative isolate overflow-hidden py-24 text-center sm:py-36">
       <div aria-hidden="true" className="aurora absolute inset-0 -z-10" />
+      {/* The horizon behind the last call. Only in the dark theme: the copy stays light on top of it. */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/closing-horizon.webp"
+          srcSet="/closing-horizon-1200.webp 1400w, /closing-horizon.webp 2400w"
+          sizes="100vw"
+          alt=""
+          width={2400}
+          height={622}
+          loading="lazy"
+          decoding="async"
+          className="closing-horizon h-full w-full object-cover opacity-70 [mask-image:radial-gradient(ellipse_70%_52%_at_50%_72%,#000,transparent_80%)]"
+        />
+      </div>
       <div className="wrap" data-reveal>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/favicon.svg" alt="" width={44} height={44} className="mx-auto" />

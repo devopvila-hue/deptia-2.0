@@ -72,7 +72,7 @@ export default async function Page({ params: { locale } }: { params: { locale: s
         <Connected copy={m.connected} />
         <Team copy={m.team} />
         <Control copy={m.control} />
-        <Pricing copy={m.pricing} locale={localeMeta[locale].bcp47} site={locale} />
+        <Pricing copy={m.pricing} locale={localeMeta[locale].bcp47} site={locale} includedItems={m.included.items.map((i) => i.name)} />
         <Faq copy={m.faq} />
         <Closing copy={m.closing} />
       </main>
