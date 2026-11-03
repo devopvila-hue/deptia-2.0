@@ -145,7 +145,9 @@
       "Clienți și vânzări",
       "Administrare și facturare",
       "Marketing și canale",
-      "Magazin și comenzi"
+      "Magazin și comenzi",
+      "Operațiuni",
+      "Resurse umane"
     ],
     "afterBody": "Un singur loc, datele tale legate între ele și o echipă digitală care lucrează cu ele.",
     "blocks": [
@@ -193,10 +195,12 @@
     ],
     "beforeNodes": [
       "Tabel clienți",
+      "Furnizori",
       "Facturi",
       "E-mail",
       "Calendar",
       "Rețele",
+      "Tabel personal",
       "Magazin"
     ],
     "youShort": "Tu",

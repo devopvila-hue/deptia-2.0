@@ -145,7 +145,9 @@
       "Clientes y ventas",
       "Gestión y facturación",
       "Marketing y canales",
-      "Tienda y pedidos"
+      "Tienda y pedidos",
+      "Operaciones",
+      "Recursos humanos"
     ],
     "afterBody": "Un solo lugar, tus datos conectados y un equipo digital que trabaja sobre ellos.",
     "blocks": [
@@ -193,10 +195,12 @@
     ],
     "beforeNodes": [
       "Hoja de clientes",
+      "Proveedores",
       "Facturas",
       "Correo",
       "Agenda",
       "Redes",
+      "Hoja de personal",
       "Tienda"
     ],
     "youShort": "Tú",

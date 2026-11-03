@@ -40,3 +40,7 @@ Las 48 capturas de `public/shots/` se hicieron el 30-10 14:05 UTC, antes de que 
 ## Actualización 2026-11-03: Operaciones y Recursos humanos
 
 El operador añadió los departamentos Operaciones y Recursos humanos en el portal (staging). Se añaden como dos filas sin nombre en «Ver el equipo completo» (`team.more`, siete idiomas). Textos propuestos y sin verificar: ver la fila nueva de `docs/VERIFICACION-AFIRMACIONES.md`. Las capturas del portal siguen mostrando 7 departamentos hasta que el cambio llegue a `main` del portal y se recapture. Tests 6/6. Sin publicar.
+
+## Actualización 2026-11-03 (2): diagrama «Antes / Con Departify»
+
+`src/components/connected.tsx` rehecho: geometría 400×300 sin estirar, cajas opacas sobre las líneas, curvas desde el centro y pulso animado solo con movimiento permitido (`.flow`). «Con Departify» pasa de 4 a 6 áreas (suma Operaciones y Recursos humanos, pendientes de verificar) y «Antes» de 6 a 8 herramientas (Proveedores y Hoja de personal, solo ilustrativas). Siete idiomas, tests 6/6, tipos y lint PASS, build PASS; revisado en oscuro, claro y móvil de 390 px. Sin publicar.

@@ -198,3 +198,8 @@
   .marquee-group[aria-hidden] { display: none; }
   .marquee-toggle { display: none; }
 }
+
+/* Connector pulses on the "with Departify" diagram. */
+.flow { stroke-dasharray: 3 9; }
+.motion-ok .flow { animation: flow 1.6s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -12; } }
