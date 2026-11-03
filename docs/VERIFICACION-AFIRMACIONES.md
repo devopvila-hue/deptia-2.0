@@ -37,7 +37,7 @@ Veredictos: **VERIFICADO** (en código), **CONDICIONADO** (existe, pero depende 
 | «Importas tus datos y a trabajar», «sin pagar herramientas sueltas» | PENDIENTE | Petición del operador. Falta verificar la importación de clientes en el CRM y de artículos/facturas en el ERP (repos `departify-crm` y `departify-erp`, no accesibles en esta sesión) |
 | «Para quien lleva su negocio solo y para quien dirige un equipo de 20 personas» | CONDICIONADO | Habla del tamaño del negocio. Hoy cada cuenta es para una persona y no hay invitaciones (`connections.json:288`); la FAQ lo dice |
 | Plan Empresa «A medida» con «Hablemos» | PENDIENTE | Compromisos comerciales (volumen, acompañamiento, facturación a medida) a confirmar por el operador. El botón abre la página de contacto actual (`/contacto?plan=empresa`) |
-| Capturas de producto | VERIFICADO | Son el portal real (`apps/portal` compilado) en Glass White y Glass, con datos de ejemplo simulados; scripts en `scripts/portal-shots/` |
+| Capturas de producto | VERIFICADO | Son el portal real (`apps/portal` compilado) en Glass White y Glass, con datos de ejemplo simulados; scripts en `scripts/portal-shots/`. Recapturadas el 2026-11-03 desde `devopvila-hue/departify` `main` en `0094a13d`, que ya incluye el Glass con color (`832b8886`, 2026-10-30) y no incluye el botón de envío azul en reposo (`110d5ea1`, aún fuera de `main`) |
 
 ## Añadido en la v4 (2026-10-30)
 

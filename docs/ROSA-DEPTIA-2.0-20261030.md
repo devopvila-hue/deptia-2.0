@@ -32,3 +32,7 @@ Rehacer la landing de Departify como propuesta comercial nueva (brief de Astra),
 4. Prueba de comprensión con cinco propietarios del perfil.
 5. Operador: confirmar si Alberto (Desarrollo) entra en todos los planes; en código es `independent`.
 6. Con OK del operador: desplegar como vista previa (con `noindex`), revisar, migrar páginas legales y decidir la sustitución de `departify.app`.
+
+## Actualización 2026-11-03: capturas del portal
+
+Las 48 capturas de `public/shots/` se hicieron el 30-10 14:05 UTC, antes de que el Glass con color entrara en `main` de departify (19:44 UTC). Se recapturaron desde `main` en `0094a13d` con `scripts/portal-shots/` (mismas dimensiones; `src/config/shots.ts` sin cambios). Tests 6/6 y typecheck PASS; hero revisado en claro y oscuro sin errores de consola. Sin publicar. Pendiente: si el botón de envío azul en reposo (`110d5ea1`) debe aparecer, hay que fusionarlo antes en departify y recapturar.
